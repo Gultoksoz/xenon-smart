@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app flat  height="150">
+  <v-app-bar app flat  height="100">
     
       <v-img
       class="logo"
@@ -21,36 +21,21 @@
       </v-sheet>
     </v-toolbar-title>
 
-    
 
-    <v-list >
-        <v-list-group value="languageOptions">
-          <template v-slot:activator="{ props }">
-            <v-list-item
-              v-bind="props"
-              title="TR"
-              append-icon="mdi mdi-chevron-down"
-            ></v-list-item>
-          </template>
-
-          <v-list-item
-            
-            title="TR"
-            value="TR"
-          ></v-list-item>
-
-          <v-list-item
-           
-            title="EN"
-            value="EN"
-          ></v-list-item>
-
-        </v-list-group>
-      </v-list>
-  <v-icon end icon="mdi mdi-web"></v-icon>
+      
+  <v-select class="list-lang"
+    v-model="selectedItem"
+    :items="languageOptions"
+    item-title="title"
+    item-value="value"
+    return-object
+    variant="text"
+  ></v-select>
+   
+  <v-icon class="icon" end icon="mdi mdi-web"></v-icon>
   </v-app-bar>
   
-  <v-divider :thickness="151"></v-divider> 
+  <v-divider :thickness="102"></v-divider> 
 
 </template>
 
@@ -58,12 +43,17 @@
   export default {
   data() {
     return {
-      
-      languageOptions: ['TR', 'EN'],
+      selectedItem:  { title: 'TR', value: 'TR' },
+      languageOptions: [
+          { title: 'TR', value: 'TR' },
+          { title: 'EN', value: 'EN' },
+         
+        ],
       
     }
   },
   methods: {
+   
    
     }
     
@@ -72,9 +62,17 @@
 </script>
 <style scoped>
 
+.list-lang{
+  max-width: 85px;
+  margin-top: 20px;
+}
 
+.icon{
+  margin-right: 35px;
+}
 .logo{
   margin: 30px;
+  margin-left: 4rem;
 }
 .chips{
   background-color: #e6e6e6;
