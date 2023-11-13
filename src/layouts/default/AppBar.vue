@@ -1,41 +1,101 @@
 <template>
-  <v-app-bar app flat  height="100">
+  <v-app-bar app flat  height="100" >
+    <v-row no-gutters>
+      <v-col cols="3">
+        <v-img
+          class="logo"
+          src="@/assets/Xenon-Logo.png" 
+          max-height="40px" 
+          max-width="120px" 
+          contain
+        />
+      </v-col>
     
-      <v-img
-      class="logo"
-        src="@/assets/Xenon-Logo.png" 
-        max-height="40px" 
-        max-width="120px" 
-        contain
-      />
-    
-    <v-toolbar-title class="menu">
+      <v-col cols="6">
+        <v-toolbar-title class="menu">
+          <v-sheet class="chips">
+            <v-chip
+              text-color="black"
+              variant="text"
+              class="custom-chip" 
+              @click.stop="drawer = !drawer"
+              > Ürünler
+              <v-icon end icon="mdi mdi-chevron-down"></v-icon>
+            </v-chip>
+          
+            <v-chip text-color="black" @click="" variant="text" class="custom-chip">Online Mağaza</v-chip>
+            <v-chip text-color="black" @click="" variant="text" class="custom-chip">Destek</v-chip>
+            <v-chip text-color="black" @click="" variant="text" class="custom-chip">İletişim</v-chip>
+          </v-sheet>
+        </v-toolbar-title>
+      </v-col>
       
-      <v-sheet class="chips"> 
-        <v-chip text-color="black" @click="" variant="text" class="custom-chip">Ürünler
-          <v-icon end icon="mdi mdi-chevron-down"></v-icon>
-        </v-chip>
-        <v-chip text-color="black" @click="" variant="text" class="custom-chip">Online Mağaza</v-chip>
-        <v-chip text-color="black" @click="" variant="text" class="custom-chip">Destek</v-chip>
-        <v-chip text-color="black" @click="" variant="text" class="custom-chip">İletişim</v-chip>
-      </v-sheet>
-    </v-toolbar-title>
-
-
-      
-  <v-select class="list-lang"
-    v-model="selectedItem"
-    :items="languageOptions"
-    item-title="title"
-    item-value="value"
-    return-object
-    variant="text"
-  ></v-select>
+      <v-col cols="3" class="d-flex">
+        <v-select class="list-lang"
+          v-model="selectedItem"
+          :items="languageOptions"
+          item-title="title"
+          item-value="value"
+          return-object
+          variant="text"
+        ></v-select>
    
-  <v-icon class="icon" end icon="mdi mdi-web"></v-icon>
+        <v-icon class="icon" end icon="mdi mdi-web"></v-icon>
+      </v-col>
+
+      <v-divider  :thickness="5"></v-divider> 
+ 
+    </v-row>
   </v-app-bar>
+  <v-navigation-drawer
+    v-model="drawer"
+    location="center"
+    temporary
+  >
+    <v-list>
+
+      <v-row class="d-flex" >
+              <v-col cols="2" >
+                <v-list-item class="dropdown-menu">
+                  <v-icon size="48" color="grey-darken-2" icon="mdi mdi-home-outline"></v-icon>
+                  <p> Akıllı Yaşam</p>
+                  
+                </v-list-item>
+              </v-col>
+              <v-col cols="2">
+                <v-list-item  class="dropdown-menu">
+                  <v-icon size="48" color="grey-darken-2" icon="mdi mdi-home-outline"></v-icon>
+                  <p> Akıllı Yaşam</p>
+                </v-list-item>
+              </v-col>
+              <v-col cols="2">
+                <v-list-item  class="dropdown-menu">
+                  <v-icon size="48" color="grey-darken-2" icon="mdi mdi-home-outline"></v-icon>
+                  <p> Akıllı Yaşam</p>
+                </v-list-item>
+              </v-col>
+              <v-col cols="2">
+                <v-list-item  class="dropdown-menu">
+                  <v-icon size="48" color="grey-darken-2" icon="mdi mdi-home-outline"></v-icon>
+                  <p> Akıllı Yaşam</p>
+                </v-list-item>
+              </v-col>
+              <v-col cols="2">
+                <v-list-item  class="dropdown-menu">
+                  <v-icon size="48" color="grey-darken-2" icon="mdi mdi-home-outline"></v-icon>
+                  <p> Akıllı Yaşam</p>
+                </v-list-item>
+              </v-col>
+              <v-col cols="2">
+                <v-list-item  class="dropdown-menu">
+                  <v-icon size="48" color="grey-darken-2" icon="mdi mdi-home-outline"></v-icon>
+                  <p> Akıllı Yaşam</p>
+                </v-list-item>
+              </v-col> 
+            </v-row>
+    </v-list>
+  </v-navigation-drawer>
   
-  <v-divider :thickness="102"></v-divider> 
 
 </template>
 
@@ -50,25 +110,37 @@
          
         ],
       
+      drawer: false,
+      group: null,
+     
     }
   },
-  methods: {
-   
-   
-    }
-    
+
+  watch: {
+      group () {
+        this.drawer = false
+      },
+    },
+ 
 }
 
 </script>
 <style scoped>
 
+.dropdown-menu{
+  text-align: left;
+  margin-left: 40px;
+}
+
 .list-lang{
   max-width: 85px;
   margin-top: 20px;
+  margin-left: 150px;
 }
 
 .icon{
-  margin-right: 35px;
+  margin-top: 33px;
+
 }
 .logo{
   margin: 30px;
@@ -83,6 +155,7 @@
 .menu{
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .custom-chip:hover {

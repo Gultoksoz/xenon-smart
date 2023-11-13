@@ -1,6 +1,6 @@
 <template>
    <v-container fluid class="main">
-    <v-row no-gutters>
+    <v-row no-gutters class="main-text">
       <v-col cols="6" md="6" align="center" justify="center">
         <v-card class="left-aligned-card ml-8 mt-6" variant="text">
           <v-card-title class="custom-card-title "><strong>Akıllı ev sistemleri, </strong><br>modern yaşamı yeniden tanımlayın.</v-card-title>
@@ -103,14 +103,14 @@
             <strong>Akıllı Kontrol Grubu</strong>
             <br>Lorem ipsum dolor sit amet, consectetur
           </v-card-title>
-          <v-card-text class="mt-6">
+          <v-card-text class="mt-6 ml-5">
             <!-- Yazılar buraya gelecek -->
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </v-card-text>
           <v-col cols="6">
           <v-card-action>
            
-            <v-btn block rounded="xl" size="small" variant="outlined" color="primary">
+            <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
               Ürünleri incele
             </v-btn>
           </v-card-action>
@@ -120,17 +120,303 @@
         <!-- Sağ taraftaki resim -->
         <v-col cols="12" md="6">
           <v-img
-            class="img"
+            class="product-img"
             :width="650"
             aspect-ratio="4/3"
             cover
             src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
           ></v-img>
 
+          <v-sheet
+    class="mx-auto mt-6"
+    elevation="0"
+    max-width="700"
+    rounded="xl"
+    color="#cccccc"
+    
+  >
+    <v-slide-group
+      v-model="model"
+      class="pa-4 mb-10"
+      selected-class="bg-success"
+      show-arrows
+    >
+      <v-slide-group-item
+        v-for="n in 15"
+        :key="n"
+      >
+        <v-card
+          color="#cccccc"
+          class="ma-4"
+          height="200"
+          width="100"
+          
+        >
+          <div class="d-flex fill-height align-center justify-center">
+            <v-scale-transition>
+              <v-icon
+                
+                color="white"
+                size="48"
+                icon="mdi-close-circle-outline"
+              ></v-icon>
+            </v-scale-transition>
+          </div>
+        </v-card>
+      </v-slide-group-item>
+    </v-slide-group>
+  </v-sheet>
+
         </v-col>
       </v-card>
     </v-col>
   </v-row>
+
+  <v-row no-gutters>
+    <v-col cols="12">
+      <v-card class="d-flex product-card" variant="tonal">
+        <!-- Sol taraftaki metin -->
+        <v-col cols="12" md="6">
+          <v-img
+            class="product-img"
+            :width="650"
+            aspect-ratio="4/3"
+            cover
+            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          ></v-img>
+
+          <v-sheet
+    class="mx-auto mt-6"
+    elevation="0"
+    max-width="700"
+    rounded="xl"
+    color="#cccccc"
+    
+  >
+    <v-slide-group
+      v-model="model"
+      class="pa-4 mb-10"
+      selected-class="bg-success"
+      show-arrows
+    >
+      <v-slide-group-item
+        v-for="n in 15"
+        :key="n"
+      >
+        <v-card
+          color="#cccccc"
+          class="ma-4"
+          height="200"
+          width="100"
+          
+        >
+          <div class="d-flex fill-height align-center justify-center">
+            <v-scale-transition>
+              <v-icon
+                
+                color="white"
+                size="48"
+                icon="mdi-close-circle-outline"
+              ></v-icon>
+            </v-scale-transition>
+          </div>
+        </v-card>
+      </v-slide-group-item>
+    </v-slide-group>
+  </v-sheet>
+
+        </v-col>
+
+
+        <!-- Sağ taraftaki resim -->
+
+        <v-col cols="12" md="6">
+          <v-card-title class="product-card-title">
+            <strong>Akıllı Kontrol Grubu</strong>
+            <br>Lorem ipsum dolor sit amet, consectetur
+          </v-card-title>
+          <v-card-text class="mt-6 ml-5">
+            <!-- Yazılar buraya gelecek -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </v-card-text>
+          <v-col cols="6">
+          <v-card-action>
+           
+            <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
+              Ürünleri incele
+            </v-btn>
+          </v-card-action>
+        </v-col>
+        </v-col>
+
+        
+     
+      </v-card>
+    </v-col>
+  </v-row>
+
+
+  <v-row no-gutters>
+    <v-col cols="12">
+      <v-card class="d-flex product-card" variant="tonal">
+        <!-- Sol taraftaki metin -->
+        <v-col cols="12" md="6">
+          <v-card-title class="product-card-title">
+            <strong>Akıllı Kontrol Grubu</strong>
+            <br>Lorem ipsum dolor sit amet, consectetur
+          </v-card-title>
+          <v-card-text class="mt-6 ml-5">
+            <!-- Yazılar buraya gelecek -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </v-card-text>
+          <v-col cols="6">
+          <v-card-action>
+           
+            <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
+              Ürünleri incele
+            </v-btn>
+          </v-card-action>
+        </v-col>
+        </v-col>
+
+        <!-- Sağ taraftaki resim -->
+        <v-col cols="12" md="6">
+          <v-img
+            class="product-img"
+            :width="650"
+            aspect-ratio="4/3"
+            cover
+            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          ></v-img>
+
+          <v-sheet
+    class="mx-auto mt-6"
+    elevation="0"
+    max-width="700"
+    rounded="xl"
+    color="#cccccc"
+    
+  >
+    <v-slide-group
+      v-model="model"
+      class="pa-4 mb-10"
+      selected-class="bg-success"
+      show-arrows
+    >
+      <v-slide-group-item
+        v-for="n in 15"
+        :key="n"
+      >
+        <v-card
+          color="#cccccc"
+          class="ma-4"
+          height="200"
+          width="100"
+          
+        >
+          <div class="d-flex fill-height align-center justify-center">
+            <v-scale-transition>
+              <v-icon
+                
+                color="white"
+                size="48"
+                icon="mdi-close-circle-outline"
+              ></v-icon>
+            </v-scale-transition>
+          </div>
+        </v-card>
+      </v-slide-group-item>
+    </v-slide-group>
+  </v-sheet>
+
+        </v-col>
+      </v-card>
+    </v-col>
+  </v-row>
+
+  <v-row no-gutters>
+    <v-col cols="12">
+      <v-card class="d-flex product-card" variant="tonal">
+        <!-- Sol taraftaki metin -->
+        <v-col cols="12" md="6">
+          <v-img
+            class="product-img"
+            :width="650"
+            aspect-ratio="4/3"
+            cover
+            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          ></v-img>
+
+          <v-sheet
+    class="mx-auto mt-6"
+    elevation="0"
+    max-width="700"
+    rounded="xl"
+    color="#cccccc"
+    
+  >
+    <v-slide-group
+      v-model="model"
+      class="pa-4 mb-10"
+      selected-class="bg-success"
+      show-arrows
+    >
+      <v-slide-group-item
+        v-for="n in 15"
+        :key="n"
+      >
+        <v-card
+          color="#cccccc"
+          class="ma-4"
+          height="200"
+          width="100"
+          
+        >
+          <div class="d-flex fill-height align-center justify-center">
+            <v-scale-transition>
+              <v-icon
+                
+                color="white"
+                size="48"
+                icon="mdi-close-circle-outline"
+              ></v-icon>
+            </v-scale-transition>
+          </div>
+        </v-card>
+      </v-slide-group-item>
+    </v-slide-group>
+  </v-sheet>
+
+        </v-col>
+
+
+        <!-- Sağ taraftaki resim -->
+
+        <v-col cols="12" md="6">
+          <v-card-title class="product-card-title">
+            <strong>Akıllı Kontrol Grubu</strong>
+            <br>Lorem ipsum dolor sit amet, consectetur
+          </v-card-title>
+          <v-card-text class="mt-6 ml-5">
+            <!-- Yazılar buraya gelecek -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </v-card-text>
+          <v-col cols="6">
+          <v-card-action>
+           
+            <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
+              Ürünleri incele
+            </v-btn>
+          </v-card-action>
+        </v-col>
+        </v-col>
+
+        
+     
+      </v-card>
+    </v-col>
+  </v-row>
+
 
   </v-container>
 </template>
@@ -178,8 +464,13 @@ export default {
   }
 }
 
+.main-text{
+  padding-top: 100px;
+}
+
 .product-img{
-  text-align: right;
+  margin-right: 70px;
+  margin-left: auto;
 }
 
 .product-card{
@@ -236,10 +527,14 @@ export default {
 }
 .custom-card-title{
   font-size: 35px;
+  margin-top: 25px;
+
 }
 
 .product-card-title{
   font-size: 25px;
+  margin-top: 80px;
+  margin-left: 20px;
 }
 
 </style>
