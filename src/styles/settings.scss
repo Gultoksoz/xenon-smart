@@ -10,4 +10,24 @@
 // );
 .v-main{
     padding-top: 0px;
+    overflow-x: hidden;
+    
+}
+html{
+    overflow-x: hidden;
+    
+}
+body{
+    width: 100%;
+    margin: auto;
+    display: block;
+    min-width: fit-content;
+    font-family: "SF Pro Display",sans-serif;
+    
+}
+
+
+.v-btn{
+
+    text-transform:none;
 }

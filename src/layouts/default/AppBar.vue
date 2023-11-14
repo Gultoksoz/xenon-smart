@@ -1,12 +1,12 @@
 <template>
   <v-app-bar app flat  height="100" >
     <v-row no-gutters>
-      <v-col cols="3">
+      <v-col cols="3" class="d-flex align-center ">
         <v-img
           class="logo"
           src="@/assets/Xenon-Logo.png" 
-          max-height="40px" 
-          max-width="120px" 
+          max-height="60px" 
+          max-width="140px" 
           contain
         />
       </v-col>
@@ -30,7 +30,7 @@
         </v-toolbar-title>
       </v-col>
       
-      <v-col cols="3" class="d-flex">
+      <v-col cols="3" class="d-flex align-center justify-end">
         <v-select class="list-lang"
           v-model="selectedItem"
           :items="languageOptions"
@@ -40,10 +40,10 @@
           variant="text"
         ></v-select>
    
-        <v-icon class="icon" end icon="mdi mdi-web"></v-icon>
+        <v-icon end icon="mdi mdi-web"></v-icon>
       </v-col>
 
-      <v-divider  :thickness="5"></v-divider> 
+      <v-divider  :thickness="2"></v-divider> 
  
     </v-row>
   </v-app-bar>
@@ -127,25 +127,21 @@
 </script>
 <style scoped>
 
+.logo{
+  margin-left: 6em;
+}
+
 .dropdown-menu{
   text-align: left;
   margin-left: 40px;
 }
 
 .list-lang{
-  max-width: 85px;
-  margin-top: 20px;
-  margin-left: 150px;
+  max-width: max-content;
+  margin-top: 1.2em;
+  
 }
 
-.icon{
-  margin-top: 33px;
-
-}
-.logo{
-  margin: 30px;
-  margin-left: 4rem;
-}
 .chips{
   background-color: #e6e6e6;
   border-radius: 20px;
