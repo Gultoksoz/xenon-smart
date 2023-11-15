@@ -131,19 +131,19 @@
           >
             <v-slide-group
               v-model="model"
-              class="pa-4 mb-10"
+              class="pa-4 mb-10 card-slide"
               selected-class="bg-success"
               show-arrows
             >
               <v-slide-group-item
-                v-for="n in 15"
+                v-for="n in 9"
                 :key="n"
               >
                 <v-card
                   color="#cccccc"
                   class="ma-4"
                   height="200"
-                  width="100"
+                  width="105"
                   
                 >
                   <div class="d-flex fill-height align-center justify-center">
@@ -190,7 +190,7 @@
           >
             <v-slide-group
               v-model="model"
-              class="pa-4 mb-10"
+              class="pa-4 mb-10 card-slide"
               selected-class="bg-success"
               show-arrows
             >
@@ -284,7 +284,7 @@
           >
             <v-slide-group
               v-model="model"
-              class="pa-4 mb-10"
+              class="pa-4 mb-10 card-slide"
               selected-class="bg-success"
               show-arrows
             >
@@ -375,6 +375,27 @@ export default {
 
 }
 
+.product-card-title{
+  font-size: 1.8em;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.card-slide{
+  width: 680px;
+  height: 200px;
+
+}
+
+.kontrol_grubu_img{
+  margin: 4.4em;
+}
+
+.sensor-img{
+  margin: 1em 4.8em 0 6em;
+  
+}
+
 }
 
 @media screen and (max-width: 960px) {
@@ -403,6 +424,24 @@ export default {
   margin-top: 45px;
   padding-top: 1em;
 
+}
+.product-card-title{
+  font-size: 1.5em;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.card-slide{
+  width: 490px;
+  height: 200px;
+
+}
+.kontrol_grubu_img{
+  margin: 0.5em;
+}
+.sensor-img{
+  margin: 1em 4.8em 0 1em;
+  
 }
 
 }
@@ -440,6 +479,22 @@ export default {
   font-size: 0.8em;
 }
 
+.product-card-title{
+  font-size: 1.1em;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.card-slide{
+  width: 370px;
+  height: 200px;
+
+}
+
+.sensor-img{
+  margin: 1em 4.8em 0 0.8em;
+  
+}
 }
 
 
@@ -454,14 +509,9 @@ export default {
   
 }
 
-.sensor-img{
-  margin: 1em 4.8em 0 6em;
-  
-}
 
-.kontrol_grubu_img{
-  margin: 4.4em;
-}
+
+
 
 .product-card{
   border-radius: 25px;
@@ -471,7 +521,7 @@ export default {
   
 }
 .kontrol-card-color{
-  background-color: #99D5B7;
+  background-color: #EBF7F1;
 }
 
 .sensor-card-color{
@@ -514,14 +564,6 @@ export default {
 }
 
 
-
-
-
-.product-card-title{
-  font-size: 1.8em;
-  margin-top: 60px;
-  margin-left: 20px;
-}
 .product-card-text{
   font-size: 1em;
   margin-top: 2em;
