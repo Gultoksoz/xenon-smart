@@ -3,14 +3,14 @@
     <v-row no-gutters class="main-text">
       <v-col cols="6" md="6" align="center" justify="center">
         <v-card class="left-aligned-card" variant="text">
-          <v-card-title class="custom-card-title "><strong class="bold-text">Akıllı ev sistemleri, </strong><br>modern yaşamı yeniden tanımlayın.</v-card-title>
+          <v-card-title class="custom-card-title "><strong>Akıllı ev sistemleri, </strong><br>modern yaşamı yeniden tanımlayın.</v-card-title>
           <v-card-text class="mb-4 mt-2">
             Akıllı ev sistemleri, teknolojinin en son ve en etkili halini sunarak yaşam tarzınıza değer katıyor. Evdeki her cihazın birbirine bağlı olması, geleceğin konforunu bugünden deneyimlemenizi sağlar.
           </v-card-text>
           <v-card-action>
 
             <v-col cols="4" sm="6" md="4">
-            <v-btn rounded="xl" size="small"  variant="outlined" color="#007AFF">
+            <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
               Ürünleri incele
             </v-btn></v-col>
           </v-card-action>
@@ -92,46 +92,41 @@
     </v-spacer>
   </v-row>
   
-
-  <v-row no-gutters>
-    <v-col cols="12">
-      <v-card class="d-flex product-card" variant="tonal">
-        <!-- Sol taraftaki metin -->
-        <v-col cols="12" md="6">
-          <v-card-title class="product-card-title">
-            <strong>Akıllı Kontrol Grubu</strong>
-            <br>Lorem ipsum dolor sit amet, consectetur
+  
+    <v-card class="d-flex product-card" variant="tonal">
+    <v-row>
+      <v-col cols="6" class="d-flex flex-column">
+        <v-card-title class="product-card-title">
+            <strong>Akıllı Geçiş Kontrol</strong> sistemleri daha <br> akıllı bir yaşam tarzına geçiş yapmak <br>için mükemmel bir seçenektir.
           </v-card-title>
-          <v-card-text class="mt-6 ml-5">
-            <!-- Yazılar buraya gelecek -->
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <v-card-text class="product-card-text">
+            
+            Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi <br>kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları,<br> apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. <br>QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü<br> optimize edebilirsiniz.
           </v-card-text>
-          <v-col cols="6">
-            <v-card-action>
-           
-              <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
-              Ürünleri incele
-              </v-btn>
-            </v-card-action>
-          </v-col>
-        </v-col>
+          <v-card-action class="product-button">
 
-        <!-- Sağ taraftaki resim -->
-        <v-col cols="12" md="6">
+            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+              <strong>Daha fazla</strong>
+            </v-btn>
+          </v-card-action>
+
+      </v-col>
+      <v-col cols="6" class="d-flex flex-column">
+        <v-sheet class="mx-auto mt-2" elevation="0" max-width="100%" max-height="100%" rounded="xl" color="#cccccc">
           <v-img
             class="product-img"
-            :width="650"
+            :width="680"
             aspect-ratio="4/3"
-            cover
-            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+            src="@/assets/giris_kontrol.png"
           ></v-img>
+        </v-sheet>
 
           <v-sheet
             class="mx-auto mt-6"
             elevation="0"
-            max-width="700"
+            max-width="680"
             rounded="xl"
-            color="#cccccc"
+            color="#E9E9E9"
             
           >
             <v-slide-group
@@ -165,31 +160,32 @@
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
+        
+      </v-col>
+    </v-row>
+  </v-card>
+  
+  <v-card class="d-flex product-card kontrol-card-color" variant="tonal">
+    <v-row>
 
-        </v-col>
-      </v-card>
-    </v-col>
-  </v-row>
-
-  <v-row no-gutters>
-    <v-col cols="12">
-      <v-card class="d-flex product-card" variant="tonal">
-        <!-- Sol taraftaki metin -->
-        <v-col cols="12" md="6">
+      <v-col cols="6" class="d-flex flex-column">
+        <v-sheet class="mx-auto mt-2 " elevation="0" max-width="100%" max-height="100%" rounded="xl" color="#B0C7BC">
           <v-img
-            class="product-img"
-            :width="650"
+            class="kontrol_grubu_img"
+            :width="500"
+            :height="490"
             aspect-ratio="4/3"
-            cover
-            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+            
+            src="@/assets/kontrol_grubu.png"
           ></v-img>
+        </v-sheet>
 
           <v-sheet
             class="mx-auto mt-6"
             elevation="0"
-            max-width="700"
+            max-width="655"
             rounded="xl"
-            color="#cccccc"
+            color="#BBC6C1"
             
           >
             <v-slide-group
@@ -223,199 +219,105 @@
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
+        
+      </v-col>
 
-        </v-col>
 
 
-        <!-- Sağ taraftaki resim -->
 
-        <v-col cols="12" md="6">
-          <v-card-title class="product-card-title">
-            <strong>Akıllı Kontrol Grubu</strong>
-            <br>Lorem ipsum dolor sit amet, consectetur
+      <v-col cols="6" class="d-flex flex-column">
+        <v-card-title class="product-card-title">
+            <strong>Akıllı Kontrol Grubu</strong><br>Evinizin kontrolünü parmak<br>uçlarınızda tutun.
           </v-card-title>
-          <v-card-text class="mt-6 ml-5">
-            <!-- Yazılar buraya gelecek -->
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </v-card-text>
-          <v-col cols="6">
-            <v-card-action>
+          <v-card-text class="product-card-text">
             
-              <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
-                Ürünleri incele
-              </v-btn>
-            </v-card-action>
-          </v-col>
-        </v-col>
-
-        
-     
-      </v-card>
-    </v-col>
-  </v-row>
-
-
-  <v-row no-gutters>
-    <v-col cols="12">
-      <v-card class="d-flex product-card" variant="tonal">
-        <!-- Sol taraftaki metin -->
-        <v-col cols="12" md="6">
-          <v-card-title class="product-card-title">
-            <strong>Akıllı Kontrol Grubu</strong>
-            <br>Lorem ipsum dolor sit amet, consectetur
-          </v-card-title>
-          <v-card-text class="mt-6 ml-5">
-            <!-- Yazılar buraya gelecek -->
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Akıllı Kameralar, evinizin, işyerinizin veya herhangi bir mekanın güvenliğini ve<br>gözetimini en üst düzeye çıkarmak için tasarlanmış üstün bir teknoloji<br>ürünüdür. Bu kameralar, gelişmiş özelliklerle donatılmış, yüksek çözünürlüklü<br>video kaydı, hareket algılama, uzaktan erişim ve daha fazlası sunarak size<br>sakinlik ve güvenlik sağlar.
           </v-card-text>
-          <v-col cols="6">
-          <v-card-action>
-           
-            <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
-              Ürünleri incele
+          <v-card-action class="product-button">
+
+            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+              <strong>Daha fazla</strong>
             </v-btn>
           </v-card-action>
-        </v-col>
-        </v-col>
 
-        <!-- Sağ taraftaki resim -->
-        <v-col cols="12" md="6">
-          <v-img
-            class="product-img"
-            :width="650"
-            aspect-ratio="4/3"
-            cover
-            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-          ></v-img>
-
-          <v-sheet
-    class="mx-auto mt-6"
-    elevation="0"
-    max-width="700"
-    rounded="xl"
-    color="#cccccc"
-    
-  >
-    <v-slide-group
-      v-model="model"
-      class="pa-4 mb-10"
-      selected-class="bg-success"
-      show-arrows
-    >
-      <v-slide-group-item
-        v-for="n in 15"
-        :key="n"
-      >
-        <v-card
-          color="#cccccc"
-          class="ma-4"
-          height="200"
-          width="100"
-          
-        >
-          <div class="d-flex fill-height align-center justify-center">
-            <v-scale-transition>
-              <v-icon
-                
-                color="white"
-                size="48"
-                icon="mdi-close-circle-outline"
-              ></v-icon>
-            </v-scale-transition>
-          </div>
-        </v-card>
-      </v-slide-group-item>
-    </v-slide-group>
-  </v-sheet>
-
-        </v-col>
-      </v-card>
-    </v-col>
-  </v-row>
-
-  <v-row no-gutters>
-    <v-col cols="12">
-      <v-card class="d-flex product-card" variant="tonal">
-        <!-- Sol taraftaki metin -->
-        <v-col cols="12" md="6">
-          <v-img
-            class="product-img"
-            :width="650"
-            aspect-ratio="4/3"
-            cover
-            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-          ></v-img>
-
-          <v-sheet
-    class="mx-auto mt-6"
-    elevation="0"
-    max-width="700"
-    rounded="xl"
-    color="#cccccc"
-    
-  >
-    <v-slide-group
-      v-model="model"
-      class="pa-4 mb-10"
-      selected-class="bg-success"
-      show-arrows
-    >
-      <v-slide-group-item
-        v-for="n in 15"
-        :key="n"
-      >
-        <v-card
-          color="#cccccc"
-          class="ma-4"
-          height="200"
-          width="100"
-          
-        >
-          <div class="d-flex fill-height align-center justify-center">
-            <v-scale-transition>
-              <v-icon
-                
-                color="white"
-                size="48"
-                icon="mdi-close-circle-outline"
-              ></v-icon>
-            </v-scale-transition>
-          </div>
-        </v-card>
-      </v-slide-group-item>
-    </v-slide-group>
-  </v-sheet>
-
-        </v-col>
+      </v-col>
+      
+    </v-row>
+  </v-card>
 
 
-        <!-- Sağ taraftaki resim -->
-
-        <v-col cols="12" md="6">
-          <v-card-title class="product-card-title">
-            <strong>Akıllı Kontrol Grubu</strong>
-            <br>Lorem ipsum dolor sit amet, consectetur
+  <v-card class="d-flex product-card sensor-card-color" variant="tonal">
+    <v-row>
+      <v-col cols="6" class="d-flex flex-column">
+        <v-card-title class="product-card-title">
+            <strong>Akıllı Sensörler</strong><br>Ev otomasyonunuza veya işyerinizin<br>güvenliğine entegre edilebilecek çok<br>yönlü cihazlardır.
           </v-card-title>
-          <v-card-text class="mt-6 ml-5">
-            <!-- Yazılar buraya gelecek -->
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <v-card-text class="product-card-text">
+            
+            Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi <br>kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları,<br> apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. <br>QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü<br> optimize edebilirsiniz.
           </v-card-text>
-          <v-col cols="6">
-          <v-card-action>
-           
-            <v-btn class="ml-5" block rounded="xl" size="small" variant="flat" color="primary">
-              Ürünleri incele
+          <v-card-action class="product-button">
+
+            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+              <strong>Daha fazla</strong>
             </v-btn>
           </v-card-action>
-        </v-col>
-        </v-col>
 
+      </v-col>
+      <v-col cols="6" class="d-flex flex-column">
+        <v-sheet class="mx-auto mt-2" elevation="0" max-width="100%" max-height="100%" rounded="xl" color="#97A9B7">
+          <v-img
+            class="sensor-img"
+            :width="500"
+            aspect-ratio="4/3"
+            src="@/assets/sensor.png"
+          ></v-img>
+        </v-sheet>
+
+          <v-sheet
+            class="mx-auto mt-6"
+            elevation="0"
+            max-width="680"
+            rounded="xl"
+            color="#BFCFDC"
+            
+          >
+            <v-slide-group
+              v-model="model"
+              class="pa-4 mb-10"
+              selected-class="bg-success"
+              show-arrows
+            >
+              <v-slide-group-item
+                v-for="n in 15"
+                :key="n"
+              >
+                <v-card
+                  color="#cccccc"
+                  class="ma-4"
+                  height="200"
+                  width="100"
+                  
+                >
+                  <div class="d-flex fill-height align-center justify-center">
+                    <v-scale-transition>
+                      <v-icon
+                        
+                        color="white"
+                        size="48"
+                        icon="mdi-close-circle-outline"
+                      ></v-icon>
+                    </v-scale-transition>
+                  </div>
+                </v-card>
+              </v-slide-group-item>
+            </v-slide-group>
+          </v-sheet>
         
-     
-      </v-card>
-    </v-col>
-  </v-row>
-
+      </v-col>
+    </v-row>
+  </v-card>
+  
 
   </v-container>
 </template>
@@ -466,6 +368,12 @@ export default {
   justify-content: center;
 }
 
+.custom-card-title{
+  font-size: 2em;
+  margin-top: 45px;
+  padding-top: 1em;
+
+}
 
 }
 
@@ -489,6 +397,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.custom-card-title{
+  font-size: 1.5em;
+  margin-top: 45px;
+  padding-top: 1em;
+
 }
 
 }
@@ -514,6 +428,18 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
+.custom-card-title{
+  font-size: 1em;
+  margin-top: 45px;
+  padding-top: 1em;
+
+}
+
+.main-button{
+  font-size: 0.8em;
+}
+
 }
 
 
@@ -524,15 +450,37 @@ export default {
 }
 
 .product-img{
-  margin-right: 70px;
-  margin-left: auto;
+  margin-top: 1.8em;
+  
+}
+
+.sensor-img{
+  margin: 1em 4.8em 0 6em;
+  
+}
+
+.kontrol_grubu_img{
+  margin: 4.4em;
 }
 
 .product-card{
   border-radius: 25px;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 50px;
+  margin: 3.1em 6.25em 3.1em 6.25em;
+  padding-top: 3.1em;
+  padding-bottom: 3.1em;
+  
+}
+.kontrol-card-color{
+  background-color: #99D5B7;
+}
+
+.sensor-card-color{
+  background-color: #F0F6FB ;
+}
+
+.product-button{
+  padding-bottom: 18em;
+  padding-left: 1.8em;
 }
 
 .about-subtext{
@@ -565,22 +513,19 @@ export default {
   padding-top: 20px;
 }
 
-.custom-card-title{
-  font-size: 1.9em;
-  margin-top: 45px;
-  padding-top: 1em;
 
-}
 
-.bold-text {
-  font-weight:bolder;
-  font-size: 2.4em;
-}
+
 
 .product-card-title{
-  font-size: 1.5em;
-  margin-top: 80px;
+  font-size: 1.8em;
+  margin-top: 60px;
   margin-left: 20px;
+}
+.product-card-text{
+  font-size: 1em;
+  margin-top: 2em;
+  margin-left: 1.2em;
 }
 
 </style>
