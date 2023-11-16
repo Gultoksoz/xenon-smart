@@ -123,9 +123,8 @@
         </v-sheet>
 
           <v-sheet
-            class="mt-6 ml-4 sheet-slide"
+            class="mt-6 sheet-slide"
             elevation="0"
-            max-width="680"
             rounded="xl"
             color="#E9E9E9"
             
@@ -270,9 +269,9 @@
         </v-sheet>
 
           <v-sheet
-            class=" ml-5 mt-6 sheet-slide"
+            class=" mt-6 sheet-slide"
             elevation="0"
-            max-width="680"
+            
             rounded="xl"
             color="#BFCFDC"
             
@@ -335,6 +334,77 @@ export default {
   text-align: center;
 }
 
+@media screen and (max-width: 1920px) {
+  .custom-card {
+    width: 200px;
+    height: 175px;
+    background-color: #efefef;
+    border-radius: 20px;
+    
+  }
+
+  .about-text{
+  margin-left: 9em;
+  margin-right: 9em;
+  font-size: 2em;
+  font-weight: 550;
+  color: black;
+}
+
+.custom-card-text{
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card-title{
+  font-size: 2em;
+  margin-top: 45px;
+  padding-top: 1em;
+
+}
+
+.product-card-title{
+  font-size: 1.8em;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.card-slide{
+  width: 580px;
+  height: 150px;
+
+}
+.sheet-slide{
+  width: 555px;
+  margin-right: 4em;
+}
+
+.kontrol_grubu_img{
+  margin: 4.4em;
+}
+
+.sensor-img{
+  margin: 1em 4.8em 0 6em;
+  
+}
+
+.product-card{
+  border-radius: 25px;
+  margin: 3.1em 6.25em 3.1em 6.25em;
+  padding-top: 3.1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 3.1em;
+  
+}
+
+
+
+}
+
+
 
 @media screen and (max-width: 1920px) {
   .custom-card {
@@ -374,12 +444,88 @@ export default {
 }
 
 .card-slide{
-  width: 590px;
-  height: 200px;
+  width: 580px;
+  height: 150px;
 
 }
 .sheet-slide{
-  width: 500;
+  width: 555px;
+  margin-right: 4em;
+}
+
+.kontrol_grubu_img{
+  margin: 4.4em;
+}
+
+.sensor-img{
+  margin: 1em 4.8em 0 6em;
+  
+}
+
+.product-card{
+  border-radius: 25px;
+  margin: 3.1em 6.25em 3.1em 6.25em;
+  padding-top: 3.1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 3.1em;
+  
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .custom-card {
+    width: 200px;
+    height: 175px;
+    background-color: #efefef;
+    border-radius: 20px;
+    
+  }
+
+  .about-text{
+  margin-left: 9em;
+  margin-right: 9em;
+  font-size: 2em;
+  font-weight: 550;
+  color: black;
+}
+
+.custom-card-text{
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card-title{
+  font-size: 2em;
+  margin-top: 45px;
+  padding-top: 1em;
+
+}
+
+.product-card-title{
+  font-size: 1.8em;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.card-slide{
+  width: 560px;
+  height: 200px;
+  margin-top: 1em;
+
+}
+.sheet-slide{
+  width: 550px;
+  height: 200px;
 }
 
 .kontrol_grubu_img{
@@ -443,6 +589,10 @@ export default {
   height: 200px;
 
 }
+.sheet-slide{
+  width: 440px;
+  height: 200px;
+}
 .kontrol_grubu_img{
   margin: 0.5em;
 }
@@ -504,6 +654,11 @@ export default {
   width: 350px;
   height: 200px;
 
+}
+
+.sheet-slide{
+  width: 340px;
+  height: 200px;
 }
 
 .sensor-img{
