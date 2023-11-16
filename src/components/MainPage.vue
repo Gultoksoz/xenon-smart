@@ -1,11 +1,11 @@
 <template>
    <v-container fluid class="main">
-    <v-row no-gutters class="main-text">
+    <v-row class="main-text">
       <v-col cols="6" md="6" align="center" justify="center">
         <v-card class="left-aligned-card" variant="text">
           <v-card-title class="custom-card-title "><strong>Akıllı ev sistemleri, </strong><br>modern yaşamı yeniden tanımlayın.</v-card-title>
           <v-card-text class="mb-4 mt-2">
-            Akıllı ev sistemleri, teknolojinin en son ve en etkili halini sunarak yaşam tarzınıza değer katıyor. Evdeki her cihazın birbirine bağlı olması, geleceğin konforunu bugünden deneyimlemenizi sağlar.
+            Akıllı ev sistemleri, teknolojinin en son ve en etkili halini sunarak yaşam tarzınıza<br> değer katıyor. Evdeki her cihazın birbirine bağlı olması, geleceğin konforunu<br> bugünden deneyimlemenizi sağlar.
           </v-card-text>
           <v-card-action>
 
@@ -27,49 +27,50 @@
   </v-row>
   <v-row class="d-flex flex-column mt-6">
     <v-spacer>
-      <v-col cols="12" class="d-flex align-center justify-center mt-8">
-        
+      <v-col cols="12" class="d-flex align-center justify-space-around ml-6 mt-8">
+        <v-col>
         <v-card
-           class="d-flex align-center justify-center mr-10 custom-card">
+           class="d-flex align-center justify-center  custom-card">
            <v-card-title class="d-flex align-center justify-center flex-column">
            <v-icon > <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Geçiş Kontrol</v-card-text></v-card-title>
         </v-card>
-        
+      </v-col>
+      <v-col>
         <v-card  
-           class="d-flex align-center justify-center mr-10 custom-card">
+           class="d-flex align-center justify-center  custom-card">
            <v-card-title class="d-flex align-center justify-center  flex-column">
             <v-icon > <img src="@/assets/akilli_kontrol_grubu.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kontrol Grubu</v-card-text></v-card-title>
         </v-card>
-        
+      </v-col><v-col>
         <v-card  
-           class="d-flex align-center justify-center mr-10 custom-card">
+           class="d-flex align-center justify-center  custom-card">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_kamera.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kamera</v-card-text></v-card-title>
         </v-card>
-        
+      </v-col><v-col>
         <v-card 
-           class="d-flex align-center justify-center mr-10 custom-card ">
+           class="d-flex align-center justify-center  custom-card ">
            <v-card-title class="d-flex align-center justify-center  flex-column">
             <v-icon > <img src="@/assets/akilli_kapi_kilidi.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kapı Kilidi</v-card-text></v-card-title>
         </v-card>
-        
+      </v-col><v-col>
         <v-card  
-           class="d-flex align-center justify-center mr-10 custom-card">
+           class="d-flex align-center justify-center  custom-card">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_sensor.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Sensör</v-card-text></v-card-title>
         </v-card>
-        
+      </v-col><v-col>
         <v-card
-           class="d-flex align-center justify-center mr-10 custom-card">
+           class="d-flex align-center justify-center custom-card">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_aydinlatma.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Aydınlatma</v-card-text></v-card-title>
-        </v-card>
+        </v-card></v-col>
       </v-col>
     </v-spacer>
   </v-row>
@@ -122,7 +123,7 @@
         </v-sheet>
 
           <v-sheet
-            class="mx-auto mt-6"
+            class="mt-6 ml-4 sheet-slide"
             elevation="0"
             max-width="680"
             rounded="xl"
@@ -136,27 +137,23 @@
               show-arrows
             >
               <v-slide-group-item
-                v-for="n in 9"
+                v-for="n in 6"
                 :key="n"
               >
-                <v-card
-                  color="#cccccc"
+                <v-spacer
                   class="ma-4"
                   height="200"
                   width="105"
                   
                 >
-                  <div class="d-flex fill-height align-center justify-center">
+                  <div class="d-flex  align-center justify-center">
                     <v-scale-transition>
-                      <v-icon
-                        
-                        color="white"
-                        size="48"
-                        icon="mdi-close-circle-outline"
-                      ></v-icon>
+                      <v-spacer class="slider-text">
+                      <v-icon size="62" class="mb-4 ml-4">  <img src="@/assets/rfid_kart.svg"/></v-icon><br>
+                      RFID Kart Okuyucu</v-spacer>
                     </v-scale-transition>
                   </div>
-                </v-card>
+                </v-spacer>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
@@ -169,7 +166,7 @@
     <v-row>
 
       <v-col cols="6" class="d-flex flex-column">
-        <v-sheet class="mx-auto mt-2 " elevation="0" max-width="100%" max-height="100%" rounded="xl" color="#B0C7BC">
+        <v-sheet class=" mt-2 kontrol-sheet" elevation="0" rounded="xl" color="#B0C7BC">
           <v-img
             class="kontrol_grubu_img"
             :width="500"
@@ -181,9 +178,9 @@
         </v-sheet>
 
           <v-sheet
-            class="mx-auto mt-6"
+            class=" mt-6"
             elevation="0"
-            max-width="655"
+            max-width="710"
             rounded="xl"
             color="#BBC6C1"
             
@@ -198,24 +195,22 @@
                 v-for="n in 15"
                 :key="n"
               >
-                <v-card
-                  color="#cccccc"
+                <v-spacer
+                 
                   class="ma-4"
                   height="200"
                   width="100"
                   
+                  
                 >
-                  <div class="d-flex fill-height align-center justify-center">
+                  <div class="d-flex fill-height align-start justify-center">
                     <v-scale-transition>
-                      <v-icon
-                        
-                        color="white"
-                        size="48"
-                        icon="mdi-close-circle-outline"
-                      ></v-icon>
+                      <v-spacer class="slider-text">
+                      <v-icon size="62" class="mb-4 ml-1">  <img src="@/assets/priz.svg"/></v-icon><br>
+                      Akıllı Priz Tekli </v-spacer>
                     </v-scale-transition>
                   </div>
-                </v-card>
+                </v-spacer>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
@@ -275,7 +270,7 @@
         </v-sheet>
 
           <v-sheet
-            class="mx-auto mt-6"
+            class=" ml-5 mt-6 sheet-slide"
             elevation="0"
             max-width="680"
             rounded="xl"
@@ -289,27 +284,24 @@
               show-arrows
             >
               <v-slide-group-item
-                v-for="n in 15"
+                v-for="n in 6"
                 :key="n"
               >
-                <v-card
-                  color="#cccccc"
+                <v-spacer
                   class="ma-4"
                   height="200"
                   width="100"
+
                   
                 >
-                  <div class="d-flex fill-height align-center justify-center">
+                  <div class="d-flex fill-height align-start justify-center">
                     <v-scale-transition>
-                      <v-icon
-                        
-                        color="white"
-                        size="48"
-                        icon="mdi-close-circle-outline"
-                      ></v-icon>
+                      <v-spacer class="slider-text">
+                      <v-icon size="62" class="mb-4 ml-1">  <img src="@/assets/perde_rolesi.svg"/></v-icon><br>
+                      Akıllı Priz Rolesi </v-spacer>
                     </v-scale-transition>
                   </div>
-                </v-card>
+                </v-spacer>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
@@ -382,9 +374,12 @@ export default {
 }
 
 .card-slide{
-  width: 680px;
+  width: 590px;
   height: 200px;
 
+}
+.sheet-slide{
+  width: 500;
 }
 
 .kontrol_grubu_img{
@@ -395,6 +390,18 @@ export default {
   margin: 1em 4.8em 0 6em;
   
 }
+
+.product-card{
+  border-radius: 25px;
+  margin: 3.1em 6.25em 3.1em 6.25em;
+  padding-top: 3.1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 3.1em;
+  
+}
+
+
 
 }
 
@@ -426,13 +433,13 @@ export default {
 
 }
 .product-card-title{
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-top: 60px;
   margin-left: 20px;
 }
 
 .card-slide{
-  width: 490px;
+  width: 450px;
   height: 200px;
 
 }
@@ -443,6 +450,14 @@ export default {
   margin: 1em 4.8em 0 1em;
   
 }
+.product-card{
+  border-radius: 25px;
+  margin: 3.1em 6.25em 3.1em 6.25em;
+  padding-top: 3.1em;
+  padding-bottom: 3.1em;
+  
+}
+
 
 }
 
@@ -480,13 +495,13 @@ export default {
 }
 
 .product-card-title{
-  font-size: 1.1em;
+  font-size: 1em;
   margin-top: 60px;
   margin-left: 20px;
 }
 
 .card-slide{
-  width: 370px;
+  width: 350px;
   height: 200px;
 
 }
@@ -495,6 +510,20 @@ export default {
   margin: 1em 4.8em 0 0.8em;
   
 }
+
+.product-card{
+  border-radius: 25px;
+  margin: 3.1em 6.25em 3.1em 6.25em;
+  padding-top: 3.1em;
+  padding-bottom: 3.1em;
+  
+}
+
+.kontrol-sheet{
+  height: 25em;
+  width: 23em;
+}
+
 }
 
 
@@ -509,17 +538,15 @@ export default {
   
 }
 
-
-
-
-
-.product-card{
-  border-radius: 25px;
-  margin: 3.1em 6.25em 3.1em 6.25em;
-  padding-top: 3.1em;
-  padding-bottom: 3.1em;
-  
+.slider-text{
+  font-size: 0.6em;
+  font-weight: 600;
+  margin-top: 1em;
 }
+
+
+
+
 .kontrol-card-color{
   background-color: #EBF7F1;
 }
@@ -541,7 +568,7 @@ export default {
 }
 
 .left-aligned-card {
-  margin-left: 5em;
+  margin-left: 3em;
   text-align: left;
   color: black;
 }

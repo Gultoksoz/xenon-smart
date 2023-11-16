@@ -40,7 +40,7 @@
           variant="text"
         ></v-select>
    
-        <v-icon end icon="mdi mdi-web"></v-icon>
+        <v-icon class="icon" icon="mdi mdi-web"></v-icon>
       </v-col>
 
       <v-divider  :thickness="2"></v-divider> 
@@ -128,7 +128,7 @@
 <style scoped>
 
 .logo{
-  margin-left: 6em;
+  margin-left: 10em;
 }
 
 .dropdown-menu{
@@ -139,7 +139,11 @@
 .list-lang{
   max-width: max-content;
   margin-top: 1.2em;
+ 
   
+}
+.icon{
+  margin-right: 4em
 }
 
 .chips{
