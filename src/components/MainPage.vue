@@ -10,7 +10,7 @@
           <v-card-action>
 
             <v-col cols="4" sm="6" md="4">
-            <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+            <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
               Ürünleri incele
             </v-btn></v-col>
           </v-card-action>
@@ -30,7 +30,7 @@
       <v-col cols="12" class="d-flex align-center justify-space-around ml-6 mt-8">
         <v-col>
         <v-card
-           class="d-flex align-center justify-center  custom-card">
+           class="d-flex align-center justify-center  custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center flex-column">
            <v-icon > <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Geçiş Kontrol</v-card-text></v-card-title>
@@ -38,35 +38,35 @@
       </v-col>
       <v-col>
         <v-card  
-           class="d-flex align-center justify-center  custom-card">
+           class="d-flex align-center justify-center  custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center  flex-column">
             <v-icon > <img src="@/assets/akilli_kontrol_grubu.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kontrol Grubu</v-card-text></v-card-title>
         </v-card>
       </v-col><v-col>
         <v-card  
-           class="d-flex align-center justify-center  custom-card">
+           class="d-flex align-center justify-center  custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_kamera.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kamera</v-card-text></v-card-title>
         </v-card>
       </v-col><v-col>
         <v-card 
-           class="d-flex align-center justify-center  custom-card ">
+           class="d-flex align-center justify-center  custom-card " @click="">
            <v-card-title class="d-flex align-center justify-center  flex-column">
             <v-icon > <img src="@/assets/akilli_kapi_kilidi.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kapı Kilidi</v-card-text></v-card-title>
         </v-card>
       </v-col><v-col>
         <v-card  
-           class="d-flex align-center justify-center  custom-card">
+           class="d-flex align-center justify-center  custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_sensor.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Sensör</v-card-text></v-card-title>
         </v-card>
       </v-col><v-col>
         <v-card
-           class="d-flex align-center justify-center custom-card">
+           class="d-flex align-center justify-center custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_aydinlatma.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Aydınlatma</v-card-text></v-card-title>
@@ -106,7 +106,7 @@
           </v-card-text>
           <v-card-action class="product-button">
 
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
               <strong>Daha fazla</strong>
             </v-btn>
           </v-card-action>
@@ -262,7 +262,7 @@
         <v-sheet class="mx-auto mt-2" elevation="0" max-width="100%" max-height="100%" rounded="xl" color="#97A9B7">
           <v-img
             class="sensor-img"
-            :width="500"
+            :width="550"
             aspect-ratio="4/3"
             src="@/assets/sensor.png"
           ></v-img>
@@ -314,13 +314,17 @@
 </template>
   
 <script >
-
+import router from '@/router/index.js'
 export default {
   data() {
     return {
      
     };
   },
+
+  methods: {
+    
+  }
 };
     
 </script>
@@ -334,7 +338,9 @@ export default {
   text-align: center;
 }
 
-@media screen and (max-width: 1920px) {
+
+
+@media screen and (max-width: 2560px) {
   .custom-card {
     width: 200px;
     height: 175px;
@@ -372,84 +378,12 @@ export default {
 }
 
 .card-slide{
-  width: 580px;
+  width: 680px;
   height: 150px;
 
 }
 .sheet-slide{
-  width: 555px;
-  margin-right: 4em;
-}
-
-.kontrol_grubu_img{
-  margin: 4.4em;
-}
-
-.sensor-img{
-  margin: 1em 4.8em 0 6em;
-  
-}
-
-.product-card{
-  border-radius: 25px;
-  margin: 3.1em 6.25em 3.1em 6.25em;
-  padding-top: 3.1em;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-bottom: 3.1em;
-  
-}
-
-
-
-}
-
-
-
-@media screen and (max-width: 1920px) {
-  .custom-card {
-    width: 200px;
-    height: 175px;
-    background-color: #efefef;
-    border-radius: 20px;
-    
-  }
-
-  .about-text{
-  margin-left: 9em;
-  margin-right: 9em;
-  font-size: 2em;
-  font-weight: 550;
-  color: black;
-}
-
-.custom-card-text{
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.custom-card-title{
-  font-size: 2em;
-  margin-top: 45px;
-  padding-top: 1em;
-
-}
-
-.product-card-title{
-  font-size: 1.8em;
-  margin-top: 60px;
-  margin-left: 20px;
-}
-
-.card-slide{
-  width: 580px;
-  height: 150px;
-
-}
-.sheet-slide{
-  width: 555px;
+  width: 720px;
   margin-right: 4em;
 }
 
@@ -729,6 +663,8 @@ export default {
 }
 .main{
   padding: 0px;
+  padding-left: 6em;
+  padding-right: 6em;
 }
 .img{
   margin-left: auto;
