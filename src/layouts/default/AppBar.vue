@@ -43,7 +43,7 @@
         <v-icon class="icon" icon="mdi mdi-web"></v-icon>
       </v-col>
 
-      <v-divider  :thickness="2"></v-divider> 
+       
  
     </v-row>
   </v-app-bar>
