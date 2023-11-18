@@ -127,6 +127,7 @@ export default {
 }
 .link-baslik{
     margin-bottom: 1em;
+  color:white;
     
 }
 .left-align{
