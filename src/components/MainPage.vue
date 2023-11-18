@@ -30,7 +30,7 @@
       <v-col cols="12" class="d-flex align-center justify-space-around ml-6 mt-8">
         <v-col>
         <v-card
-           class="d-flex align-center justify-center  custom-card" @click="">
+           class="d-flex align-center justify-center  custom-card" @click="$router.push('/product')">
            <v-card-title class="d-flex align-center justify-center flex-column">
            <v-icon > <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Geçiş Kontrol</v-card-text></v-card-title>
