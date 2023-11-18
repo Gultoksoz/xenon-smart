@@ -25,7 +25,7 @@
           
             <v-chip text-color="black" @click="" variant="text" class="custom-chip">Online Mağaza</v-chip>
             <v-chip text-color="black" @click="" variant="text" class="custom-chip">Destek</v-chip>
-            <v-chip text-color="black" @click="" variant="text" class="custom-chip">İletişim</v-chip>
+            <v-chip text-color="black" @click="$router.push('/contact')" variant="text" class="custom-chip">İletişim</v-chip>
           </v-sheet>
         </v-toolbar-title>
       </v-col>
@@ -135,6 +135,7 @@
 </template>
 
 <script >
+  import router from '@/router/index.js'
   export default {
   data() {
     return {
