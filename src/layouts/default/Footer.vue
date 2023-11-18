@@ -26,7 +26,7 @@
             <v-col  class="page-links ">
                 <v-icon > <img src="@/assets/xenon-logo-white.svg"/></v-icon></v-col>
             <v-col >
-                <p class="link-baslik">Hakkımızda</p>
+                <router-link to="/about" class="link-baslik">Hakkımızda</router-link>
 
                 <p class="text-color">Hakkımızda</p>
                 <p class="text-color">Değerlerimiz</p>
@@ -77,6 +77,7 @@
   </template>
 
 <script>
+  import router from '@/router/index.js'
 export default {
   data: () => ({
     email: "",
