@@ -1,18 +1,20 @@
 <template>
   <v-app-bar app flat  height="100" >
     <v-row no-gutters>
-      <v-col cols="3" class="d-flex align-center ">
+      <v-col cols="12" md="3" class="d-flex align-center justify-center mt-3">
         <v-img
-          class="logo"
+          class="mt-6 "
           src="@/assets/Xenon-Logo.png" 
-          max-height="60px" 
-          max-width="140px" 
           contain
+          height="auto"
+          max-height="30px"
         />
       </v-col>
     
-      <v-col cols="6">
-        <v-toolbar-title class="menu">
+      <v-col cols="12" md="9"  class="d-flex px-0 py-0">
+        <v-col cols="9" class="d-flex align-center justify-center px-0 py-0">
+
+        <v-spacer class="menu">
           <v-sheet class="chips">
             <v-chip
               text-color="black"
@@ -27,10 +29,11 @@
             <v-chip text-color="black" @click="" variant="text" class="custom-chip">Destek</v-chip>
             <v-chip text-color="black" @click="$router.push('/contact')" variant="text" class="custom-chip">İletişim</v-chip>
           </v-sheet>
-        </v-toolbar-title>
-      </v-col>
-      
-      <v-col cols="3" class="d-flex align-center justify-end">
+        </v-spacer>
+        </v-col>
+        <v-col cols="3" class="px-0 py-0">
+        <v-spacer class="d-flex align-center justify-center">
+
         <v-select class="list-lang"
           v-model="selectedItem"
           :items="languageOptions"
@@ -41,7 +44,15 @@
         ></v-select>
    
         <v-icon class="icon" icon="mdi mdi-web"></v-icon>
+      </v-spacer>
+    </v-col>
+
+
       </v-col>
+      
+      <!-- <v-col cols="3" class="d-flex align-center justify-end">
+        
+      </v-col> -->
 
        
  
@@ -164,10 +175,10 @@
 <style scoped>
 
 .logo{
-  margin-left: 10em;
+  /* margin-left: 10em; */
 }
 
-.dropdown-menu{
+/* .dropdown-menu{
   text-align: left;
   margin-left: 40px;
 }
@@ -206,6 +217,6 @@
 .dropdown-menu p {
   color: gray;
   font-size: 0.8em;
-}
+} */
 
 </style>

@@ -1,7 +1,7 @@
 <template>
-   <v-container fluid class="main">
-    <v-row class="main-text">
-      <v-col cols="6" md="6" align="center" justify="center">
+   <v-container fluid class="main" style="margin-top: 100px;">
+    <v-row>
+      <v-col cols="6" >
         <v-card class="left-aligned-card" variant="text">
           <v-card-title class="custom-card-title "><strong>Akıllı ev sistemleri, </strong><br>modern yaşamı yeniden tanımlayın.</v-card-title>
           <v-card-text class="mb-4 mt-2">
@@ -15,20 +15,20 @@
             </v-btn></v-col>
           </v-card-action>
         </v-card>
-    </v-col>
-    <v-col cols="6" md="6">
-      <v-img class="img"
-        :width="650"
-        aspect-ratio="4/3"
-        cover
-        src="@/assets/main.png"
-      ></v-img>
-    </v-col>
-  </v-row>
+      </v-col>
+      <v-col cols="6" >
+        <v-img class="img"
+          :width="650"
+          aspect-ratio="4/3"
+          cover
+          src="@/assets/main.png"
+        ></v-img>
+      </v-col>
+    </v-row>
   <v-row class="d-flex flex-column mt-6">
     <v-spacer>
-      <v-col cols="12" class="d-flex align-center justify-space-around ml-6 mt-8">
-        <v-col>
+    <v-col class="d-flex flex-wrap align-center justify-space-around">
+      <v-col cols="6" md="4" lg="2" >
         <v-card
            class="d-flex align-center justify-center  custom-card" @click="$router.push('/product')">
            <v-card-title class="d-flex align-center justify-center flex-column">
@@ -36,157 +36,160 @@
            <v-card-text class="custom-card-text">Akıllı Geçiş Kontrol</v-card-text></v-card-title>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col cols="6" md="4" lg="2">
         <v-card  
            class="d-flex align-center justify-center  custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center  flex-column">
             <v-icon > <img src="@/assets/akilli_kontrol_grubu.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kontrol Grubu</v-card-text></v-card-title>
         </v-card>
-      </v-col><v-col>
+      </v-col>
+      <v-col cols="6" md="4" lg="2">
         <v-card  
            class="d-flex align-center justify-center  custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_kamera.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kamera</v-card-text></v-card-title>
         </v-card>
-      </v-col><v-col>
+      </v-col>
+      <v-col cols="6" md="4" lg="2">
         <v-card 
            class="d-flex align-center justify-center  custom-card " @click="">
            <v-card-title class="d-flex align-center justify-center  flex-column">
             <v-icon > <img src="@/assets/akilli_kapi_kilidi.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Kapı Kilidi</v-card-text></v-card-title>
         </v-card>
-      </v-col><v-col>
+      </v-col>
+      <v-col cols="6" md="4" lg="2">
         <v-card  
            class="d-flex align-center justify-center  custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_sensor.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Sensör</v-card-text></v-card-title>
         </v-card>
-      </v-col><v-col>
+      </v-col>
+      <v-col cols="6" md="4" lg="2">
         <v-card
            class="d-flex align-center justify-center custom-card" @click="">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_aydinlatma.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Aydınlatma</v-card-text></v-card-title>
-        </v-card></v-col>
+        </v-card>
       </v-col>
+    </v-col>
     </v-spacer>
   </v-row>
   
   <v-row class="d-flex flex-column">
-    <v-spacer>
-      <v-col cols="12" class="d-flex align-center justify-center">
-        <p class="about"> <strong> Xenon Smart Hakkında </strong> </p>
-      </v-col>
+    <v-spacer class="text-center mb-3">
+      <!-- <v-col cols="12" class="d-flex align-center justify-center"> -->
+        <h3>Xenon Smart Hakkında</h3>
+      <!-- </v-col> -->
     </v-spacer>
-  </v-row>
-
-  <v-row class="d-flex flex-column">
-    <v-spacer>
-      <v-col cols="12" class="d-flex flex-column custom-text ">
-        
+    <v-spacer class="text-center">
+      <!-- <v-col cols="12" class="d-flex flex-column custom-text "> -->
         <p class="about-text">Mucitler, mühendisler ve tasarımcılardan oluşan ekibimiz, akıllı ev deneyimini bir üst seviyeye taşıyan ürünler yaratmak için tutkuyla çalışıyor.</p>
         <p class="about-subtext">Yenilikçi teknolojimizle gurur duyuyor ve keyif anlarınızın benzersiz olmasını sağlamak için sürekli olarak mükemmellik için çalışıyoruz.</p>
-      </v-col>
+      <!-- </v-col> -->
     </v-spacer>
   </v-row>
-  
-  
-    <v-card class="d-flex product-card" variant="tonal">
-    <v-row>
-      <v-col cols="6" class="d-flex flex-column">
-        <v-card-title class="product-card-title">
-            <strong>Akıllı Geçiş Kontrol</strong> sistemleri daha <br> akıllı bir yaşam tarzına geçiş yapmak <br>için mükemmel bir seçenektir.
-          </v-card-title>
-          <v-card-text class="product-card-text">
-            
-            Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi <br>kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları,<br> apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. <br>QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü<br> optimize edebilirsiniz.
-          </v-card-text>
-          <v-card-action class="product-button">
 
+  <v-row class="d-flex flex-column">
+    
+  </v-row>
+  
+  <v-card variant="tonal" class="my-4 py-4">
+    <v-row>
+      <v-col md="4" xl="6" class="px-0" >
+        <v-spacer class="card-title">
+          <div>
+            <span>Akıllı Geçiş Kontrol</span>
+              sistemleri daha akıllı bir yaşam tarzına geçiş yapmak için mükemmel bir seçenektir.
+        </div>
+
+          </v-spacer>
+          <v-spacer class="card-text">
+            <div>
+            <span>
+            Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları, apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü optimize edebilirsiniz.
+          </span>
+        </div>
+          </v-spacer>
+         
+            <v-spacer class="card-action">
+             <div >
             <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
               <strong>Daha fazla</strong>
             </v-btn>
-          </v-card-action>
-
+          </div>
+          </v-spacer>
       </v-col>
-      <v-col cols="6" class="d-flex flex-column">
-        <v-sheet class="mx-auto mt-2" elevation="0" max-width="100%" max-height="100%" rounded="xl" color="#cccccc">
+      <v-col md="8" xl="6" class="px-0" >
+        <v-spacer class="d-flex justify-center my-4">
+        <v-sheet width="80%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#cccccc">
           <v-img
             class="product-img"
-            :width="680"
+            width="auto"
             aspect-ratio="4/3"
             src="@/assets/giris_kontrol.png"
           ></v-img>
         </v-sheet>
-
+      </v-spacer>
+      <v-spacer class="d-flex justify-center my-4">
           <v-sheet
-            class="mt-6 sheet-slide"
             elevation="0"
             rounded="xl"
             color="#E9E9E9"
-            
+            width="80%"
           >
             <v-slide-group
               v-model="model"
-              class="pa-4 mb-10 card-slide"
               selected-class="bg-success"
               show-arrows
+              class="d-flex align-center"
             >
               <v-slide-group-item
-                v-for="n in 6"
+                v-for="n in 15"
                 :key="n"
               >
-                <v-spacer
-                  class="ma-4"
-                  height="200"
-                  width="105"
-                  
-                >
-                  <div class="d-flex  align-center justify-center">
-                    <v-scale-transition>
-                      <v-spacer class="slider-text">
-                      <v-icon size="62" class="mb-4 ml-4">  <img src="@/assets/rfid_kart.svg"/></v-icon><br>
-                      RFID Kart Okuyucu</v-spacer>
-                    </v-scale-transition>
-                  </div>
-                </v-spacer>
+                <v-scale-transition class="my-4">
+                  <v-spacer style="max-width: 100px;" class="text-center mx-2">
+                    <v-img max-height="80" src="@/assets/rfid_kart.svg"></v-img>
+                    <span class="mt-2">
+                      RFID Kart Okuyucu
+                    </span>
+                  </v-spacer>
+                </v-scale-transition>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
-        
+        </v-spacer>
       </v-col>
     </v-row>
   </v-card>
-  
-  <v-card class="d-flex product-card kontrol-card-color" variant="tonal">
+  <v-card variant="tonal" class=" kontrol-card-color my-4 py-4">
     <v-row>
-
-      <v-col cols="6" class="d-flex flex-column">
-        <v-sheet class=" mt-2 kontrol-sheet" elevation="0" rounded="xl" color="#B0C7BC">
-          <v-img
-            class="kontrol_grubu_img"
-            :width="500"
-            :height="490"
-            aspect-ratio="4/3"
-            
-            src="@/assets/kontrol_grubu.png"
-          ></v-img>
-        </v-sheet>
-
+      <v-col md="8" xl="6" class="px-0">
+        <v-spacer class="d-flex justify-center my-4">
+          <v-sheet width="80%" class="d-flex justify-center align-center" elevation="0" rounded="xl" color="#B0C7BC">
+            <v-img
+              class="kontrol_grubu_img"
+              width="auto"
+              aspect-ratio="4/3"
+              src="@/assets/kontrol_grubu.png"
+            ></v-img>
+          </v-sheet>
+        </v-spacer>
+        <v-spacer class="d-flex justify-center my-4">
           <v-sheet
-            class=" mt-6"
             elevation="0"
-            max-width="710"
+            width="80%"
             rounded="xl"
             color="#BBC6C1"
-            
           >
             <v-slide-group
               v-model="model"
-              class="pa-4 mb-10 card-slide"
+              class="d-flex align-center"
               selected-class="bg-success"
               show-arrows
             >
@@ -194,82 +197,81 @@
                 v-for="n in 15"
                 :key="n"
               >
-                <v-spacer
-                 
-                  class="ma-4"
-                  height="200"
-                  width="100"
-                  
-                  
-                >
-                  <div class="d-flex fill-height align-start justify-center">
-                    <v-scale-transition>
-                      <v-spacer class="slider-text">
-                      <v-icon size="62" class="mb-4 ml-1">  <img src="@/assets/priz.svg"/></v-icon><br>
-                      Akıllı Priz Tekli </v-spacer>
-                    </v-scale-transition>
-                  </div>
-                </v-spacer>
+                <v-scale-transition class="my-4">
+                  <v-spacer style="max-width: 100px;" class="text-center mx-2">
+                    <v-img max-height="80" src="@/assets/priz.svg"></v-img>
+                    <span class="mt-2">
+                      Akıllı Priz Tekli 
+                    </span>
+                  </v-spacer>
+                </v-scale-transition>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
-        
+        </v-spacer>
       </v-col>
-
-
-
-
-      <v-col cols="6" class="d-flex flex-column">
-        <v-card-title class="product-card-title">
-            <strong>Akıllı Kontrol Grubu</strong><br>Evinizin kontrolünü parmak<br>uçlarınızda tutun.
-          </v-card-title>
-          <v-card-text class="product-card-text">
-            
-            Akıllı Kameralar, evinizin, işyerinizin veya herhangi bir mekanın güvenliğini ve<br>gözetimini en üst düzeye çıkarmak için tasarlanmış üstün bir teknoloji<br>ürünüdür. Bu kameralar, gelişmiş özelliklerle donatılmış, yüksek çözünürlüklü<br>video kaydı, hareket algılama, uzaktan erişim ve daha fazlası sunarak size<br>sakinlik ve güvenlik sağlar.
-          </v-card-text>
-          <v-card-action class="product-button">
-
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+      <v-col md="4" xl="6" class="px-0">
+        <v-spacer class="card-title">
+          <div>
+            <span>Akıllı Kontrol Grubu</span> Evinizin kontrolünü parmak uçlarınızda tutun.
+          </div>
+          </v-spacer>
+          <v-spacer class="card-text">
+            <div>
+            <span>
+            Akıllı Kameralar, evinizin, işyerinizin veya herhangi bir mekanın güvenliğini ve gözetimini en üst düzeye çıkarmak için tasarlanmış üstün bir teknoloji ürünüdür. Bu kameralar, gelişmiş özelliklerle donatılmış, yüksek çözünürlüklü video kaydı, hareket algılama, uzaktan erişim ve daha fazlası sunarak size sakinlik ve güvenlik sağlar.
+          </span>
+        </div>
+          </v-spacer>
+          <v-spacer class="card-action">
+            <div >
+            <v-btn size="x-large" density="comfortable" rounded="xl" variant="outlined" color="#007AFF">
               <strong>Daha fazla</strong>
             </v-btn>
-          </v-card-action>
-
+          </div>
+          </v-spacer>
       </v-col>
-      
     </v-row>
   </v-card>
 
 
-  <v-card class="d-flex product-card sensor-card-color" variant="tonal">
+  <v-card variant="tonal" class="my-4 py-4 sensor-card-color">
     <v-row>
-      <v-col cols="6" class="d-flex flex-column">
-        <v-card-title class="product-card-title">
-            <strong>Akıllı Sensörler</strong><br>Ev otomasyonunuza veya işyerinizin<br>güvenliğine entegre edilebilecek çok<br>yönlü cihazlardır.
-          </v-card-title>
-          <v-card-text class="product-card-text">
-            
-            Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi <br>kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları,<br> apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. <br>QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü<br> optimize edebilirsiniz.
-          </v-card-text>
-          <v-card-action class="product-button">
-
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
-              <strong>Daha fazla</strong>
-            </v-btn>
-          </v-card-action>
-
+      <v-col md="4" xl="6" class="px-0" >
+        <v-spacer class="card-title">
+          <div>
+            <span>Akıllı Sensörler</span> Ev otomasyonunuza veya işyerinizin güvenliğine entegre edilebilecek çok yönlü cihazlardır.
+          </div>
+        </v-spacer>
+        <v-spacer class="card-text">
+            <div>
+              <span>
+              Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları, apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü optimize edebilirsiniz.
+            </span>
+          </div>
+        </v-spacer>
+        <v-spacer class="card-action">
+            <div >
+          <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
+            <strong>Daha fazla</strong>
+          </v-btn>
+        </div>
+        </v-spacer>
       </v-col>
-      <v-col cols="6" class="d-flex flex-column">
-        <v-sheet class="mx-auto mt-2" elevation="0" max-width="100%" max-height="100%" rounded="xl" color="#97A9B7">
+      <v-col md="8" xl="6" class="px-0" >
+        <v-spacer class="d-flex justify-center my-4">
+        <v-sheet width="80%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#97A9B7">
           <v-img
             class="sensor-img"
-            :width="550"
+            width="auto"
             aspect-ratio="4/3"
             src="@/assets/sensor.png"
           ></v-img>
         </v-sheet>
-
+      </v-spacer>
+      <v-spacer class="d-flex justify-center my-4">
           <v-sheet
-            class=" mt-6 sheet-slide"
+            width="80%"
             elevation="0"
             
             rounded="xl"
@@ -278,33 +280,30 @@
           >
             <v-slide-group
               v-model="model"
-              class="pa-4 mb-10 card-slide"
+              class="d-flex align-center"
               selected-class="bg-success"
               show-arrows
             >
               <v-slide-group-item
-                v-for="n in 6"
+                v-for="n in 15"
                 :key="n"
               >
-                <v-spacer
-                  class="ma-4"
-                  height="200"
-                  width="100"
-
+                
                   
-                >
-                  <div class="d-flex fill-height align-start justify-center">
-                    <v-scale-transition>
-                      <v-spacer class="slider-text">
-                      <v-icon size="62" class="mb-4 ml-1">  <img src="@/assets/perde_rolesi.svg"/></v-icon><br>
-                      Akıllı Priz Rolesi </v-spacer>
+                    <v-scale-transition class="my-4">
+                      <v-spacer style="max-width: 100px;" class="text-center mx-2">
+                        <v-img max-height="80" src="@/assets/perde_rolesi.svg"></v-img>
+                        <span class="mt-2">
+                        Akıllı Priz Rolesi 
+                      </span>
+                      </v-spacer>
                     </v-scale-transition>
-                  </div>
-                </v-spacer>
+                  
+                
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
-        
+        </v-spacer>
       </v-col>
     </v-row>
   </v-card>
@@ -340,7 +339,59 @@ export default {
 
 
 
-@media screen and (max-width: 2560px) {
+.card-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  font-size: 32px;
+  padding:8px;
+}
+.card-title div {
+  width: 80%;
+}
+
+.card-title div span {
+  font-weight: bold;
+}
+.card-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:20px;
+  padding:8px;
+}
+.card-text div {
+  width: 80%;
+}
+
+.card-action{
+display:flex;
+justify-content:center;
+padding:4px;
+}
+.card-action div{
+  width: 80%;
+  margin-top:8px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 2560px) {
   .custom-card {
     width: 200px;
     height: 175px;
@@ -408,12 +459,12 @@ export default {
 
 
 
-}
+} */
 
 
 
 
-
+/* 
 @media screen and (max-width: 1280px) {
   .custom-card {
     width: 200px;
@@ -614,7 +665,7 @@ export default {
 }
 
 }
-
+ */
 
 
 .main-text{
@@ -623,7 +674,7 @@ export default {
 }
 
 .product-img{
-  margin-top: 1.8em;
+  /* margin-top: 1.8em; */
   
 }
 
@@ -662,12 +713,13 @@ export default {
   color: black;
 }
 .main{
-  padding: 0px;
+  /* padding: 0px;
   padding-left: 6em;
-  padding-right: 6em;
+  padding-right: 6em; */
+  max-width: 100vw !important;
 }
 .img{
-  margin-left: auto;
+  /* margin-left: auto; */
   
 }
 
