@@ -1,44 +1,64 @@
 <template>
-    <v-container fluid class="main">
-     <v-row class="main-text">
-       <v-col cols="6" md="6" align="center" justify="center">
+    <v-container fluid class="main" style="margin-top: 100px;">
+      <v-carousel>
+  <v-carousel-item
+  >
+  <v-spacer class="main-text d-flex">
+    <v-col cols="6">
          <v-card class="left-aligned-card" variant="text" color="white">
-           <v-card-title class="custom-card-title "><strong>Akıllı RGB Ampul</strong> ile yaşam <br>alanınıza özel bir dokunuş<br> ekleyin,</v-card-title>
-           <v-card-text class="mb-4 mt-2">
-            Akıllı Ampul ile evinizi kişiselleştirin ve her anın keyfini çıkarın. İster <br>dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı <br>dilediğiniz gibi renklendirin!
-           </v-card-text>
-           <v-icon class="d-flex align-center justify-start ml-3 mb-4"> <img src="@/assets/google_home.svg"/></v-icon>
-           <v-card-action>
+           <v-spacer class="d-flex flex-column " style="font-size: 28px;">
+            <span class="font-weight-bold">Akıllı aydınlatma ile</span>
+            <span> yaşam alanlarınız daha renkli, daha akıllı ve daha keyifli...</span>
+          </v-spacer>
+           <v-spacer class="mb-4 mt-2" style="font-size: 16px;">
+            <span>
+            Estetik tasarımı ve gelişmiş özellikleriyle bu akıllı aydınlatma sistemi, evinizde veya ofisinizde aydınlatma deneyiminizi başka bir seviyeye taşıyacak.
+            </span>
+          </v-spacer>
+          <v-spacer>
+ 
              <v-col cols="4" sm="6" md="4">
              <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
-               Özellikler
+               Ürünleri incele
              </v-btn></v-col>
-           </v-card-action>
+           </v-spacer>
          </v-card>
      </v-col>
-     <v-col cols="6" md="6">
-       <v-img class="img"
-         :width="160"
+     <v-col cols="6" class="d-flex justify-center align-start">
+       <v-img
+         max-width="160"
          aspect-ratio="4/3"
-         cover
          src="@/assets/lamp.svg"
        ></v-img>
      </v-col>
-   </v-row>
+  </v-spacer>
+
+  </v-carousel-item>
+
+  <v-carousel-item
+    src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+    cover
+  ></v-carousel-item>
+
+  <v-carousel-item
+    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+    cover
+  ></v-carousel-item>
+</v-carousel>
    <div class="pad">
    <v-row class="d-flex flex-column">
-     <v-spacer>
-       <v-col cols="12" class="d-flex align-center justify-center">
-         <p class="about"> <strong> RGB Led Ampul </strong> </p>
-       </v-col>
+    <v-spacer class="text-center mt-6 mb-6">
+       
+      <h3 class="font-weight-bold" style="color: gray;">RGB Led Ampul </h3>
+      
      </v-spacer>
-   </v-row>
+   
  
-   <v-row class="d-flex flex-column">
-     <v-spacer>
+   
+     <v-spacer class="text-center mt-6 mb-6">
        <v-col cols="12" class="d-flex flex-column custom-text ">
          
-         <p class="about-text">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
+         <p class="font-weight-bold">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
          <v-icon class="d-flex align-start justify-center about-icon"> <img src="@/assets/play_store.svg"/></v-icon>
        </v-col>
      </v-spacer>
@@ -52,7 +72,7 @@
          <v-card-title class="rgb-text" >Parti modunda müzikle senkronize renk<br> değişimleriyle eğlenceli bir atmosfer yaratın.</v-card-title>
          <v-card-action>
              
-             <v-btn  @click="" class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  :variant="button" color="#FFFFFF">
+             <v-btn  @click="" class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
                Satın al
              </v-btn>
              <v-btn class="rgb-button ml-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
@@ -127,6 +147,71 @@
        </v-col>
      </v-row>
    </v-card>
+
+   <v-card class="d-flex parlaklik-card" variant="tonal">
+     <v-row>
+ 
+       <v-col cols="6" class="d-flex">
+           <v-img
+             cover
+             src="@/assets/parlaklik_background.png"
+           ></v-img>
+       </v-col>
+       
+       <v-col cols="6" class="d-flex flex-column">
+         <v-card-title class="product-card-title">
+             <strong>Parlaklık Ayarı</strong>
+           </v-card-title>
+           <v-card-text class="product-card-text">
+             
+             Akıllı Kameralar, evinizin, işyerinizin veya herhangi bir mekanın güvenliğini<br> ve gözetimini en üst düzeye çıkarmak için tasarlanmış üstün bir teknoloji<br>ürünüdür. Bu kameralar, gelişmiş özelliklerle donatılmış, yüksek çözünürlüklü<br>video kaydı, hareket algılama, uzaktan erişim ve daha fazlası sunarak size<br>sakinlik ve güvenlik sağlar.
+           </v-card-text>
+           <v-card-action class="product-button">
+ 
+             <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+               <strong>Daha fazla</strong>
+             </v-btn>
+           </v-card-action>
+ 
+       </v-col>
+       
+     </v-row>
+   </v-card>
+
+
+   <v-card class="d-flex renk-card" variant="tonal">
+     <v-row>
+       <v-col cols="6" class="d-flex flex-column">
+         <v-card-title class="product-card-title">
+             <strong>16 Milyon Renk Seçeneği</strong>
+           </v-card-title>
+           <v-card-text class="product-card-text">
+             
+             Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi <br>kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları,<br> apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. <br>QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü<br> optimize edebilirsiniz.
+           </v-card-text>
+           <v-card-action class="product-button">
+            
+              <v-btn class="mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/" >
+                  <strong>Satın al</strong>
+                </v-btn>
+                <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
+                  <strong>Daha fazla</strong>
+                </v-btn>
+            </v-card-action>
+ 
+       </v-col>
+       
+        <v-col cols="6" class="d-flex">
+           <v-img
+             cover
+             src="@/assets/parlaklik_background_right.png"
+           ></v-img>
+      
+       </v-col>
+     </v-row>
+   </v-card>
+
+
 </div>
  
    </v-container>
@@ -151,6 +236,46 @@
  
  <style scoped >
  
+
+ .card-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  font-size: 32px;
+  padding:8px;
+}
+.card-title div {
+  width: 80%;
+}
+
+.card-title div span {
+  font-weight: bold;
+}
+.card-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:20px;
+  padding:8px;
+}
+.card-text div {
+  width: 80%;
+}
+
+.card-action{
+display:flex;
+justify-content:center;
+padding:4px;
+}
+.card-action div{
+  width: 80%;
+  margin-top:8px
+}
+
+
+
+
  
  .custom-text{
    align-items :center;
@@ -162,7 +287,7 @@
 
 
  
- @media screen and (max-width: 2560px) {
+ /* @media screen and (max-width: 2560px) {
    .custom-card {
      width: 200px;
      height: 175px;
@@ -485,7 +610,7 @@
  }
  
  
- }
+ } */
  
  .pad{
     padding-left: 6em;
