@@ -1,5 +1,47 @@
 <template>
     <v-container fluid class="main">
+      <v-carousel>
+  <v-carousel-item
+  >
+  <v-spacer class="main-text d-flex">
+    <v-col cols="6">
+         <v-card class="left-aligned-card" variant="text" color="white">
+           <v-card-title class="custom-card-title "><strong>Akıllı aydınlatma ile</strong> yaşam <br>alanlarınız daha renkli, daha<br> akıllı ve daha keyifli...</v-card-title>
+           <v-card-text class="mb-4 mt-2">
+            Estetik tasarımı ve gelişmiş özellikleriyle bu akıllı aydınlatma sistemi,<br> evinizde veya ofisinizde aydınlatma deneyiminizi başka bir seviyeye<br> taşıyacak.
+           </v-card-text>
+           <v-card-action>
+ 
+             <v-col cols="4" sm="6" md="4">
+             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
+               Ürünleri incele
+             </v-btn></v-col>
+           </v-card-action>
+         </v-card>
+     </v-col>
+     <v-col cols="6" class="d-flex justify-center align-start">
+       <v-img
+         max-width="160"
+         aspect-ratio="4/3"
+         src="@/assets/lamp.svg"
+       ></v-img>
+     </v-col>
+  </v-spacer>
+
+  </v-carousel-item>
+
+  <v-carousel-item
+    src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+    cover
+  ></v-carousel-item>
+
+  <v-carousel-item
+    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+    cover
+  ></v-carousel-item>
+</v-carousel>
+
+<!-- 
      <v-row class="main-text">
        <v-col cols="6" md="6" align="center" justify="center">
          <v-card class="left-aligned-card" variant="text" color="white">
@@ -24,7 +66,7 @@
          src="@/assets/lamp.svg"
        ></v-img>
      </v-col>
-   </v-row>
+   </v-row> -->
    <div class="pad">
    <v-row class="d-flex flex-column">
      <v-spacer>
@@ -292,7 +334,7 @@
 
 
  
- @media screen and (max-width: 2560px) {
+ /* @media screen and (max-width: 2560px) {
    .custom-card {
      width: 200px;
      height: 175px;
@@ -603,17 +645,17 @@
  
  
  }
- 
+  */
  .pad{
     padding-left: 6em;
     padding-right: 6em;
  }
  
  .main-text{
-   padding-top: 100px;
+   padding-top: 130px;
    background-image: url('@/assets/product_background.png');
    background-size: cover;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
  }
  
  
@@ -653,13 +695,14 @@
    color: black;
  }
  .main{
+  margin-top: 100px;
    padding: 0px;
  }
- .img{
+ /* .img{
    margin-left: 9em;
    margin-top: 1em;
    
- }
+ } */
  
  
  .about{

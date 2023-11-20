@@ -1,26 +1,32 @@
 <template>
    <v-container fluid class="main" style="margin-top: 100px;">
-    <v-row>
-      <v-col cols="6" >
+    <v-row class="header_element">
+      <v-col cols="12" md="6">
         <v-card class="left-aligned-card" variant="text">
-          <v-card-title class="custom-card-title "><strong>Akıllı ev sistemleri, </strong><br>modern yaşamı yeniden tanımlayın.</v-card-title>
-          <v-card-text class="mb-4 mt-2">
-            Akıllı ev sistemleri, teknolojinin en son ve en etkili halini sunarak yaşam tarzınıza<br> değer katıyor. Evdeki her cihazın birbirine bağlı olması, geleceğin konforunu<br> bugünden deneyimlemenizi sağlar.
-          </v-card-text>
-          <v-card-action>
+          <v-spacer class="custom-card-title d-flex flex-column" style="font-size: 28px;">
+            <span class="font-weight-bold">Akıllı ev sistemleri,</span>
+            <span>
+              modern yaşamı yeniden tanımlayın.
+            </span>
+          </v-spacer>
+          <v-spacer class="mb-4 mt-2" style="font-size: 16px;">
+            <span>
+              Akıllı ev sistemleri, teknolojinin en son ve en etkili halini sunarak yaşam tarzınıza değer katıyor. Evdeki her cihazın birbirine bağlı olması, geleceğin konforunu bugünden deneyimlemenizi sağlar.
+            </span>
+          </v-spacer>
+          <v-spacer>
 
-            <v-col cols="4" sm="6" md="4">
+            <v-col>
             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
               Ürünleri incele
             </v-btn></v-col>
-          </v-card-action>
+          </v-spacer>
         </v-card>
       </v-col>
-      <v-col cols="6" >
+      <v-col cols="12" md="6" class="d-flex align-center justify-center">
         <v-img class="img"
-          :width="650"
+          max-width="650"
           aspect-ratio="4/3"
-          cover
           src="@/assets/main.png"
         ></v-img>
       </v-col>
@@ -331,10 +337,11 @@ export default {
 <style scoped >
 
 
-.custom-text{
-  align-items :center;
-  justify-content :center;
-  text-align: center;
+@media screen and (max-width: 960px) {
+  .header_element {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 }
 
 

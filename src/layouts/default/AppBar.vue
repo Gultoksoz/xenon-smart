@@ -3,7 +3,7 @@
     <v-row no-gutters>
       <v-col cols="12" md="3" class="d-flex align-center justify-center mt-3">
         <v-img
-          class="mt-6 "
+          class="logo mt-1"
           src="@/assets/Xenon-Logo.png" 
           contain
           height="auto"
@@ -12,7 +12,7 @@
       </v-col>
     
       <v-col cols="12" md="9"  class="d-flex px-0 py-0">
-        <v-col cols="9" class="d-flex align-center justify-center px-0 py-0">
+        <v-col cols="9" class="d-flex align-center justify-center  py-0">
 
         <v-spacer class="menu">
           <v-sheet class="chips">
@@ -31,10 +31,10 @@
           </v-sheet>
         </v-spacer>
         </v-col>
-        <v-col cols="3" class="px-0 py-0">
+        <v-col cols="3" class=" py-0">
         <v-spacer class="d-flex align-center justify-center">
 
-        <v-select class="list-lang"
+        <v-select class="list-lang mt-5"
           v-model="selectedItem"
           :items="languageOptions"
           item-title="title"
@@ -43,7 +43,7 @@
           variant="text"
         ></v-select>
    
-        <v-icon class="icon" icon="mdi mdi-web"></v-icon>
+        <v-icon class="" icon="mdi mdi-web"></v-icon>
       </v-spacer>
     </v-col>
 
@@ -174,8 +174,10 @@
 </script>
 <style scoped>
 
-.logo{
-  /* margin-left: 10em; */
+@media screen and (max-width: 960px) {
+  .logo{
+    top: 20px;
+  }
 }
 
 /* .dropdown-menu{
