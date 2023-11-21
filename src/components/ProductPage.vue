@@ -53,45 +53,38 @@
     cover
   ></v-carousel-item>
 </v-carousel>
-   <div class="pad">
-   <v-row class="d-flex flex-column">
-    <v-spacer class="text-center mt-6 mb-6">
-       
-      <h3 class="font-weight-bold" style="color: gray;">RGB Led Ampul </h3>
-      
+   
+   <!-- <v-row class="d-flex flex-column"> -->
+    <v-spacer class="text-center mt-6">
+      <h3 class="font-weight-bold mb-4" style="color: gray;">RGB Led Ampul </h3>
+      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
      </v-spacer>
-   
- 
-   
-     <v-spacer class="text-center mt-6 mb-6">
-       <v-col cols="12" class="d-flex flex-column custom-text ">
-         
-         <p class="font-weight-bold" style="font-size: 1.5em;">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
-         <v-icon class="d-flex align-start justify-center about-icon"> <img src="@/assets/play_store.svg"/></v-icon>
-       </v-col>
+     <v-spacer class=" d-flex flex-wrap justify-space-around">
+         <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/app-store.png"/></v-col> 
+         <v-col sm="4" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/google-play.png"/></v-col>
+         <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/xenon-app.png"/></v-col>
+         <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/googlehome@4x.png"/></v-col>
+         <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/Google-Alexa.png"/></v-col>
      </v-spacer>
-   </v-row>
-   
-   <v-row class="d-flex flex-column">
-     <v-card class="d-flex rgb-card" variant="tonal">
-     
-       <v-col cols="12" class="d-flex flex-column align-center justify-end">
+   <!-- </v-row> -->
+   <!-- <v-row class="d-flex flex-column"> -->
+    <v-spacer class="d-flex align-center justify-center">
+     <v-card class="d-flex flex-column align-center justify-end rgb-card"  variant="tonal">
          <v-card-title >RGB Led Ampul</v-card-title>
-         <v-card-title class="rgb-text" >Parti modunda müzikle senkronize renk<br> değişimleriyle eğlenceli bir atmosfer yaratın.</v-card-title>
-         <v-card-action>
-             
+         <v-card-text class="rgb-text " >Parti modunda müzikle senkronize renk<br class="my-2"> değişimleriyle eğlenceli bir atmosfer yaratın.</v-card-text>
+         <v-card-actions>
              <v-btn  @click="" class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
              <v-btn class="rgb-button ml-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
                Daha fazla
              </v-btn>
-           
-           </v-card-action>
-       </v-col>
-     
+           </v-card-actions>
    </v-card>
-  </v-row>
+
+  </v-spacer>
+
+  <!-- </v-row> -->
    
    <v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
      <v-row>
@@ -264,7 +257,7 @@
    </v-row>
 
 
-</div>
+
  
    </v-container>
  </template>
@@ -349,18 +342,31 @@ padding:4px;
   background-repeat: no-repeat;
   color: white;
   border-radius: 33px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
+   margin: 0 20px;
    padding-top: 3.1em;
    padding-bottom: 3.1em;
-   height:45em ;
+   height:auto ;
+   max-width: 900px;
+   width: 90%;
  }
  .rgb-text{
   text-align: center;
-  font-size: 2em;
   
-  margin-bottom: 1em;
  }
-
+ @media screen and (min-width: 600px) {
+  .rgb-text{
+  text-align: center;
+  font-size: 3vw;
+  
+ }
+}
+@media screen and (min-width: 1280px) {
+  .rgb-text{
+  text-align: center;
+  font-size: 2vw;
+  
+ }
+}
 
  .slider-text{
    font-size: 0.6em;
@@ -392,7 +398,11 @@ padding:4px;
    
  }
  
- 
+ .logo_image {
+  max-width: 380px;
+  min-width: 150px;
+ }
+
  .about{
    color: gray;
    font-size: 1em;

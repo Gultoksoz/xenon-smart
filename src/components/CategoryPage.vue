@@ -1,11 +1,12 @@
 <template>
     <v-container fluid class="main" style="margin-top: 100px;">
-      <v-carousel>
+      <v-carousel hide-delimiters>
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
-    <v-col cols="6">
-         <v-card class="left-aligned-card" variant="text" color="white">
+    <v-col cols="2" sm="1"></v-col>
+    <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
+         <v-spacer variant="text" style="color: white;">
            <v-spacer class="d-flex flex-column " style="font-size: 28px;">
             <span class="font-weight-bold">Akıllı aydınlatma ile</span>
             <span> yaşam alanlarınız daha renkli, daha akıllı ve daha keyifli...</span>
@@ -22,15 +23,16 @@
                Ürünleri incele
              </v-btn></v-col>
            </v-spacer>
-         </v-card>
+         </v-spacer>
      </v-col>
-     <v-col cols="6" class="d-flex justify-center align-start">
+     <v-col cols="0" sm="4" md="5" class="d-flex justify-center align-start">
        <v-img
          max-width="160"
          aspect-ratio="4/3"
          src="@/assets/lamp.svg"
        ></v-img>
      </v-col>
+     <v-col cols="1"></v-col>
   </v-spacer>
 
   </v-carousel-item>
@@ -85,14 +87,14 @@
      <v-spacer class="text-center mt-6 mb-6">
        
          
-         <p class="font-weight-bold">Akıllı aydınlatma, konfor, enerji tasarrufu ve estetik tasarımı bir araya getirerek aydınlatma deneyiminizi dönüştürüyor. </p>
+         <p class="font-weight-bold" >Akıllı aydınlatma, konfor, enerji tasarrufu ve estetik tasarımı bir araya getirerek aydınlatma deneyiminizi dönüştürüyor. </p>
          <p class="about-subtext">Yenilikçi teknolojimizle gurur duyuyor ve keyif anlarınızın benzersiz olmasını sağlamak için sürekli olarak mükemmellik için çalışıyoruz.</p>
        
      </v-spacer>
    </v-row>
    
    
-   <v-card variant="tonal" class="my-4 py-4">
+   <v-card variant="tonal" class="my-4 py-4" style="border-radius: 25px;">
     <v-row>
       <v-col md="4" xl="6" class="px-0" >
         <v-spacer class="card-title">
@@ -165,7 +167,7 @@
     </v-row>
   </v-card>
    
-  <v-card variant="tonal" class=" kontrol-card-color my-4 py-4">
+  <v-card variant="tonal" class=" kontrol-card-color my-4 py-4"  style="border-radius: 25px;">
     <v-row>
       <v-col md="8" xl="6" class="px-0">
         <v-spacer class="d-flex justify-center my-4">
@@ -233,7 +235,7 @@
   </v-card>
 
 
-  <v-card variant="tonal" class="my-4 py-4 sensor-card-color">
+  <v-card variant="tonal" class="my-4 py-4 sensor-card-color"  style="border-radius: 25px;">
     <v-row>
       <v-col md="4" xl="6" class="px-0" >
         <v-spacer class="card-title">
