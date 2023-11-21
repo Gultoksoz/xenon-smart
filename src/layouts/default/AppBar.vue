@@ -181,45 +181,4 @@
   }
 }
 
-/* .dropdown-menu{
-  text-align: left;
-  margin-left: 40px;
-}
-
-.list-lang{
-  max-width: max-content;
-  margin-top: 1.2em;
- 
-  
-}
-.icon{
-  margin-right: 4em
-}
-
-.chips{
-  background-color: #e6e6e6;
-  border-radius: 20px;
-  padding:5px 10px 5px 10px;
-
-}
-.menu{
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.custom-chip:hover {
-  background-color: #fff;
- 
-}
-
-.custom-chip--active {
-  background-color: #fff; 
-  
-}
-.dropdown-menu p {
-  color: gray;
-  font-size: 0.8em;
-} */
-
 </style>
