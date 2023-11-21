@@ -1,11 +1,12 @@
 <template>
     <v-container fluid class="main" style="margin-top: 100px;">
-      <v-carousel>
+      <v-carousel hide-delimiters>
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
-    <v-col cols="6">
-         <v-card class="left-aligned-card" variant="text" color="white">
+    <v-col cols="2" sm="1"></v-col>
+    <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
+         <v-spacer variant="text" style="color: white;">
            <v-spacer class="d-flex flex-column " style="font-size: 28px;">
             <span class="font-weight-bold">Akıllı RGB Ampul</span>
             <span> ile yaşam alanınıza özel bir dokunuş ekleyin,</span>
@@ -27,15 +28,17 @@
                Özellikler
              </v-btn></v-col>
            </v-spacer>
-         </v-card>
+         </v-spacer>
      </v-col>
-     <v-col cols="6" class="d-flex justify-center align-start">
+     <v-col cols="0" sm="4" md="5" class="d-flex justify-center align-start">
        <v-img
          max-width="160"
          aspect-ratio="4/3"
          src="@/assets/lamp.svg"
        ></v-img>
      </v-col>
+    <v-col cols="1"></v-col>
+
   </v-spacer>
 
   </v-carousel-item>
@@ -322,344 +325,11 @@ padding:4px;
   margin-top:8px
 }
 
-
-
-
- 
  .custom-text{
    align-items :center;
    justify-content :center;
    text-align: center;
  }
- 
-
-
-
- 
- /* @media screen and (max-width: 2560px) {
-   .custom-card {
-     width: 200px;
-     height: 175px;
-     background-color: #efefef;
-     border-radius: 20px;
-     
-   }
- 
-   .about-text{
-   margin-left: 9em;
-   margin-right: 9em;
-   font-size: 2em;
-   font-weight: 550;
-   color: black;
- }
- 
- .custom-card-text{
-   font-size: 1em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- .custom-card-title{
-   font-size: 2em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- 
- .product-card-title{
-   font-size: 1.8em;
-   margin-top: 60px;
-   margin-left: 20px;
- }
- 
- .card-slide{
-  width: 680px;
-  height: 150px;
-
-}
-.sheet-slide{
-  width: 720px;
-  margin-right: 4em;
-}
- 
- .kontrol_grubu_img{
-   margin: 4.4em;
- }
- 
- .sensor-img{
-   margin: 1em 4.8em 0 6em;
-   
- }
- 
- .product-card{
-   border-radius: 33px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-right: 1em;
-   padding-left: 1em;
-   padding-bottom: 3.1em;
-   
- }
- .product-img{
-   margin-top: 2em;
-   margin-left: 18em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 55em;
- }
- 
- 
- }
- 
- 
- 
- 
- 
- @media screen and (max-width: 1280px) {
-   .custom-card {
-     width: 200px;
-     height: 175px;
-     background-color: #efefef;
-     border-radius: 20px;
-     
-   }
- 
-   .about-text{
-   margin-left: 9em;
-   margin-right: 9em;
-   font-size: 2em;
-   font-weight: 550;
-   color: black;
- }
- 
- .custom-card-text{
-   font-size: 1em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- .custom-card-title{
-   font-size: 2em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- 
- .product-card-title{
-   font-size: 1.8em;
-   margin-top: 60px;
-   margin-left: 20px;
-  
- }
-
- 
- .card-slide{
-  width: 560px;
-  height: 200px;
-  margin-top: 1em;
-
-}
-.sheet-slide{
-  width: 550px;
-  height: 200px;
-}
- 
- .kontrol_grubu_img{
-   margin: 0em;
- }
- 
- .sensor-img{
-  margin: 1em 4.8em 0 6em;
-  
-}
- 
- .product-card{
-   border-radius: 33px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-right: 1em;
-   padding-left: 1em;
-   padding-bottom: 3.1em;
-   
- }
- .product-img{
-   margin-top: 2em;
-   margin-left: 6em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 18em;
- }
- 
- 
- }
- 
- @media screen and (max-width: 960px) {
-   .custom-card {
-     width: 160px;
-     height: 145px;
-     background-color: #efefef;
-     border-radius: 20px;
-   }
- 
-   .about-text{
-   margin-left: 5em;
-   margin-right: 5em;
-   font-size: 2em;
-  
- }
- 
- .custom-card-text{
-   font-size: 0.8em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- .custom-card-title{
-   font-size: 1.5em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- .product-card-title{
-  font-size: 1.4em;
-  margin-top: 60px;
-  margin-left: 20px;
-}
- 
-.card-slide{
-  width: 450px;
-  height: 200px;
-
-}
-.sheet-slide{
-  width: 440px;
-  height: 200px;
-}
- .kontrol_grubu_img{
-   margin: 0.5em;
- }
- .sensor-img{
-   margin: 1em 4.8em 0 1em;
-   
- }
- .product-card{
-   border-radius: 33px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-bottom: 3.1em;
-   
- }
- 
- .product-img{
-   margin-top: 2em;
-   margin-left: 5em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 18em;
- }
-
- }
- 
- @media screen and (max-width: 600px) {
-   .custom-card {
-     width: 120px;
-     height: 105px;
-     background-color: #efefef;
-     border-radius: 20px;
-   }
- 
-   .about-text{
-   margin-left: 2em;
-   margin-right: 2em;
-   font-size: 1.5em;
-  
- }
- 
- .custom-card-text{
-   font-size: 0.6em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- .custom-card-title{
-   font-size: 1em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- 
- .main-button{
-   font-size: 0.8em;
- }
-
- .rgb-button{
-  font-size: 0.8em;
- }
- .rgb-button:hover{
-  font-size: 0.8em;
-  color: white;
-  background-color: white;
- }
- .rgb-button:active{
-  font-size: 0.8em;
-  color: white;
- }
- 
- .product-card-title{
-    font-size: 1em;
-   margin-top: 60px;
-   margin-left: 20px;
- }
- 
- .card-slide{
-    width: 350px;
-   height: 200px;
- 
- }
- 
- .sheet-slide{
-  width: 340px;
-  height: 200px;
-}
- 
- .sensor-img{
-   margin: 1em 4.8em 0 0.8em;
-   
- }
- 
- .product-card{
-   border-radius: 33px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-bottom: 3.1em;
-   
- }
- 
- .kontrol-sheet{
-   height: 25em;
-   width: 18em;
- }
- .product-img{
-   margin-top: 2em;
-   margin-left: 5em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 18em;
- }
- 
- 
- } */
  
  .pad{
     padding-left: 6em;
