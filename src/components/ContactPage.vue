@@ -3,21 +3,28 @@
     <v-container fluid >
         <v-row class="d-flex header">
             <v-col cols="6" class="d-flex flex-column align-start justify-start">
-                <p class="small-text ">Xenon Smart</p>
                 <strong class="big-text ">İletişim</strong>
             </v-col >
             <v-divider  :thickness="2"></v-divider>
         </v-row>
-        <v-row class="d-flex main justify-space-around ml-1" >
+        <v-row class="d-flex flex-wrap" >
 
           
-          <v-col cols="8" md="8"  class="background-map " @click="redirectToLink" >
+          <!-- <v-col cols="8" md="8"  class="background-map " @click="redirectToLink" >
             <v-icon class="pin" > <img width="32" src="@/assets/pin.svg"/></v-icon>
-          </v-col>
+          </v-col> -->
           
-          <v-col cols="4" md="4" class="d-flex ">
-            <v-spacer variant="elevated" class="card">
-              <v-card-title class="text-color">GERİ BİLDİRİM FORMU</v-card-title>
+          <v-spacer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3006.0412900578685!2d28.9868288!3d41.1117893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab54b7efb98d5%3A0xac34d0462f5f7c92!2sBili%C5%9Fim%20Vadisi%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1700563845234!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </v-spacer>
+          
+          <v-col cols="12" class="d-flex card_form">
+            <v-col cols="4" offset="8" variant="elevated" class="py-0">
+              <v-card class="rounded-xl px-4 py-4">
+
+              <v-card-title class="text-color">GERİ BİLDİRİM FORMU</v-card-title> 
+              <v-card-text>
+
               <v-form>
                 <v-text-field label="İsim" variant="underlined">
 
@@ -31,9 +38,16 @@
                 <v-text-field label="Mesaj" variant="underlined">
                   
                 </v-text-field>
-                <v-btn variant="outlined" rounded="xl" class="button">Gönder</v-btn>
               </v-form>
-            </v-spacer>
+            </v-card-text>
+
+              <v-card-actions>
+                <v-btn variant="outlined" rounded="xl" class="button">Gönder</v-btn>
+              </v-card-actions>
+
+            </v-card>
+
+            </v-col>
           </v-col>
         </v-row>
 
@@ -91,9 +105,10 @@ Gebze, Kocaeli Türkiye</p>
  .header{
   padding: 10em 6em 0em 9em;
   }
-.main{
-    padding: 0em 6em 0em 9em;
-}
+
+  .card_form {
+    position: absolute;
+  }
   .small-text{
     font-size: 1em;
     color: black;
@@ -115,15 +130,9 @@ Gebze, Kocaeli Türkiye</p>
   margin-top: 2em;
   margin-left: 5em;
  }
- .card{
-  border-radius: 3em;
-  padding: 0em 3em 2em 3em;
-  
 
- }
  .text-color{
   color: gray;
- padding-left: 0em;
  font-size: 1em;
  }
  .button{
