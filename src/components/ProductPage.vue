@@ -90,7 +90,7 @@
    </v-card>
   </v-row>
    
-   <v-card class=" parlaklik-card " variant="tonal">
+   <v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
      <v-row>
  
        <v-col cols="6" class="d-flex">
@@ -117,7 +117,7 @@
    </v-card>
  
  
-   <v-card class=" renk-card" variant="tonal">
+   <v-card class="parlaklik-card" style="background-color: #FFF9F4 ;" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
         <v-spacer class="card-title">
@@ -142,7 +142,7 @@
      </v-row>
    </v-card>
 
-   <v-card class=" parlaklik-card " variant="tonal">
+   <v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
      <v-row>
  
        <v-col cols="6" class="d-flex">
@@ -169,7 +169,7 @@
    </v-card>
 
 
-   <v-card class=" renk-card" variant="tonal">
+   <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
         <v-spacer class="card-title">
@@ -213,7 +213,7 @@
    </v-row>
 
 
-   <v-card class=" renk-card" variant="tonal">
+   <v-card class=" parlaklik-card" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex pr-0">
         <v-img
@@ -700,28 +700,12 @@ padding:4px;
  
  
  .parlaklik-card{
-   background-color: #FAF6FF;
+   
    border-radius: 40px;
    margin: 3.1em 6.25em 3.1em 6.25em;
  }
  
- .renk-card{
-   background-color: #FFF9F4 ;
-   border-radius: 40px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
- }
  
- .product-button{
-   padding-bottom: 18em;
-   padding-left: 1.8em;
- }
- 
- .about-subtext{
-   font-size: 1em;
-   color: black;
-   text-align: center;
-   margin: 1em 10em 0 10em;
- }
  
  .left-aligned-card {
    margin-left: 9em;
