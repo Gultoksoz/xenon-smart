@@ -1,25 +1,24 @@
 
 <template>
-    <v-container fluid >
-        <v-row class="d-flex header">
-            <v-col cols="6" class="d-flex flex-column align-start justify-start">
-                <p class="small-text left-side">Xenon Smart</p>
-                <strong class="big-text left-side">Hakkımızda</strong>
-            </v-col >
-            <v-col cols="6" class="d-flex align-center justify-end right-side">
-                <p class="small-text mr-4">Biz Kimiz?</p> 
-                <p class="small-text mr-4">Değerlerimiz</p> 
-                <p class="small-text mr-4">Vizyonumuz</p> 
-                <p class="small-text ">Neden Xenon Smart?</p> 
+    <v-container fluid class="main_page">
+        <v-spacer class="d-flex flex-wrap">
+            <v-col cols="12" md="3" xs class="d-flex align-center justify-center">
+                <strong class="big-text">Hakkımızda</strong>
+            </v-col>
+            <v-spacer></v-spacer>
+            <v-col cols="12" md="6" class="d-flex flex-wrap align-center justify-space-around">
+                <v-col cols="6" sm="3" class="mx-0 mt-0 py-0 px-0 text-center"><span class="small-text">Biz Kimiz?</span> </v-col>
+                <v-col cols="6" sm="3" class="mx-0 mt-0 py-0 px-0 text-center"><span class="small-text">Değerlerimiz</span></v-col>
+                <v-col cols="6" sm="3" class="mx-0 mb-0 py-0 px-0 text-center"><span class="small-text">Vizyonumuz</span></v-col>
+                <v-col cols="6" sm="3" class="mx-0 mb-0 py-0 px-0 text-center"><span class="small-text ">Neden Xenon Smart?</span></v-col>
             </v-col >
             <v-divider  :thickness="3"></v-divider>
-        </v-row>
+        </v-spacer>
   <v-row class="d-flex main">
-    <v-col cols="4" class="d-flex align-start justify-start">
-                
+    <v-col cols="12" md="4" class="d-flex align-start justify-start pb-0">
         <strong class="big-text">Biz Kimiz?</strong>
     </v-col >
-    <v-col cols="8" class="d-flex align-center justify-center ">
+    <v-col cols="12" md="8" class="d-flex align-center justify-center">
         <p class="small-p">Xenon Smart yüksek akıllı ev sistemleri ve akıllı dokunmatik anahtar sistemleri ile ilgili destek çözümleri ve bunlara dair teknolojiyi sağlayan bir firmadır. Profesyonel bir akıllı ev sistemi üreticisi olarak; Altı kategoride sekiz seri ve yüzlerce ürün çeşidimiz mevcuttur.<br>
 
 Bunlar arasında güvenlik sistemleri, ev araçları kontrol sistemi, otomatik kapı ve pencere sistemii giriş kontrol sistemi ve ev merkezi müzik sistemi gibi sistemler üretmekte ve ithalatını yapmaktayız. Ayrıca kullanıcıya özel teknolojilerde sağlamaktayız.<br>
@@ -34,32 +33,31 @@ Firmamız üst düzey ürün ve hizmet geliştirme, üretim ve pazarlama yöneti
     <v-divider  :thickness="3"></v-divider>
   </v-row>
   <v-row class="d-flex main">
-    <v-col cols="4" class="d-flex align-start justify-start">
-                
+    <v-col cols="12" md="4" class="d-flex align-start justify-start pb-0">
         <strong class="big-text">Değerlerimiz</strong>
     </v-col >
-    <v-col cols="8" class="d-flex flex-column align-start justify-start">
+    <v-col cols="12" md="8" class="d-flex flex-column align-start justify-start">
         <p class="small-p">Xenon Smart olarak, akıllı ev teknolojilerinde dünya standartlarını belirleyen bir lider olma vizyonu ile hareket ediyoruz. Vizyonumuz, müşterilerimize benzersiz ve özelleştirilebilir akıllı ev çözümleri sunarak yaşam kalitelerini artırmalarına katkıda bulunmaktır.</p> 
         <br>
-<strong class="text-color  ">İnovasyon ve Teknoloji </strong>
+<strong class="text-color mt-3">İnovasyon ve Teknoloji </strong>
 <p class="small-p">Xenon Smart olarak, sürekli olarak değişen teknolojiye ayak uydurmayı ve inovasyonu teşvik etmeyi önemsiyoruz. Müşterilerimize en son teknolojiyi sunmak ve sektörde öncü olmak amacıyla sürekli olarak yeni ve yenilikçi çözümler geliştiriyoruz.</p>
 <br>
-<strong class="text-color  ">Müşteri Odaklılık</strong>
+<strong class="text-color mt-3">Müşteri Odaklılık</strong>
 <p class="small-p">Müşterilerimizin ihtiyaçlarını anlamak ve onlara en iyi çözümleri sunmak önceliğimizdir. Güvenlik sistemleri, otomatik kapı ve pencere sistemleri, aydınlatma sistemleri ve enerji sistemleri alanındaki ürün ve hizmetlerimizi, müşterilerimizin beklentilerini karşılamak için sürekli olarak iyileştiriyoruz.</p>
 <br>
-<strong class="text-color  ">Kalite ve Güvenilirlik</strong>
+<strong class="text-color mt-3">Kalite ve Güvenilirlik</strong>
 <p class="small-p">Ürünlerimizde ve hizmetlerimizde yüksek kalite standartlarına bağlı kalarak, müşterilerimize güvenilir ve dayanıklı çözümler sunuyoruz. Güvenlik, performans ve dayanıklılık konularında sürekli olarak kendimizi geliştiriyoruz.</p>
 <br>
-<strong class="text-color  ">Sürdürülebilirlik</strong>
+<strong class="text-color mt-3">Sürdürülebilirlik</strong>
 <p class="small-p">Çevre dostu çözümler üretmek ve iş süreçlerimizde sürdürülebilirlik ilkelerine bağlı kalmak, doğal kaynakları koruma konusundaki sorumluluğumuzun bilincinde olduğumuzun bir göstergesidir. Enerji tasarruflu ürünler ve yeşil teknolojiye odaklanarak, sürdürülebilir bir gelecek için çalışıyoruz.</p>
 <br>
-<strong class="text-color ">İşbirliği ve Ekip Çalışması</strong>
+<strong class="text-color mt-3">İşbirliği ve Ekip Çalışması</strong>
 <p class="small-p">Xenon Smart olarak, başarımızı takım çalışmasına ve işbirliğine dayandırıyoruz. Çalışanlarımız, müşterilerimiz ve iş ortaklarımızla etkili iletişim kurarak, ortak hedeflere ulaşmak için birlikte çalışıyoruz.</p>
 <br>
-<strong class="text-color ">Şeffaflık ve Sorumluluk</strong>
+<strong class="text-color mt-3">Şeffaflık ve Sorumluluk</strong>
 <p class="small-p">İşimizi şeffaf bir şekilde yönetmek ve müşterilerimize, çalışanlarımıza ve topluma karşı sorumluluk sahibi olmak temel prensiplerimizdendir. Etiğe uygun davranışlar sergileyerek güvenilir bir iş ortağı olma taahhüdümüzü sürdürüyoruz.</p>
 <br>
-<p class="small-text text-color">
+<p class="small-text text-color mt-3">
 Xenon Smart olarak, bu değerlere sıkı sıkıya bağlı kalarak, müşterilerimize yenilikçi, güvenilir ve sürdürülebilir akıllı ev çözümleri sunmaya devam ediyoruz.
 </p> 
 <br>
@@ -68,11 +66,11 @@ Xenon Smart olarak, bu değerlere sıkı sıkıya bağlı kalarak, müşterileri
     <v-divider  :thickness="3"></v-divider>
   </v-row>
   <v-row class="d-flex main">
-    <v-col cols="4" class="d-flex align-start justify-start">
+    <v-col cols="12" md="4" class="d-flex align-start justify-start pb-0">
                 
         <strong class="big-text">Neden <br>Xenon Smart?</strong>
     </v-col >
-    <v-col cols="8" class="d-flex flex-column align-start justify-start">
+    <v-col cols="12" md="8" class="d-flex flex-column align-start justify-start">
         <p class="small-text text-color mb-4">Xenon Smart'i seçmenizin birçok nedeni var.</p>
         <p class="small-p mb-4">
             Xenon Smart, akıllı ev teknolojilerinde teknolojik mükemmeliği hedefler. Ürünlerimizde kullanılan en son teknoloji, sektördeki en güncel gelişmeleri yansıtarak evinizin veya işyerinizin güvenliği, konforu ve enerji verimliliği konularında öncü olmanızı sağlar.</p>
@@ -113,23 +111,15 @@ Xenon Smart olarak, bu değerlere sıkı sıkıya bağlı kalarak, müşterileri
      
  </script>
  <style scoped>
- .header{
-     padding-top: 10em;
+ .main_page{
+     padding-top: 100px;
   }
-.main{
-    padding: 3em 6em 0em 9em;
-}
+
   .small-text{
     font-size: 1em;
   }
  .big-text{
     font-size: 2em;
- }
- .left-side{
-    margin-left: 143px;
- }
- .right-side{
-    padding-right: 5.5em;
  }
 
  .small-p{
