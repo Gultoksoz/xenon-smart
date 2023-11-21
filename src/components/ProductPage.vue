@@ -85,7 +85,8 @@
   </v-spacer>
 
   <!-- </v-row> -->
-   
+   <v-spacer class="d-flex align-center justify-center">
+
    <v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
      <v-row>
  
@@ -111,8 +112,10 @@
        
      </v-row>
    </v-card>
- 
- 
+  </v-spacer>
+
+ <v-spacer class="d-flex align-center justify-center">
+
    <v-card class="parlaklik-card" style="background-color: #FFF9F4 ;" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
@@ -137,6 +140,10 @@
        </v-col>
      </v-row>
    </v-card>
+ </v-spacer>
+
+   <v-spacer class="d-flex align-center justify-center">
+
 
    <v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
      <v-row>
@@ -163,6 +170,10 @@
        
      </v-row>
    </v-card>
+  </v-spacer>
+
+
+   <v-spacer class="d-flex align-center justify-center">
 
 
    <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
@@ -189,6 +200,7 @@
        </v-col>
      </v-row>
    </v-card>
+  </v-spacer>
    
    <v-row class="d-flex flex-column">
     <v-spacer class="text-center mt-6 mb-6">
@@ -200,20 +212,22 @@
  
    
      <v-spacer class="text-center mt-6 mb-6">
-       <v-col cols="12" class="d-flex flex-column custom-text ">
+       <v-col cols="12" class="d-flex flex-column custom-text">
          
-         <span class="font-weight-bold" style="font-size: 1.5em;">Google Home ve Alexa uyumluluğu ile evinizin aydınlatmasını tam anlamıyla akıllı hale getiriyor.  Ortamın atmosferini parmaklarınızın ucuyla yönetin!</span>
-          <img class="mt-4" src="@/assets/Layer_1.png"/>
+         <span class="font-weight-bold" style="font-size: 1.5em; width: 90%;">Google Home ve Alexa uyumluluğu ile evinizin aydınlatmasını tam anlamıyla akıllı hale getiriyor.  Ortamın atmosferini parmaklarınızın ucuyla yönetin!</span>
+          <v-img width="90%" class="mt-4" src="@/assets/Layer_1.png"/>
        </v-col>
      </v-spacer>
    </v-row>
 
+<v-spacer class="d-flex align-center justify-center">
 
-   <v-card class=" parlaklik-card" variant="tonal">
-     <v-row>
-       <v-col cols="6" class="d-flex pr-0">
+   <v-card class=" parlaklik-card d-flex" variant="tonal">
+     <!-- <v-row> -->
+       <v-col cols="6" class="d-flex px-0 py-0">
         <v-img
              cover
+             width="45%"
              max-width="760"
              src="@/assets/Group59.png"
            ></v-img>
@@ -221,19 +235,21 @@
 
        </v-col>
        
-        <v-col cols="6" class="d-flex pl-0">
+        <v-col cols="6" class="d-flex px-0 py-0">
            <v-img
              cover
+             width="45%"
              max-width="760"
              src="@/assets/Group63.png"
            ></v-img>
       
        </v-col>
-     </v-row>
+     <!-- </v-row> -->
    </v-card>
+  </v-spacer>
 
    <v-row class="d-flex flex-column">
-    <v-spacer class="text-center mt-6 mb-6">
+    <v-spacer class="text-center mt-6 mb-3">
        
       <h3 class="font-weight-bold" style="color: gray;">RGB Led Ampul </h3>
       
@@ -241,9 +257,10 @@
    
  
    
-     <v-spacer class="text-center mt-6 mb-6">
-       <v-col cols="12" class="d-flex flex-column custom-text ">
-         
+     <v-spacer class="text-center mb-6">
+       <v-col cols="12" class="d-flex flex-column custom-text">
+         <v-spacer  style="width: 90%;">
+
          <span class="font-weight-bold" style="font-size: 1.5em;">RGB Led Ampul ile evinizi kişiselleştirin, odalarınıza özel bir dokunuş ekleyin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!</span>
          <v-spacer class="card-action mt-4">
             <div >
@@ -252,6 +269,8 @@
             </v-btn>
           </div>
           </v-spacer>
+         </v-spacer>
+
        </v-col>
      </v-spacer>
    </v-row>
@@ -342,7 +361,7 @@ padding:4px;
   background-repeat: no-repeat;
   color: white;
   border-radius: 33px;
-   margin: 0 20px;
+   margin: 10px 20px;
    padding-top: 3.1em;
    padding-bottom: 3.1em;
    height:auto ;
@@ -376,12 +395,12 @@ padding:4px;
  
  
  .parlaklik-card{
-   
+  margin: 10px 20px;
+  max-width: 900px;
+   width: 90%;
    border-radius: 40px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
+   
  }
- 
- 
  
  .left-aligned-card {
    margin-left: 9em;
