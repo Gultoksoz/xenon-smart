@@ -7,19 +7,24 @@
     <v-col cols="6">
          <v-card class="left-aligned-card" variant="text" color="white">
            <v-spacer class="d-flex flex-column " style="font-size: 28px;">
-            <span class="font-weight-bold">Akıllı aydınlatma ile</span>
-            <span> yaşam alanlarınız daha renkli, daha akıllı ve daha keyifli...</span>
+            <span class="font-weight-bold">Akıllı RGB Ampul</span>
+            <span> ile yaşam alanınıza özel bir dokunuş ekleyin,</span>
           </v-spacer>
            <v-spacer class="mb-4 mt-2" style="font-size: 16px;">
             <span>
-            Estetik tasarımı ve gelişmiş özellikleriyle bu akıllı aydınlatma sistemi, evinizde veya ofisinizde aydınlatma deneyiminizi başka bir seviyeye taşıyacak.
+              Akıllı Ampul ile evinizi kişiselleştirin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!
             </span>
           </v-spacer>
           <v-spacer>
- 
+            
+                  <v-img
+                  max-width="260"
+                  src="@/assets/google_home.svg"
+                ></v-img>
+
              <v-col cols="4" sm="6" md="4">
              <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
-               Ürünleri incele
+               Özellikler
              </v-btn></v-col>
            </v-spacer>
          </v-card>
@@ -85,7 +90,7 @@
    </v-card>
   </v-row>
    
-   <v-card class="d-flex parlaklik-card" variant="tonal">
+   <v-card class=" parlaklik-card " variant="tonal">
      <v-row>
  
        <v-col cols="6" class="d-flex">
@@ -96,19 +101,15 @@
        </v-col>
        
        <v-col cols="6" class="d-flex flex-column">
-         <v-card-title class="product-card-title">
-             <strong>Parlaklık Ayarı</strong>
-           </v-card-title>
-           <v-card-text class="product-card-text">
-             
-             Akıllı Kameralar, evinizin, işyerinizin veya herhangi bir mekanın güvenliğini<br> ve gözetimini en üst düzeye çıkarmak için tasarlanmış üstün bir teknoloji<br>ürünüdür. Bu kameralar, gelişmiş özelliklerle donatılmış, yüksek çözünürlüklü<br>video kaydı, hareket algılama, uzaktan erişim ve daha fazlası sunarak size<br>sakinlik ve güvenlik sağlar.
-           </v-card-text>
-           <v-card-action class="product-button">
- 
-             <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
-               <strong>Daha fazla</strong>
-             </v-btn>
-           </v-card-action>
+         <v-spacer class="card-title">
+             <span class="font-weight-bold">16 Milyon Renk Seçeneği</span>
+           </v-spacer>
+           <v-spacer class="card-text">
+            <span>
+            Geniş renk paleti sayesinde ampulünüzü istediğiniz her renge ayarlayabilirsiniz. Renk tekerleği ile kolayca favori renklerinizi seçebilirsiniz.
+          </span>
+          </v-spacer>
+           
  
        </v-col>
        
@@ -116,62 +117,51 @@
    </v-card>
  
  
-   <v-card class="d-flex renk-card" variant="tonal">
+   <v-card class=" renk-card" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
-         <v-card-title class="product-card-title">
-             <strong>16 Milyon Renk Seçeneği</strong>
-           </v-card-title>
-           <v-card-text class="product-card-text">
-             
-             Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi <br>kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları,<br> apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. <br>QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü<br> optimize edebilirsiniz.
-           </v-card-text>
-           <v-card-action class="product-button">
-            
-              <v-btn class="mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/" >
-                  <strong>Satın al</strong>
-                </v-btn>
-                <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
-                  <strong>Daha fazla</strong>
-                </v-btn>
-            </v-card-action>
- 
+        <v-spacer class="card-title">
+             <span class="font-weight-bold">Parlaklık Ayarı</span>
+           </v-spacer>
+           <v-spacer class="card-text">
+            <span>
+              Aydınlatma ihtiyacınıza uygun olarak ampulün parlaklığını artırabilir veya azaltabilirsiniz. Işığın yumuşaklığını ve yoğunluğunu kişisel tercihinize göre özelleştirebilirsiniz.
+          </span>
+          </v-spacer>
+           
        </v-col>
        
         <v-col cols="6" class="d-flex">
            <v-img
              cover
-             src="@/assets/parlaklik_background_right.png"
+             max-width="760"
+             src="@/assets/xenonsmart-brightnes.gif"
            ></v-img>
       
        </v-col>
      </v-row>
    </v-card>
 
-   <v-card class="d-flex parlaklik-card" variant="tonal">
+   <v-card class=" parlaklik-card " variant="tonal">
      <v-row>
  
        <v-col cols="6" class="d-flex">
            <v-img
              cover
-             src="@/assets/parlaklik_background.png"
+             src="@/assets/phone.png"
            ></v-img>
        </v-col>
        
        <v-col cols="6" class="d-flex flex-column">
-         <v-card-title class="product-card-title">
-             <strong>Parlaklık Ayarı</strong>
-           </v-card-title>
-           <v-card-text class="product-card-text">
-             
-             Akıllı Kameralar, evinizin, işyerinizin veya herhangi bir mekanın güvenliğini<br> ve gözetimini en üst düzeye çıkarmak için tasarlanmış üstün bir teknoloji<br>ürünüdür. Bu kameralar, gelişmiş özelliklerle donatılmış, yüksek çözünürlüklü<br>video kaydı, hareket algılama, uzaktan erişim ve daha fazlası sunarak size<br>sakinlik ve güvenlik sağlar.
-           </v-card-text>
-           <v-card-action class="product-button">
- 
-             <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
-               <strong>Daha fazla</strong>
-             </v-btn>
-           </v-card-action>
+         <v-spacer class="card-title">
+             <span class="font-weight-bold">Uzaktan Kontrol</span>
+           </v-spacer>
+           <v-spacer class="card-text">
+            <span>
+              Akıllı telefonunuz veya tabletiniz üzerinden ampulu uzaktan kontrol edebilirsiniz. Evinizde dolaşırken veya rahat bir koltuktan otururken ampulü açabilir, kapatabilir ve renkleri değiştirebilirsiniz.
+          </span>
+          </v-spacer>
+           
  
        </v-col>
        
@@ -179,37 +169,92 @@
    </v-card>
 
 
-   <v-card class="d-flex renk-card" variant="tonal">
+   <v-card class=" renk-card" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
-         <v-card-title class="product-card-title">
-             <strong>16 Milyon Renk Seçeneği</strong>
-           </v-card-title>
-           <v-card-text class="product-card-text">
-             
-             Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi <br>kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları,<br> apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. <br>QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü<br> optimize edebilirsiniz.
-           </v-card-text>
-           <v-card-action class="product-button">
-            
-              <v-btn class="mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/" >
-                  <strong>Satın al</strong>
-                </v-btn>
-                <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF">
-                  <strong>Daha fazla</strong>
-                </v-btn>
-            </v-card-action>
- 
+        <v-spacer class="card-title">
+             <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
+           </v-spacer>
+           <v-spacer class="card-text">
+            <span>
+              Ampulu belirli bir zamanda otomatik olarak açabilir veya kapatabilirsiniz. Zamanlayıcı özelliği ile güneş batışı efektleri oluşturabilir veya gece lambası olarak kullanabilirsiniz.
+          </span>
+          </v-spacer>
+           
        </v-col>
        
         <v-col cols="6" class="d-flex">
            <v-img
              cover
-             src="@/assets/parlaklik_background_right.png"
+             max-width="760"
+             src="@/assets/Group 17.png"
            ></v-img>
       
        </v-col>
      </v-row>
    </v-card>
+   
+   <v-row class="d-flex flex-column">
+    <v-spacer class="text-center mt-6 mb-6">
+       
+      <h3 class="font-weight-bold" style="color: gray;">RGB Led Ampul </h3>
+      
+     </v-spacer>
+   
+ 
+   
+     <v-spacer class="text-center mt-6 mb-6">
+       <v-col cols="12" class="d-flex flex-column custom-text ">
+         
+         <p class="font-weight-bold">Google Home ve Alexa uyumluluğu ile evinizin aydınlatmasını tam anlamıyla akıllı hale getiriyor.  Ortamın atmosferini parmaklarınızın ucuyla yönetin!</p>
+          <img class="mt-4" src="@/assets/Layer_1.png"/>
+       </v-col>
+     </v-spacer>
+   </v-row>
+
+
+   <v-card class=" renk-card" variant="tonal">
+     <v-row>
+       <v-col cols="6" class="d-flex flex-column">
+        <v-spacer class="card-title">
+             <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
+           </v-spacer>
+           <v-spacer class="card-text">
+            <span>
+              Ampulu belirli bir zamanda otomatik olarak açabilir veya kapatabilirsiniz. Zamanlayıcı özelliği ile güneş batışı efektleri oluşturabilir veya gece lambası olarak kullanabilirsiniz.
+          </span>
+          </v-spacer>
+           
+       </v-col>
+       
+        <v-col cols="6" class="d-flex">
+           <v-img
+             cover
+             max-width="760"
+             src="@/assets/Group 17.png"
+           ></v-img>
+      
+       </v-col>
+     </v-row>
+   </v-card>
+
+   <v-row class="d-flex flex-column">
+    <v-spacer class="text-center mt-6 mb-6">
+       
+      <h3 class="font-weight-bold" style="color: gray;">RGB Led Ampul </h3>
+      
+     </v-spacer>
+   
+ 
+   
+     <v-spacer class="text-center mt-6 mb-6">
+       <v-col cols="12" class="d-flex flex-column custom-text ">
+         
+         <p class="font-weight-bold">RGB Led Ampul ile evinizi kişiselleştirin, odalarınıza özel bir dokunuş ekleyin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!</p>
+          <img class="mt-4" src="@/assets/Layer_1.png"/>
+       </v-col>
+     </v-spacer>
+   </v-row>
 
 
 </div>
@@ -240,7 +285,7 @@
  .card-title{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin-top: 16px;
   font-size: 32px;
   padding:8px;
@@ -257,7 +302,7 @@
   align-items: center;
   justify-content: center;
   font-size:20px;
-  padding:8px;
+  padding:2px;
 }
 .card-text div {
   width: 80%;
@@ -618,7 +663,7 @@ padding:4px;
  }
  
  .main-text{
-   padding-top: 100px;
+   padding-top: 130px;
    background-image: url('@/assets/product_background.png');
    background-size: cover;
   background-repeat: no-repeat;
@@ -681,6 +726,7 @@ padding:4px;
  }
  .main{
    padding: 0px;
+   margin-top: 100px;
  }
  .img{
    margin-left: 9em;
@@ -700,7 +746,7 @@ padding:4px;
  
  
  .product-card-text{
-   font-size: 1em;
+   font-size: 1.5em;
    margin-top: 2em;
    margin-left: 1.2em;
  }

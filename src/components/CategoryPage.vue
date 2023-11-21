@@ -76,7 +76,7 @@
     <v-row class="d-flex flex-column">
      <v-spacer class="text-center mt-6 mb-6">
        
-          <h3> Akıllı Aydınlatma </h3>
+          <h3 style="color: gray;"> Akıllı Aydınlatma </h3>
        
      </v-spacer>
    

@@ -89,13 +89,13 @@
   <v-row class="d-flex flex-column">
     <v-spacer class="text-center mb-3">
       <!-- <v-col cols="12" class="d-flex align-center justify-center"> -->
-        <h3>Xenon Smart Hakkında</h3>
+        <h3 style="color: gray;">Xenon Smart Hakkında</h3>
       <!-- </v-col> -->
     </v-spacer>
     <v-spacer class="text-center">
       <!-- <v-col cols="12" class="d-flex flex-column custom-text "> -->
-        <p class="about-text">Mucitler, mühendisler ve tasarımcılardan oluşan ekibimiz, akıllı ev deneyimini bir üst seviyeye taşıyan ürünler yaratmak için tutkuyla çalışıyor.</p>
-        <p class="about-subtext">Yenilikçi teknolojimizle gurur duyuyor ve keyif anlarınızın benzersiz olmasını sağlamak için sürekli olarak mükemmellik için çalışıyoruz.</p>
+        <p class="font-weight-bold">Mucitler, mühendisler ve tasarımcılardan oluşan ekibimiz, akıllı ev deneyimini bir üst seviyeye taşıyan ürünler yaratmak için tutkuyla çalışıyor.</p>
+        <p >Yenilikçi teknolojimizle gurur duyuyor ve keyif anlarınızın benzersiz olmasını sağlamak için sürekli olarak mükemmellik için çalışıyoruz.</p>
       <!-- </v-col> -->
     </v-spacer>
   </v-row>
