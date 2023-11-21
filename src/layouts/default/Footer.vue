@@ -56,7 +56,8 @@
                 <p class="text-color">Mesafeli Satış Sözleşmesi</p>
             </v-col>
             <v-col >
-                <p class="link-baslik">İletişim</p>
+                
+                <router-link to="/contact" class="link-baslik">İletişim</router-link>
 
                 <p class="text-color"><strong>Telefon</strong></p>
                 <p class="text-color">+90 (850) 303 46 66</p><br>

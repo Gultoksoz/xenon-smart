@@ -112,7 +112,7 @@
          
             <v-spacer class="card-action">
              <div >
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
+            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" href="https://shop.xenonsmart.com/">
               <strong>Satın Al</strong>
             </v-btn>
             <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">

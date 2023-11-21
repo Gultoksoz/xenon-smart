@@ -63,7 +63,7 @@
      <v-spacer class="text-center mt-6 mb-6">
        <v-col cols="12" class="d-flex flex-column custom-text ">
          
-         <p class="font-weight-bold">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
+         <p class="font-weight-bold" style="font-size: 1.5em;">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
          <v-icon class="d-flex align-start justify-center about-icon"> <img src="@/assets/play_store.svg"/></v-icon>
        </v-col>
      </v-spacer>
@@ -123,7 +123,7 @@
         <v-spacer class="card-title">
              <span class="font-weight-bold">Parlaklık Ayarı</span>
            </v-spacer>
-           <v-spacer class="card-text">
+           <v-spacer class="card-text ml-2">
             <span>
               Aydınlatma ihtiyacınıza uygun olarak ampulün parlaklığını artırabilir veya azaltabilirsiniz. Işığın yumuşaklığını ve yoğunluğunu kişisel tercihinize göre özelleştirebilirsiniz.
           </span>
@@ -175,7 +175,7 @@
         <v-spacer class="card-title">
              <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
            </v-spacer>
-           <v-spacer class="card-text">
+           <v-spacer class="card-text ml-2">
             <span>
               Ampulu belirli bir zamanda otomatik olarak açabilir veya kapatabilirsiniz. Zamanlayıcı özelliği ile güneş batışı efektleri oluşturabilir veya gece lambası olarak kullanabilirsiniz.
           </span>
@@ -206,7 +206,7 @@
      <v-spacer class="text-center mt-6 mb-6">
        <v-col cols="12" class="d-flex flex-column custom-text ">
          
-         <p class="font-weight-bold">Google Home ve Alexa uyumluluğu ile evinizin aydınlatmasını tam anlamıyla akıllı hale getiriyor.  Ortamın atmosferini parmaklarınızın ucuyla yönetin!</p>
+         <span class="font-weight-bold" style="font-size: 1.5em;">Google Home ve Alexa uyumluluğu ile evinizin aydınlatmasını tam anlamıyla akıllı hale getiriyor.  Ortamın atmosferini parmaklarınızın ucuyla yönetin!</span>
           <img class="mt-4" src="@/assets/Layer_1.png"/>
        </v-col>
      </v-spacer>
@@ -215,23 +215,21 @@
 
    <v-card class=" renk-card" variant="tonal">
      <v-row>
-       <v-col cols="6" class="d-flex flex-column">
-        <v-spacer class="card-title">
-             <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
-           </v-spacer>
-           <v-spacer class="card-text">
-            <span>
-              Ampulu belirli bir zamanda otomatik olarak açabilir veya kapatabilirsiniz. Zamanlayıcı özelliği ile güneş batışı efektleri oluşturabilir veya gece lambası olarak kullanabilirsiniz.
-          </span>
-          </v-spacer>
+       <v-col cols="6" class="d-flex pr-0">
+        <v-img
+             cover
+             max-width="760"
+             src="@/assets/Group59.png"
+           ></v-img>
            
+
        </v-col>
        
-        <v-col cols="6" class="d-flex">
+        <v-col cols="6" class="d-flex pl-0">
            <v-img
              cover
              max-width="760"
-             src="@/assets/Group 17.png"
+             src="@/assets/Group63.png"
            ></v-img>
       
        </v-col>
@@ -250,8 +248,14 @@
      <v-spacer class="text-center mt-6 mb-6">
        <v-col cols="12" class="d-flex flex-column custom-text ">
          
-         <p class="font-weight-bold">RGB Led Ampul ile evinizi kişiselleştirin, odalarınıza özel bir dokunuş ekleyin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!</p>
-          <img class="mt-4" src="@/assets/Layer_1.png"/>
+         <span class="font-weight-bold" style="font-size: 1.5em;">RGB Led Ampul ile evinizi kişiselleştirin, odalarınıza özel bir dokunuş ekleyin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!</span>
+         <v-spacer class="card-action mt-4">
+            <div >
+            <v-btn size="x-large" density="compact" rounded="xl" variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
+              <strong> Satın Al </strong>
+            </v-btn>
+          </div>
+          </v-spacer>
        </v-col>
      </v-spacer>
    </v-row>

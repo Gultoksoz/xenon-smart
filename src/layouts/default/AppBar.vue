@@ -8,6 +8,7 @@
           contain
           height="auto"
           max-height="30px"
+          @click="$router.push('/')"
         />
       </v-col>
     
