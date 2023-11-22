@@ -14,7 +14,6 @@
     
       <v-col cols="12" md="9"  class="d-flex px-0 py-0">
         <v-col cols="9" class="d-flex align-center justify-center  py-0">
-
         <v-spacer class="menu">
           <v-sheet class="chips">
             <v-chip
@@ -59,89 +58,79 @@
  
     </v-row>
   </v-app-bar>
+
   <v-navigation-drawer
     v-model="drawer"
-    location="center"
     temporary
+    :location="resize > 1280 ? 'center': 'left'"
+    class="py-3"
   >
-    <v-list>
-
-      <v-row class="d-flex" >
-              <v-col cols="2" class=" d-flex align-start justify-center" >
-                <v-list-item class="dropdown-menu">
-                  <v-icon size="48"> <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon><br>
-                  <strong>Akıllı Geçiş Kontrol</strong>
-                  <!--  <router-link class="custom-router-link" to="../product"></router-link> -->
-                  <p> RFID Kart Okuyucu(Dış Ortam)</p>
-                  <p> RFID Kart Okuyucu(İç Ortam) </p>
-                  <p> QR Kod Okuyucu(Dış Ortam) </p>
-                  <p> QR Kod Okuyucu(İç Ortam) </p>
-                  <p> 1 Çıkış Geçiş Kontrol Paneli </p>
-                  <p> 2 Çıkış Geçiş Kontrol Paneli </p>
-                  <p> 8 Çıkış Geçiş Kontrol Paneli </p>
-                  <p> 16 Çıkış Geçiş Kontrol Paneli </p>
-                  <p> Temassız Çıkış Butonu</p>
-                  
-                </v-list-item>
-              </v-col>
-              <v-col cols="2" class=" d-flex align-start justify-center">
-                <v-list-item  class="dropdown-menu">
-                  <v-icon size="48"> <img src="@/assets/akilli_kontrol_grubu.svg"/></v-icon><br>
-                  <strong>Akıllı Kontrol Grubu</strong>
-                  <p>Akıllı Tekli Priz </p>
-                  <p> Akıllı Çoklu Priz </p>
-                  <p> Akıllı Tekli Anahtar </p>
-                  <p> Akıllı İkili Anahtar </p>
-                  <p> Akıllı Perde Kontrol Rolesi </p>
-                  <p> Akıllı Röle </p>
-                  <p> Akıllı Dokunmatik Anahtar</p>
-                </v-list-item>
-              </v-col>
-              <v-col cols="2" class=" d-flex align-start justify-center">
-                <v-list-item  class="dropdown-menu">
-                  <v-icon size="48" > <img src="@/assets/akilli_kamera.svg"/></v-icon><br>
-                  <strong>Akıllı Kamera</strong>
-                  <p> Bebek Kamerası </p>
-                  <p> Bebek Kamerası(Monitörlü) </p>
-                  <p> Dış Ortam Kamerası </p>
-                  <p> Dış Ortam Kamerası(Bataryalı) </p>
-                  <p> İç Ortam Kamerası</p>
-                </v-list-item>
-              </v-col>
-              <v-col cols="2" class=" d-flex align-start justify-center">
-                <v-list-item  class="dropdown-menu">
-                  <v-icon size="48"> <img src="@/assets/akilli_kapi_kilidi.svg"/></v-icon><br>
-                  <strong>Akıllı Kapı Kilidi</strong>
-                  <p> Akıllı Kapı Kilidi-X8051 </p>
-                  <p> Akıllı Kapı Kilidi-X8052 </p>
-                  <p> Akıllı Kapı Kilidi-X8056 </p>
-                  <p> Akıllı Kapı Kilidi-X8057</p>
-                </v-list-item>
-              </v-col>
-              <v-col cols="2" class=" d-flex align-start justify-center">
-                <v-list-item  class="dropdown-menu">
-                  <v-icon size="48"> <img src="@/assets/akilli_sensor.svg"/></v-icon><br>
-                  <strong>Akıllı Sensör</strong>
-                  <p> Akıllı Kapı Sensörü </p>
-                  <p> Akıllı Hareket Sensörü </p>
-                  <p> Akıllı Duman Sensörü </p>
-                  <p> Akıllı Titreşim Sensörü </p>
-                  <p> Akıllı Su Sensörü </p>
-                  <p> Akıllı El Sensörü</p>
-                </v-list-item>
-              </v-col>
-              <v-col cols="2" class=" d-flex align-start justify-center">
-                <v-list-item  class="dropdown-menu">
-                  <v-icon size="48"> <img src="@/assets/akilli_aydinlatma.svg"/></v-icon><br>
-                  <strong>Akıllı Aydınlatma</strong>
-                  <p> Akıllı RGB Led Ampül </p>
-                  <p> Akıllı Tekli Anahtar </p>
-                  <p>Akıllı İkili Anahtar</p>
-                </v-list-item>
-              </v-col> 
-            </v-row>
-    </v-list>
+    <v-card class="d-flex flex-wrap" style="overflow-y: scroll;">
+      <v-col cols="12" lg="2" xl="2">
+        <v-icon size="48"> <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon><br>
+        <router-link class="link" to="#">Akıllı Geçiş Kontrol</router-link>
+        <v-spacer  v-for="(item) in smartPassControl"
+            :key="item.id">
+          <span>
+            {{ item.text }}
+          </span>
+        </v-spacer>
+      </v-col>
+      <v-col cols="12" lg="2" xl="2">
+        <v-icon size="48"> <img src="@/assets/akilli_kontrol_grubu.svg"/></v-icon><br>
+        <router-link class="link" to="#">Akıllı Kontrol Grubu</router-link>
+        <v-spacer  v-for="(item) in smartControl"
+            :key="item.id">
+          <span>
+            {{ item.text }}
+          </span>
+        </v-spacer>
+      </v-col>
+      <v-col cols="12" lg="2" xl="2">
+        <v-icon size="48" > <img src="@/assets/akilli_kamera.svg"/></v-icon><br>
+        <router-link class="link" to="#">Akıllı Kamera</router-link>
+        <v-spacer  v-for="(item) in smartCamera"
+            :key="item.id">
+          <span>
+            {{ item.text }}
+          </span>
+        </v-spacer>
+      </v-col>
+      <v-col cols="12" lg="2" xl="2">
+        <v-icon size="48"> <img src="@/assets/akilli_kapi_kilidi.svg"/></v-icon><br>
+        <router-link class="link" to="#">Akıllı Kapı Kilidi</router-link>
+        <v-spacer  v-for="(item) in smartDoorKey"
+            :key="item.id">
+          <span>
+            {{ item.text }}
+          </span>
+        </v-spacer>
+      </v-col>
+      <v-col cols="12" lg="2" xl="2">
+        <v-icon size="48"> <img src="@/assets/akilli_sensor.svg"/></v-icon><br>
+        <router-link class="link" to="#">Akıllı Sensör</router-link>
+        <v-spacer  v-for="(item) in smartSensor"
+            :key="item.id">
+          <span>
+            {{ item.text }}
+          </span>
+        </v-spacer>
+      </v-col>
+      <v-col cols="12" lg="2" xl="2">
+        <v-icon size="48"> <img src="@/assets/akilli_aydinlatma.svg"/></v-icon><br>
+        <router-link class="link" to="#">Akıllı Aydınlatma</router-link>
+        <v-spacer  v-for="(item) in smartAydinlatma"
+            :key="item.id">
+          <span>
+            {{ item.text }}
+          </span>
+        </v-spacer>
+      </v-col>
+    </v-card>
   </v-navigation-drawer>
+
+
+  
   
 
 </template>
@@ -155,12 +144,159 @@
       languageOptions: [
           { title: 'TR', value: 'TR' },
           { title: 'EN', value: 'EN' },
-         
         ],
       
       drawer: false,
       group: null,
-     
+      resize: window.innerWidth,
+      smartPassControl: [
+        {
+          id: 0,
+          text: "RFID Kart Okuyucu(Dış Ortam)",
+        },
+        {
+          id: 1,
+          text: "RFID Kart Okuyucu(İç Ortam)",
+        },
+        {
+          id: 2,
+          text: "QR Kod Okuyucu(Dış Ortam)",
+        },
+        {
+          id: 3,
+          text: "QR Kod Okuyucu(İç Ortam)",
+        },
+        {
+          id: 4,
+          text: "1 Çıkış Geçiş Kontrol Paneli",
+        },
+        {
+          id: 5,
+          text: "2 Çıkış Geçiş Kontrol Paneli",
+        },
+        {
+          id: 6,
+          text: "8 Çıkış Geçiş Kontrol Paneli"
+        },
+        {
+          id: 7,
+          text: "16 Çıkış Geçiş Kontrol Paneli",
+        },
+        {
+          id: 8,
+          text: "Temassız Çıkış Butonu"
+        }
+      ],
+      smartControl: [
+        {
+          id: 0,
+          text: "Akıllı Tekli Priz",
+        },
+        {
+          id: 1,
+          text: "Akıllı Çoklu Priz",
+        },
+        {
+          id: 2,
+          text: "Akıllı Tekli Anahtar",
+        },
+        {
+          id: 3,
+          text: "Akıllı İkili Anahtar",
+        },
+        {
+          id: 4,
+          text: "Akıllı Perde Kontrol Rolesi",
+        },
+        {
+          id: 5,
+          text: "Akıllı Röle",
+        },
+        {
+          id: 6,
+          text: "Akıllı Dokunmatik Anahtar"
+        }
+      ],
+      smartCamera: [
+        {
+          id: 0,
+          text: " Bebek Kamerası",
+        },
+        {
+          id: 1,
+          text: "Bebek Kamerası(Monitörlü)",
+        },
+        {
+          id: 2,
+          text: "Dış Ortam Kamerası",
+        },
+        {
+          id: 3,
+          text: "Dış Ortam Kamerası(Bataryalı)",
+        },
+        {
+          id: 4,
+          text: "İç Ortam Kamerası",
+        }
+      ],
+      smartDoorKey: [
+        {
+          id: 0,
+          text: "Akıllı Kapı Kilidi-X8051",
+        },
+        {
+          id: 1,
+          text: "Akıllı Kapı Kilidi-X8052",
+        },
+        {
+          id: 2,
+          text: "Akıllı Kapı Kilidi-X8056",
+        },
+        {
+          id: 3,
+          text: "Akıllı Kapı Kilidi-X8057",
+        }
+      ],
+      smartSensor: [
+        {
+          id: 0,
+          text: "Akıllı Kapı Sensörü",
+        },
+        {
+          id: 1,
+          text: "Akıllı Hareket Sensörü",
+        },
+        {
+          id: 2,
+          text: "Akıllı Duman Sensörü",
+        },
+        {
+          id: 3,
+          text: " Akıllı Titreşim Sensörü",
+        },
+        {
+          id: 4,
+          text: "Akıllı Su Sensörü ",
+        },
+        {
+          id: 5,
+          text: "Akıllı El Sensörü",
+        }
+      ],
+      smartAydinlatma: [
+        {
+          id: 0,
+          text: "Akıllı RGB Led Ampül ",
+        },
+        {
+          id: 1,
+          text: "Akıllı Tekli Anahtar",
+        },
+        {
+          id: 2,
+          text: "Akıllı İkili Anahtar",
+        }
+      ],
     }
   },
 
@@ -169,7 +305,14 @@
         this.drawer = false
       },
     },
- 
+  methods: {
+    myEventHandler(e) {
+      this.resize = window.innerWidth;
+      }
+  },
+  created() {
+    window.addEventListener("resize", this.myEventHandler);
+  },
 }
 
 </script>
@@ -183,6 +326,11 @@
 
 .logo:hover {
   cursor: pointer;
+}
+
+.link{
+  font-weight: bold;
+  color: black;
 }
 
 </style>
