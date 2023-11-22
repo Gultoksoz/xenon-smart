@@ -347,10 +347,11 @@ padding:4px;
  }
  
  .main-text{
-   padding-top: 130px;
+   padding: 20px 0px;
    background-image: url('@/assets/product_background.png');
-   background-size: cover;
+   background-size: 100% 100%;
   background-repeat: no-repeat;
+  min-height: 250px;
  }
  
  .rgb-card{
