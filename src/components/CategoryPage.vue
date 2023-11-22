@@ -72,7 +72,7 @@
        ></v-img>
      </v-col>
    </v-row> -->
-   <div class="pad">
+   
     <v-row class="d-flex flex-column">
      <v-spacer class="text-center mt-6 mb-6">
        
@@ -85,7 +85,7 @@
      <v-spacer class="text-center mt-6 mb-6">
        
          
-         <p class="font-weight-bold" >Akıllı aydınlatma, konfor, enerji tasarrufu ve estetik tasarımı bir araya getirerek aydınlatma deneyiminizi dönüştürüyor. </p>
+         <span class="font-weight-bold" >Akıllı aydınlatma, konfor, enerji tasarrufu ve estetik tasarımı bir araya getirerek aydınlatma deneyiminizi dönüştürüyor. </span>
          <p class="about-subtext">Yenilikçi teknolojimizle gurur duyuyor ve keyif anlarınızın benzersiz olmasını sağlamak için sürekli olarak mükemmellik için çalışıyoruz.</p>
        
      </v-spacer>
@@ -165,7 +165,7 @@
     </v-row>
   </v-card>
    
-  <v-card variant="tonal" class=" kontrol-card-color my-4 py-4"  style="border-radius: 25px;">
+  <v-card variant="tonal" class=" kontrol-card-color my-4 py-4">
     <v-row>
       <v-col md="8" xl="6" class="px-0">
         <v-spacer class="d-flex justify-center my-4">
@@ -233,7 +233,7 @@
   </v-card>
 
 
-  <v-card variant="tonal" class="my-4 py-4 sensor-card-color"  style="border-radius: 25px;">
+  <v-card variant="tonal" class="my-4 py-4 sensor-card-color">
     <v-row>
       <v-col md="4" xl="6" class="px-0" >
         <v-spacer class="card-title">
@@ -305,7 +305,7 @@
       </v-col>
     </v-row>
   </v-card>
-</div>
+
  
    </v-container>
  </template>
@@ -365,10 +365,6 @@ padding:4px;
 
 
 
-
-
-
-
  .custom-text{
    align-items :center;
    justify-content :center;
@@ -377,324 +373,6 @@ padding:4px;
  
 
 
-
- 
- /* @media screen and (max-width: 2560px) {
-   .custom-card {
-     width: 200px;
-     height: 175px;
-     background-color: #efefef;
-     border-radius: 20px;
-     
-   }
- 
-   .about-text{
-   margin-left: 9em;
-   margin-right: 9em;
-   font-size: 2em;
-   font-weight: 550;
-   color: black;
- }
- 
- .custom-card-text{
-   font-size: 1em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- .custom-card-title{
-   font-size: 2em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- 
- .product-card-title{
-   font-size: 1.8em;
-   margin-top: 60px;
-   margin-left: 20px;
- }
- 
- .card-slide{
-  width: 680px;
-  height: 150px;
-
-}
-.sheet-slide{
-  width: 720px;
-  margin-right: 4em;
-}
- 
- .kontrol_grubu_img{
-   margin: 4.4em;
- }
- 
- .sensor-img{
-   margin: 1em 4.8em 0 6em;
-   
- }
- 
- .product-card{
-   border-radius: 25px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-right: 1em;
-   padding-left: 1em;
-   padding-bottom: 3.1em;
-   
- }
- .product-img{
-   margin-top: 2em;
-   margin-left: 18em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 55em;
- }
- 
- 
- }
- 
- 
- 
- 
- 
- @media screen and (max-width: 1280px) {
-   .custom-card {
-     width: 200px;
-     height: 175px;
-     background-color: #efefef;
-     border-radius: 20px;
-     
-   }
- 
-   .about-text{
-   margin-left: 9em;
-   margin-right: 9em;
-   font-size: 2em;
-   font-weight: 550;
-   color: black;
- }
- 
- .custom-card-text{
-   font-size: 1em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- .custom-card-title{
-   font-size: 2em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- 
- .product-card-title{
-   font-size: 1.8em;
-   margin-top: 60px;
-   margin-left: 20px;
-  
- }
-
- 
- .card-slide{
-  width: 560px;
-  height: 200px;
-  margin-top: 1em;
-
-}
-.sheet-slide{
-  width: 550px;
-  height: 200px;
-}
- 
- .kontrol_grubu_img{
-   margin: 0em;
- }
- 
- .sensor-img{
-  margin: 1em 4.8em 0 6em;
-  
-}
- 
- .product-card{
-   border-radius: 25px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-right: 1em;
-   padding-left: 1em;
-   padding-bottom: 3.1em;
-   
- }
- .product-img{
-   margin-top: 2em;
-   margin-left: 6em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 18em;
- }
- 
- 
- }
- 
- @media screen and (max-width: 960px) {
-   .custom-card {
-     width: 160px;
-     height: 145px;
-     background-color: #efefef;
-     border-radius: 20px;
-   }
- 
-   .about-text{
-   margin-left: 5em;
-   margin-right: 5em;
-   font-size: 2em;
-  
- }
- 
- .custom-card-text{
-   font-size: 0.8em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- .custom-card-title{
-   font-size: 1.5em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- .product-card-title{
-  font-size: 1.4em;
-  margin-top: 60px;
-  margin-left: 20px;
-}
- 
-.card-slide{
-  width: 450px;
-  height: 200px;
-
-}
-.sheet-slide{
-  width: 440px;
-  height: 200px;
-}
- .kontrol_grubu_img{
-   margin: 0.5em;
- }
- .sensor-img{
-   margin: 1em 4.8em 0 1em;
-   
- }
- .product-card{
-   border-radius: 25px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-bottom: 3.1em;
-   
- }
- 
- .product-img{
-   margin-top: 2em;
-   margin-left: 5em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 18em;
- }
-
- }
- 
- @media screen and (max-width: 600px) {
-   .custom-card {
-     width: 120px;
-     height: 105px;
-     background-color: #efefef;
-     border-radius: 20px;
-   }
- 
-   .about-text{
-   margin-left: 2em;
-   margin-right: 2em;
-   font-size: 1.5em;
-  
- }
- 
- .custom-card-text{
-   font-size: 0.6em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- .custom-card-title{
-   font-size: 1em;
-   margin-top: 45px;
-   padding-top: 1em;
- 
- }
- 
- .main-button{
-   font-size: 0.8em;
- }
- 
- .product-card-title{
-    font-size: 1em;
-   margin-top: 60px;
-   margin-left: 20px;
- }
- 
- .card-slide{
-    width: 350px;
-   height: 200px;
- 
- }
- 
- .sheet-slide{
-  width: 340px;
-  height: 200px;
-}
- 
- .sensor-img{
-   margin: 1em 4.8em 0 0.8em;
-   
- }
- 
- .product-card{
-   border-radius: 25px;
-   margin: 3.1em 6.25em 3.1em 6.25em;
-   padding-top: 3.1em;
-   padding-bottom: 3.1em;
-   
- }
- 
- .kontrol-sheet{
-   height: 25em;
-   width: 18em;
- }
- .product-img{
-   margin-top: 2em;
-   margin-left: 5em;
-   
- }
- .lamp-sheet{
-    height: 25em;
-    width: 18em;
- }
- 
- 
- }
-  */
- .pad{
-    padding-left: 6em;
-    padding-right: 6em;
- }
  
  .main-text{
    padding-top: 130px;
@@ -728,10 +406,10 @@ padding:4px;
  }
  
  .about-subtext{
-   font-size: 1em;
+   
    color: black;
-   text-align: center;
-   margin: 1em 10em 0 10em;
+   
+   
  }
  
  .left-aligned-card {
@@ -740,14 +418,8 @@ padding:4px;
    color: black;
  }
  .main{
-  margin-top: 100px;
-   padding: 0px;
+  max-width: 100vw !important;
  }
- /* .img{
-   margin-left: 9em;
-   margin-top: 1em;
-   
- } */
  
  
  .about{
