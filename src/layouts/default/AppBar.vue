@@ -181,4 +181,8 @@
   }
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 </style>
