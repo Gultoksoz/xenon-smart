@@ -430,7 +430,8 @@ padding:4px;
    color: black;
  }
  .main{
-  max-width: 100vw !important;
+  padding: 0px;
+   margin-top: 100px;
  }
  
  
