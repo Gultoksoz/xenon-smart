@@ -19,7 +19,7 @@
           <v-spacer>
  
              <v-col cols="4" sm="6" md="4">
-             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
+             <v-btn class="product-btn" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
                Ürünleri incele
              </v-btn></v-col>
            </v-spacer>
@@ -325,6 +325,17 @@
  <style scoped >
  
  
+@media screen and (max-width: 1280px) {
+  .product-btn{
+    font-size: 0.8em;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .product-btn{
+    font-size: 0.6em;
+}
+}
 
  
 .card-title{
@@ -375,10 +386,11 @@ padding:4px;
 
  
  .main-text{
-   padding-top: 130px;
+  padding: 20px 0px;
    background-image: url('@/assets/product_background.png');
-   background-size: cover;
-    background-repeat: no-repeat;
+   background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 250px;
  }
  
  
