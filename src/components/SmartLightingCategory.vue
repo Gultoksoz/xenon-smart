@@ -24,7 +24,7 @@
                 ></v-img>
 
              <v-col cols="4" sm="6" md="4">
-             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
+             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın Al
              </v-btn></v-col>
            </v-spacer>
@@ -112,20 +112,20 @@
               v-model="model"
               selected-class="bg-success"
               show-arrows
-              class="d-flex align-center"
+              class="d-flex align-center "
             >
               <v-slide-group-item
-                v-for="(item) in rgbLamp"
+                v-for="item in rgbLamp"
                 :key="item.id"
               >
+              <v-spacer class="d-flex justify-center">
                 <v-scale-transition class="my-4">
-                  <v-spacer style="max-width: 100px;" class="text-center mx-2">
-                    <v-img max-height="80" :src="item.text" ></v-img>
-                    <span class="mt-2">
-                      RFID Kart Okuyucu
-                    </span>
+                  <v-spacer style="max-width: 100px;" class=" mx-2 ">
+                    <v-img max-height="80" :src="item.url" ></v-img>
+                    
                   </v-spacer>
                 </v-scale-transition>
+              </v-spacer>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
@@ -160,18 +160,18 @@
               selected-class="bg-success"
               show-arrows
             >
-              <v-slide-group-item
-                v-for="n in 15"
-                :key="n"
+              <v-slide-group-item 
+                v-for="item in rgbLamp"
+                :key="item.id"
               >
+              <v-spacer class="d-flex justify-center">
                 <v-scale-transition class="my-4">
-                  <v-spacer style="max-width: 100px;" class="text-center mx-2">
-                    <v-img max-height="80" src="@/assets/priz.svg"></v-img>
-                    <span class="mt-2">
-                      Akıllı Priz Tekli 
-                    </span>
+                  <v-spacer style="max-width: 100px;" class=" mx-2">
+                    <v-img max-height="80" :src="item.url"></v-img>
+                    
                   </v-spacer>
                 </v-scale-transition>
+              </v-spacer>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
@@ -260,21 +260,19 @@
               show-arrows
             >
               <v-slide-group-item
-                v-for="n in 15"
-                :key="n"
+                v-for="item in rgbLamp"
+                :key="item.id"
               >
-                
+              <v-spacer class="d-flex justify-center">
                   
                     <v-scale-transition class="my-4">
-                      <v-spacer style="max-width: 100px;" class="text-center mx-2">
-                        <v-img max-height="80" src="@/assets/perde_rolesi.svg"></v-img>
-                        <span class="mt-2">
-                        Akıllı Priz Rolesi 
-                      </span>
+                      <v-spacer style="max-width: 100px;" class=" mx-2">
+                        <v-img max-height="80" :src="item.url"></v-img>
+                        
                       </v-spacer>
                     </v-scale-transition>
                   
-                
+                  </v-spacer>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
@@ -323,19 +321,19 @@
       rgbLamp:[
         {
           id: 0,
-          text: "@/assets/Layer0.png",
+          url: "../../public/assets/Layer0.png",
         },
         {
           id: 1,
-          text: "@/assets/Layer1.png",
+          url: "../../public/assets/Layer1.png",
         },
         {
           id: 2,
-          text: "@/assets/Layer2.png",
+          url: "../../public/assets/Layer2.png",
         },
         {
           id: 3,
-          text: "@/assets/Layer3.png",
+          url: "../../public/assets/Layer3.png",
         }
       ]
      };

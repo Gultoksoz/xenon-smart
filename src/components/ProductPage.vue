@@ -24,8 +24,8 @@
                 ></v-img>
 
              <v-col cols="4" sm="6" md="4">
-             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
-               Özellikler
+             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+               Satın Al
              </v-btn></v-col>
            </v-spacer>
          </v-spacer>
