@@ -76,7 +76,7 @@
       </v-col>
       <v-col cols="6" md="4" lg="2">
         <v-card
-           class="d-flex align-center justify-center custom-card" @click="">
+           class="d-flex align-center justify-center custom-card" @click="$router.push('/smartlighting')">
            <v-card-title class="d-flex align-center justify-center flex-column ">
             <v-icon > <img src="@/assets/akilli_aydinlatma.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Aydınlatma</v-card-text></v-card-title>
