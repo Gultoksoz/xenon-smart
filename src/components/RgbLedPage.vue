@@ -96,7 +96,7 @@
        </v-col>
        
        <v-col cols="6" class="d-flex flex-column">
-         <v-spacer class="card-title">
+         <v-spacer class="card-title ">
              <span class="font-weight-bold">16 Milyon Renk Seçeneği</span>
            </v-spacer>
            <v-spacer class="card-text">
@@ -120,7 +120,7 @@
         <v-spacer class="card-title">
              <span class="font-weight-bold">Parlaklık Ayarı</span>
            </v-spacer>
-           <v-spacer class="card-text ml-2">
+           <v-spacer class="card-text temp">
             <span>
               Aydınlatma ihtiyacınıza uygun olarak ampulün parlaklığını artırabilir veya azaltabilirsiniz. Işığın yumuşaklığını ve yoğunluğunu kişisel tercihinize göre özelleştirebilirsiniz.
           </span>
@@ -157,7 +157,7 @@
          <v-spacer class="card-title">
              <span class="font-weight-bold">Uzaktan Kontrol</span>
            </v-spacer>
-           <v-spacer class="card-text">
+           <v-spacer class="card-text text-bottom">
             <span>
               Akıllı telefonunuz veya tabletiniz üzerinden ampulu uzaktan kontrol edebilirsiniz. Evinizde dolaşırken veya rahat bir koltuktan otururken ampulü açabilir, kapatabilir ve renkleri değiştirebilirsiniz.
           </span>
@@ -177,7 +177,7 @@
    <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
-        <v-spacer class="card-title">
+        <v-spacer class="card-title text-size">
              <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
            </v-spacer>
            <v-spacer class="card-text ml-2">
@@ -334,6 +334,30 @@ padding:4px;
   width: 80%;
   margin-top:8px
 }
+
+@media screen and (max-width: 600px) {
+  .temp{
+  margin-left: 25px;
+  margin-bottom: 12px;
+  
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .text-bottom{
+  margin-right: 8px;
+  margin-bottom: 12px;
+  
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .text-size{
+  font-size: 1.3em;  
+ }
+}
+
+
 
  .custom-text{
    align-items :center;
