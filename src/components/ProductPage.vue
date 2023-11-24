@@ -213,7 +213,7 @@
        <v-col cols="12" class="d-flex flex-column custom-text">
          
          <span class="font-weight-bold" style="font-size: 1.5em; width: 90%;">Google Home ve Alexa uyumluluğu ile evinizin aydınlatmasını tam anlamıyla akıllı hale getiriyor.  Ortamın atmosferini parmaklarınızın ucuyla yönetin!</span>
-          <v-img width="90%" class="mt-4" src="@/assets/Layer_1.png"/>
+          <v-img width="50%" max-width="1000" class="mt-4" src="@/assets/Layer_1.png"/>
        </v-col>
      </v-spacer>
    </v-row>
@@ -382,6 +382,14 @@ padding:4px;
   .rgb-text{
   text-align: center;
   font-size: 2vw;
+  
+ }
+}
+
+@media screen and (min-width: 1920px) {
+  .rgb-text{
+  text-align: center;
+  font-size: 1.4vw;
   
  }
 }

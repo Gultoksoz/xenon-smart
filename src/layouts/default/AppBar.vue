@@ -1,6 +1,8 @@
 <template>
   <v-app-bar app flat  height="100" >
-    <v-row no-gutters>
+    <v-row no-gutters class="d-flex align-start justify-center">
+      <v-spacer class="d-flex flex-wrap" style="max-width: 2560px;">
+
       <v-col cols="12" md="3" class="d-flex align-center justify-center mt-3">
         <v-img
           class="logo mt-1"
@@ -14,38 +16,43 @@
     
       <v-col cols="12" md="9"  class="d-flex px-0 py-0">
         <v-col cols="9" class="d-flex align-center justify-center  py-0">
-        <v-spacer class="menu">
-          <v-sheet class="chips">
-            <v-chip
-              text-color="black"
-              variant="text"
-              class="custom-chip" 
-              @click.stop="drawer = !drawer"
-              > Ürünler
-              <v-icon end icon="mdi mdi-chevron-down"></v-icon>
-            </v-chip>
+        <v-spacer class="menu d-flex">
+          <v-sheet class="chips px-4" style="background-color: #E6E6E6; border-radius: 45px;">
+            <v-chip-group
+              v-model="selection"
+              selected-class="custom-chip"
+              mandatory
+            >
+              <v-chip
+                class="mx-1"
+                text-color="black"
+                variant="text"
+                @click.stop="drawer = !drawer"
+                > Ürünler
+                <v-icon end icon="mdi mdi-chevron-down"></v-icon>
+              </v-chip>
           
-            <v-chip text-color="black" @click="" variant="text" class="custom-chip">Online Mağaza</v-chip>
-            <v-chip text-color="black" @click="" variant="text" class="custom-chip">Destek</v-chip>
-            <v-chip text-color="black" @click="$router.push('/contact')" variant="text" class="custom-chip">İletişim</v-chip>
+            <v-chip class="mx-1" text-color="black" @click="" variant="text" >Online Mağaza</v-chip>
+            <v-chip class="mx-1" text-color="black" @click="" variant="text" >Destek</v-chip>
+            <v-chip class="mx-1" text-color="black" @click="$router.push('/contact')" variant="text" >İletişim</v-chip></v-chip-group>
           </v-sheet>
         </v-spacer>
         </v-col>
         <v-col cols="3" class=" py-0">
-        <v-spacer class="d-flex align-center justify-center">
+          <v-spacer class="d-flex align-center justify-center">
 
-        <v-select class="list-lang mt-5"
-          v-model="selectedItem"
-          :items="languageOptions"
-          item-title="title"
-          item-value="value"
-          return-object
-          variant="text"
-        ></v-select>
-   
-        <v-icon class="" icon="mdi mdi-web"></v-icon>
-      </v-spacer>
-    </v-col>
+            <v-select class="list-lang mt-5"
+              v-model="selectedItem"
+              :items="languageOptions"
+              item-title="title"
+              item-value="value"
+              return-object
+              variant="text"
+            ></v-select>
+            
+            <v-icon icon="mdi mdi-web" style="background-color: #E6E6E6; border-radius: 20px;"></v-icon>
+          </v-spacer>
+        </v-col>
 
 
       </v-col>
@@ -55,6 +62,8 @@
       </v-col> -->
 
        
+ 
+    </v-spacer>
  
     </v-row>
   </v-app-bar>
@@ -140,6 +149,7 @@
   export default {
   data() {
     return {
+      selection: '',
       selectedItem:  { title: 'TR', value: 'TR' },
       languageOptions: [
           { title: 'TR', value: 'TR' },
@@ -304,6 +314,10 @@
       group () {
         this.drawer = false
       },
+      drawer(val) {
+        if(!val)
+          this.selection = ""
+      }
     },
   methods: {
     myEventHandler(e) {
@@ -331,6 +345,11 @@
 .link{
   font-weight: bold;
   color: black;
+}
+
+.custom-chip{
+background-color: white;
+border-radius: 15px;
 }
 
 </style>

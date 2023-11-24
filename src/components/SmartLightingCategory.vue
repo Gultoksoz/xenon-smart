@@ -121,7 +121,7 @@
               <v-spacer class="d-flex justify-center">
                 <v-scale-transition class="my-4">
                   <v-spacer style="max-width: 100px;" class=" mx-2 ">
-                    <v-img max-height="80" :src="item.url" ></v-img>
+                    <v-img aspect-ratio="1" max-height="80" :src="item.url" ></v-img>
                     
                   </v-spacer>
                 </v-scale-transition>

@@ -1,9 +1,16 @@
 <template>
   <v-app>
-    <default-bar />
+    <v-spacer class="d-flex align-start justify-center">
 
-    <default-view />
-    <Footer />
+      <v-spacer style=" max-width: 2560px;">
+
+        <default-bar />
+
+        <default-view />
+        <Footer />
+      </v-spacer>
+    </v-spacer>
+
   </v-app>
 </template>
 
