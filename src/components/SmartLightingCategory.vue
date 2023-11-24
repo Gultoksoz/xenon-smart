@@ -13,7 +13,7 @@
           </v-spacer>
            <v-spacer class="mb-4 mt-2" style="font-size: 16px;">
             <span>
-              Akıllı Ampul ile evinizi kişiselleştirin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!
+              Estetik tasarımı ve gelişmiş özellikleriyle bu akıllı aydınlatma sistemi, evinizde veya ofisinizde aydınlatma deneyiminizi başka bir seviyeye taşıyacak.
             </span>
           </v-spacer>
           <v-spacer>
@@ -143,7 +143,7 @@
               class="kontrol_grubu_img"
               width="auto"
               aspect-ratio="4/3"
-              src="@/assets/Layer23.png"
+              src="@/assets/Layer24.png"
             ></v-img>
           </v-sheet>
         </v-spacer>
@@ -180,14 +180,15 @@
       <v-col md="4" xl="6" class="px-0">
         <v-spacer class="card-title">
           <div>
-            <span>Akıllı Tekli  Anahtar,</span> 
-                enerji verimliliği ve kolay kontrol  sağlayan modern çözüm.
+            <span>Dokunmatik Üçlü  Anahtar,</span> 
+             
+            enerji verimliliği ve kolay kontrol  sağlayan modern çözüm.
           </div>
           </v-spacer>
           <v-spacer class="card-text">
             <div>
             <span>
-                Ev otomasyonunu zirveye taşıyan bir çözümdür. Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar. Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir ve yüksek güvenlik önlemleriyle evinizi korur. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
+              Ev otomasyonunu zirveye taşıyan bir çözümdür. Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar. Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir ve yüksek güvenlik önlemleriyle evinizi korur. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
           </span>
         </div>
           </v-spacer>
@@ -413,7 +414,7 @@ padding:4px;
 
 
  .kontrol-card-color{
-   background-color: #E2FFF0;
+   background-color: #F9F9F9;
  }
 
  .key-card{
