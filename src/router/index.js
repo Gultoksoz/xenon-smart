@@ -7,7 +7,7 @@ const routes = [
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
-        path: '',
+        path: '/',
         name: 'Home',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
@@ -15,7 +15,7 @@ const routes = [
         component: () => import('@/views/Home.vue'),
       },
       {
-        path: 'category',
+        path: '/category',
         name: 'category',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
@@ -23,7 +23,7 @@ const routes = [
         component: () => import('@/views/Category.vue'),
       },
       {
-        path: 'product',
+        path: '/product',
         name: 'product',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
@@ -31,7 +31,7 @@ const routes = [
         component: () => import('@/views/Product.vue'),
       },
       {
-        path: 'about',
+        path: '/about',
         name: 'about',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
@@ -39,7 +39,7 @@ const routes = [
         component: () => import('@/views/About.vue'),
       },
       {
-        path: 'contact',
+        path: '/contact',
         name: 'contact',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
@@ -47,7 +47,7 @@ const routes = [
         component: () => import('@/views/Contact.vue'),
       },
       {
-        path: 'smartlighting',
+        path: '/smartlighting',
         name: 'smartlighting',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
@@ -55,7 +55,7 @@ const routes = [
         component: () => import('@/views/SmartLighting.vue'),
       },
       {
-        path: 'touchtripleswitch',
+        path: '/touchtripleswitch',
         name: 'touchtripleswitch',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route

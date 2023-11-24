@@ -128,6 +128,26 @@
               </v-spacer>
               </v-slide-group-item>
             </v-slide-group>
+            <v-slide-group
+              v-model="model"
+              selected-class="bg-success"
+              show-arrows
+              class="d-flex align-center "
+            >
+              <v-slide-group-item
+                v-for="item in rgbLamp2"
+                :key="item.id"
+              >
+              <v-spacer class="d-flex justify-center">
+                <v-scale-transition class="my-4">
+                  <v-spacer style="max-width: 100px;" class=" mx-2 ">
+                    <v-img aspect-ratio="1" max-height="80" :src="item.url" ></v-img>
+                    
+                  </v-spacer>
+                </v-scale-transition>
+              </v-spacer>
+              </v-slide-group-item>
+            </v-slide-group>
           </v-sheet>
         </v-spacer>
       </v-col>
@@ -334,6 +354,24 @@
         {
           id: 3,
           url: "../../public/assets/Layer3.png",
+        }
+      ],
+      rgbLamp2:[
+        {
+          id: 0,
+          url: "@/assets/Layer0.png",
+        },
+        {
+          id: 1,
+          url: "@/assets/Layer1.png",
+        },
+        {
+          id: 2,
+          url: "@/assets/Layer2.png",
+        },
+        {
+          id: 3,
+          url: "@/assets/Layer3.png",
         }
       ]
      };
