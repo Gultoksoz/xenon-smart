@@ -2,7 +2,7 @@
   <v-app>
     <v-spacer class="d-flex align-start justify-center">
 
-      <v-spacer style=" max-width: 2560px;">
+      <v-spacer style="width: 100%; max-width: 2560px;">
 
         <default-bar />
 

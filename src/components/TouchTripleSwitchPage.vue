@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="main" style="margin-top: 100px;">
+    <v-container fluid class="main" style="margin-top: 180px;">
       <v-carousel hide-delimiters>
   <v-carousel-item
   >
@@ -11,7 +11,7 @@
             <span class="font-weight-bold">Akıllı Üçlü Anahtar,</span>
             <span>enerji verimliliği ve kolay kontrol sağlayan modern çözüm.</span>
           </v-spacer>
-           <v-spacer class="mb-4 mt-2" style="font-size: 16px;">
+           <v-spacer class="mb-1 mt-2" style="font-size: 16px;">
             <span>
                 Ev otomasyonunu zirveye taşıyan bir çözümdür. Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar.
             </span>
@@ -24,7 +24,7 @@
                 ></v-img>
 
              <v-col cols="4" sm="6" md="4">
-             <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+             <v-btn size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın Al
              </v-btn></v-col>
            </v-spacer>
@@ -119,7 +119,7 @@
         <v-spacer class="card-title">
              <span class="font-weight-bold">Parlaklık Ayarı</span>
            </v-spacer>
-           <v-spacer class="card-text ml-2">
+           <v-spacer class="card-text  temp">
             <span>
               Aydınlatma ihtiyacınıza uygun olarak ampulün parlaklığını artırabilir veya azaltabilirsiniz. Işığın yumuşaklığını ve yoğunluğunu kişisel tercihinize göre özelleştirebilirsiniz.
           </span>
@@ -308,6 +308,17 @@
 }
 .card-title div {
   width: 80%;
+}
+
+
+
+
+
+ @media screen and (max-width: 600px) {
+  .temp{
+  margin-left: 28px;
+  margin-bottom: 10px;
+}
 }
 
 .card-title div span {
