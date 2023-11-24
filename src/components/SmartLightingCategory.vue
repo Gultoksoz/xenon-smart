@@ -92,12 +92,12 @@
       </v-col>
       <v-col md="8" xl="6" class="px-0" >
         <v-spacer class="d-flex justify-center my-4">
-        <v-sheet width="80%" class="d-flex justify-center align-center background" elevation="0"  color="#cccccc">
+        <v-sheet width="80%" class="d-flex justify-center align-center key-card" elevation="0"  color="#cccccc">
           <v-img
-            
-          max-width="160"
+          width="auto"
+          
             aspect-ratio="4/3"
-            src="@/assets/lamp.svg"
+            src="@/assets/Rectangle12.png"
           ></v-img>
         </v-sheet>
       </v-spacer>
