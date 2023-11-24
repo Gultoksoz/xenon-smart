@@ -1,5 +1,5 @@
 <template>
-   <v-container fluid class="main" style="margin-top: 100px;">
+   <v-container fluid class="main" style="margin-top: 180px;">
     <v-row class="header_element">
       <v-col cols="12" md="6">
         <v-card class="left-aligned-card" variant="text">
@@ -17,14 +17,14 @@
           <v-spacer>
 
             <v-col>
-            <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
+            <v-btn class="main-button" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push()">
               Ürünleri incele
             </v-btn></v-col>
           </v-spacer>
         </v-card>
       </v-col>
       <v-col cols="12" md="6" class="d-flex align-center justify-center">
-        <v-img class="img"
+        <v-img 
           max-width="650"
           aspect-ratio="4/3"
           src="@/assets/main.png"
@@ -36,7 +36,7 @@
     <v-col class="d-flex flex-wrap align-center justify-space-around">
       <v-col cols="6" md="4" lg="2" >
         <v-card
-           class="d-flex align-center justify-center  custom-card" @click="$router.push('/product')">
+           class="d-flex align-center justify-center  custom-card" @click="$router.push('/RgbLed')">
            <v-card-title class="d-flex align-center justify-center flex-column">
            <v-icon > <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon>
            <v-card-text class="custom-card-text">Akıllı Geçiş Kontrol</v-card-text></v-card-title>
@@ -134,7 +134,7 @@
         <v-spacer class="d-flex justify-center my-4">
         <v-sheet width="80%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#cccccc">
           <v-img
-            class="product-img"
+            
             width="auto"
             aspect-ratio="4/3"
             src="@/assets/giris_kontrol.png"
@@ -388,10 +388,6 @@ padding:4px;
   
 }
 
-.product-img{
-  /* margin-top: 1.8em; */
-  
-}
 
 .slider-text{
   font-size: 0.6em;
@@ -431,10 +427,7 @@ padding:4px;
   padding-right: 6em; */
   max-width: 100vw !important;
 }
-.img{
-  /* margin-left: auto; */
-  
-}
+
 
 
 .about{

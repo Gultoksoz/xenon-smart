@@ -1,9 +1,9 @@
 <template>
-  <v-app-bar app flat  height="100" >
+  <v-app-bar app flat  height="180" >
     <v-row no-gutters class="d-flex align-start justify-center">
       <v-spacer class="d-flex flex-wrap" style="max-width: 2560px;">
 
-      <v-col cols="12" md="3" class="d-flex align-center justify-center mt-3">
+      <v-col cols="12" md="3" class="d-flex align-center justify-center mb-3">
         <v-img
           class="logo mt-1"
           src="@/assets/Xenon-Logo.png" 

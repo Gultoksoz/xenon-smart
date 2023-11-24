@@ -2,7 +2,7 @@
 <template>
     <v-container fluid class="main_page">
         <v-spacer class="d-flex flex-wrap">
-            <v-col cols="12" md="3" xs class="d-flex align-center justify-center">
+            <v-col cols="12" md="3" xs class="d-flex align-center justify-start px-0">
                 <strong class="big-text">Hakkımızda</strong>
             </v-col>
             <v-spacer></v-spacer>
@@ -112,7 +112,7 @@ Xenon Smart olarak, bu değerlere sıkı sıkıya bağlı kalarak, müşterileri
  </script>
  <style scoped>
  .main_page{
-     padding-top: 100px;
+     padding-top: 190px;
   }
 
   .small-text{

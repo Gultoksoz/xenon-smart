@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="main" style="margin-top: 100px;">
+    <v-container fluid class="main" style="margin-top: 180px;">
       <v-carousel hide-delimiters>
   <v-carousel-item
   >

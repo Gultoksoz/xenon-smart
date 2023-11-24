@@ -1,7 +1,7 @@
 
 <template>
     <v-container fluid >
-        <v-row class="d-flex header">
+        <v-row class="d-flex header mt-4">
             <v-col cols="6" class="d-flex flex-column align-start justify-start">
                 <strong class="big-text ">İletişim</strong>
             </v-col >
@@ -9,10 +9,6 @@
         </v-row>
         <v-row class="d-flex flex-wrap" >
 
-          
-          <!-- <v-col cols="8" md="8"  class="background-map " @click="redirectToLink" >
-            <v-icon class="pin" > <img width="32" src="@/assets/pin.svg"/></v-icon>
-          </v-col> -->
           
           <v-spacer>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3006.0412900578685!2d28.9868288!3d41.1117893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab54b7efb98d5%3A0xac34d0462f5f7c92!2sBili%C5%9Fim%20Vadisi%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1700563845234!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -131,10 +127,6 @@ Gebze, Kocaeli Türkiye</p>
   margin-top: 2em;
  }
 
- .pin{
-  margin-top: 2em;
-  margin-left: 5em;
- }
 
  .text-color{
   color: gray;
