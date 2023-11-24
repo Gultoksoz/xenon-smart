@@ -383,18 +383,6 @@ padding:4px;
 }
 
 
-.main-text{
-  padding-top: 100px;
-  
-}
-
-
-.slider-text{
-  font-size: 0.6em;
-  font-weight: 600;
-  margin-top: 1em;
-}
-
 
 .kontrol-card-color{
   background-color: #EBF7F1;
@@ -404,17 +392,7 @@ padding:4px;
   background-color: #F0F6FB ;
 }
 
-.product-button{
-  padding-bottom: 18em;
-  padding-left: 1.8em;
-}
 
-.about-subtext{
-  font-size: 1em;
-  color: black;
-  text-align: center;
-  margin: 1em 10em 0 10em;
-}
 
 .left-aligned-card {
   margin-left: 3em;
@@ -428,23 +406,6 @@ padding:4px;
   max-width: 100vw !important;
 }
 
-
-
-.about{
-  color: gray;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-}
-
-
-.product-card-text{
-  font-size: 1em;
-  margin-top: 2em;
-  margin-left: 1.2em;
-}
 
 </style>
   
