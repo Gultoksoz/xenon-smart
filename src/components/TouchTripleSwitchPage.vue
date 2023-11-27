@@ -70,7 +70,7 @@
      <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
         
         <h1 class="font-weight-bold mb-4 mt-8" >Nerede olursan ol!</h1>
-         <span class="rgb-text " > Xenon Smart mobil uygulası sayesinde <br class="my-2"> dünyanın herhangi bir yerinden evinize erişebiliyorsunuz.</span>
+         <span class="rgb-text " > Xenon Smart mobil uygulaması sayesinde <br class="my-2"> dünyanın herhangi bir yerinden evinize erişebiliyorsunuz.</span>
          <v-card-actions>
              <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
