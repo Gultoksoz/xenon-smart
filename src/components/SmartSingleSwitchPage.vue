@@ -90,7 +90,7 @@
        <v-col cols="6" class="d-flex">
            <v-img
              cover
-             src="@/assets/Layer32.png"
+             src="@/assets/Layer72.png"
            ></v-img>
        </v-col>
        
