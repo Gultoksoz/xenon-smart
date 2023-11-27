@@ -7,11 +7,11 @@
     <v-col cols="2" sm="1"></v-col>
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
-           <v-spacer class="d-flex flex-column " style="font-size: 28px;">
+           <v-spacer class="d-flex flex-column main-size" >
             <span class="font-weight-bold">Akıllı aydınlatma ile</span>
             <span>yaşam alanlarınız daha renkli, daha akıllı ve daha keyifli...</span>
           </v-spacer>
-           <v-spacer class="mb-4 mt-2" style="font-size: 16px;">
+           <v-spacer class="mb-4 mt-2 subtext-size">
             <span>
               Estetik tasarımı ve gelişmiş özellikleriyle bu akıllı aydınlatma sistemi, evinizde veya ofisinizde aydınlatma deneyiminizi başka bir seviyeye taşıyacak.
             </span>
@@ -356,8 +356,29 @@
   .product-btn{
     font-size: 0.6em;
 }
+
+.main-size{
+  font-size: 0.9em;  
+ }
+
+.subtext-size{
+  font-size: 0.8em;  
+ }
+
 }
 
+
+@media screen and (min-width: 600px) {
+
+.main-size{
+  font-size: 1.3em;  
+ }
+
+.subtext-size{
+  font-size: 1em;  
+ }
+
+}
  
 .card-title{
   display: flex;

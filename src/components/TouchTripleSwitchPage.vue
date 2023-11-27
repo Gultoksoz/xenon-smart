@@ -7,11 +7,11 @@
     <v-col cols="2" sm="1"></v-col>
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
-           <v-spacer class="d-flex flex-column " style="font-size: 28px;">
-            <span class="font-weight-bold">Akıllı Üçlü Anahtar,</span>
-            <span>enerji verimliliği ve kolay kontrol sağlayan modern çözüm.</span>
+           <v-spacer class="d-flex flex-column main-size " >
+            <span class="font-weight-bold">Dokunmatik Üçlü Anahtar,</span>
+            <span>enerji verimliliği ve kolay kontrol  sağlayan modern çözüm.</span>
           </v-spacer>
-           <v-spacer class="mb-1 mt-2" style="font-size: 16px;">
+           <v-spacer class="mb-1 mt-2 subtext-size">
             <span>
                 Ev otomasyonunu zirveye taşıyan bir çözümdür. Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar.
             </span>
@@ -54,7 +54,7 @@
    
    <!-- <v-row class="d-flex flex-column"> -->
     <v-spacer class="text-center mt-6">
-      <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Üçlü Anahtar </h3>
+      <h3 class="font-weight-bold mb-4" style="color: gray;">Dokunmatik Üçlü Anahtar </h3>
       <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.</p>
      </v-spacer>
      <v-spacer class=" d-flex flex-wrap justify-space-around">
@@ -90,17 +90,17 @@
        <v-col cols="6" class="d-flex">
            <v-img
              cover
-             src="@/assets/parlaklik_background.png"
+             src="@/assets/Layer32.png"
            ></v-img>
        </v-col>
        
        <v-col cols="6" class="d-flex flex-column">
          <v-spacer class="card-title">
-             <span class="font-weight-bold">16 Milyon Renk Seçeneği</span>
+             <span class="font-weight-bold">Kolay Kurulum</span>
            </v-spacer>
            <v-spacer class="card-text">
             <span>
-            Geniş renk paleti sayesinde ampulünüzü istediğiniz her renge ayarlayabilirsiniz. Renk tekerleği ile kolayca favori renklerinizi seçebilirsiniz.
+              Akıllı Tekli Anahtar, basit kurulumu sayesinde herkesin kullanabileceği bir üründür. Mevcut anahtar prizinize takmanız yeterli, ardından mobil uygulama ile eşleştirme işlemini gerçekleştirin ve kontrolü elinize alın.
           </span>
           </v-spacer>
            
@@ -111,35 +111,38 @@
    </v-card>
   </v-spacer>
 
+
  <v-spacer class="d-flex align-center justify-center">
 
-   <v-card class="parlaklik-card" style="background-color: #FFF9F4 ;" variant="tonal">
-     <v-row>
-       <v-col cols="6" class="d-flex flex-column">
-        <v-spacer class="card-title">
-             <span class="font-weight-bold">Parlaklık Ayarı</span>
-           </v-spacer>
-           <v-spacer class="card-text  temp">
-            <span>
-              Aydınlatma ihtiyacınıza uygun olarak ampulün parlaklığını artırabilir veya azaltabilirsiniz. Işığın yumuşaklığını ve yoğunluğunu kişisel tercihinize göre özelleştirebilirsiniz.
-          </span>
-          </v-spacer>
-           
-       </v-col>
-       
-        <v-col cols="6" class="d-flex">
-           <v-img
-             cover
-             max-width="760"
-             src="@/assets/xenonsmart-brightnes.gif"
-           ></v-img>
-      
-       </v-col>
-     </v-row>
-   </v-card>
- </v-spacer>
 
-   <v-spacer class="d-flex align-center justify-center">
+<v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
+  <v-row>
+
+    <v-col cols="6" class="d-flex">
+        <v-img
+          cover
+          src="@/assets/Group37.png"
+        ></v-img>
+    </v-col>
+    
+    <v-col cols="6" class="d-flex flex-column">
+      <v-spacer class="card-title">
+          <span class="font-weight-bold">Uzaktan Kontrol</span>
+        </v-spacer>
+        <v-spacer class="card-text">
+         <span>
+          Mobil uygulama aracılığıyla kullanıcıya ev içindeki aydınlatma sistemini uzaktan kontrol etme imkanı sunar. Bu, evde olmadığınız zamanlarda bile ışıkları kontrol etme ve programlama özgürlüğü sağlar.
+       </span>
+       </v-spacer>
+        
+
+    </v-col>
+    
+  </v-row>
+</v-card>
+</v-spacer>
+
+   <!-- <v-spacer class="d-flex align-center justify-center">
 
 
    <v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
@@ -167,7 +170,7 @@
        
      </v-row>
    </v-card>
-  </v-spacer>
+  </v-spacer> -->
 
 
    <v-spacer class="d-flex align-center justify-center">
@@ -176,7 +179,7 @@
    <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
-        <v-spacer class="card-title">
+        <v-spacer class="card-title text-size">
              <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
            </v-spacer>
            <v-spacer class="card-text ml-2">
@@ -202,7 +205,7 @@
    <v-row class="d-flex flex-column">
     <v-spacer class="text-center mt-6 mb-6">
        
-      <h3 class="font-weight-bold" style="color: gray;">RGB Led Ampul </h3>
+      <h3 class="font-weight-bold" style="color: gray;">Dokunmatik Üçlü Anahtar </h3>
       
      </v-spacer>
    
@@ -226,7 +229,7 @@
              cover
              width="45%"
              max-width="760"
-             src="@/assets/Group59.png"
+             src="@/assets/Group69.png"
            ></v-img>
            
 
@@ -237,7 +240,7 @@
              cover
              width="45%"
              max-width="760"
-             src="@/assets/Group63.png"
+             src="@/assets/Group33.png"
            ></v-img>
       
        </v-col>
@@ -248,7 +251,7 @@
    <v-row class="d-flex flex-column">
     <v-spacer class="text-center mt-6 mb-3">
        
-      <h3 class="font-weight-bold" style="color: gray;">RGB Led Ampul </h3>
+      <h3 class="font-weight-bold" style="color: gray;">Dokunmatik Üçlü Anahtar</h3>
       
      </v-spacer>
    
@@ -258,7 +261,7 @@
        <v-col cols="12" class="d-flex flex-column custom-text">
          <v-spacer  style="width: 90%;">
 
-         <span class="font-weight-bold" style="font-size: 1.5em;">RGB Led Ampul ile evinizi kişiselleştirin, odalarınıza özel bir dokunuş ekleyin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!</span>
+         <span class="font-weight-bold" style="font-size: 1.5em;">Akıllı Üçlü  Anahtar, uzaktan kontrol, zamanlayıcı fonksiyonu, ses kontrolü, kolay kurulum ve yüksek güvenlik özellikleriyle evinizi akıllı, enerji verimli ve güvenli bir şekilde kontrol etmenizi sağlayan modern bir çözümdür.</span>
          <v-spacer class="card-action mt-4">
             <div >
             <v-btn size="x-large" density="compact" rounded="xl" variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
@@ -312,14 +315,23 @@
 
 
 
+@media screen and (max-width: 600px) {
+  .text-size{
+  font-size: 1.3em;  
+ }
 
+ 
 
- @media screen and (max-width: 600px) {
-  .temp{
-  margin-left: 28px;
-  margin-bottom: 10px;
+.main-size{
+  font-size: 0.9em;  
+ }
+
+.subtext-size{
+  font-size: 0.8em;  
+ }
+
 }
-}
+
 
 .card-title div span {
   font-weight: bold;
@@ -387,6 +399,18 @@ padding:4px;
   font-size: 3vw;
   
  }
+
+ .main-size{
+  font-size: 1.3em;  
+ }
+
+.subtext-size{
+  font-size: 1em;  
+ }
+
+
+
+
 }
 
 
