@@ -78,6 +78,14 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import('@/views/SmartDualSwitch.vue'),
       },
+      {
+        path: '/doorsensor',
+        name: 'doorsensor',
+        // route level code-splitting
+        // this generates a separate chunk (Home-[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('@/views/DoorSensor.vue'),
+      },
 
     ],
   },
