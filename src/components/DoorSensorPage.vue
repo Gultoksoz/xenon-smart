@@ -8,12 +8,12 @@
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
            <v-spacer class="d-flex flex-column main-size " >
-            <span class="font-weight-bold">Akıllı İkili Switch,</span>
-            <span>enerji verimliliği ve kolay kontrol  sağlayan modern çözüm.</span>
+            <span class="font-weight-bold">Akıllı Kapı Sensörü,</span>
+            <span> ev güvenliğinizi bir üst seviyeye taşımak için tasarlandı.</span>
           </v-spacer>
            <v-spacer class="mb-1 mt-2 subtext-size">
             <span>
-                Ev otomasyonunu zirveye taşıyan bir çözümdür. Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar.
+                Akıllı Kapı Sensörü, kapılarınızın durumunu anında izlemenize ve kontrol etmenize olanak tanır. Kablosuz teknoloji ile donatılmış bu akıllı sensör, kullanımı kolay özellikleri ile güvenliği artırır ve ev otomasyonunu optimize eder.
             </span>
           </v-spacer>
           <v-spacer>
@@ -48,8 +48,9 @@
    
    <!-- <v-row class="d-flex flex-column"> -->
     <v-spacer class="text-center mt-6">
-      <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı İkili Switch</h3>
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.</p>
+      <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Kapı Sensörü</h3>
+      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Kablosuz teknoloji ile donatılmış akıllı kapı sensörü, kullanımı kolay özellikleri ile güvenliği artırır ve ev otomasyonunu optimize eder.
+        </p>
      </v-spacer>
      <v-spacer class=" d-flex flex-wrap justify-space-around">
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/app-store.png"/></v-col> 
@@ -63,8 +64,8 @@
     <v-spacer class="d-flex align-center justify-center">
      <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
         
-        <h1 class="font-weight-bold mb-4 mt-8" >Nerede olursan ol!</h1>
-         <span class="rgb-text " > Xenon Smart mobil uygulaması sayesinde <br class="my-2"> dünyanın herhangi bir yerinden evinize erişebiliyorsunuz.</span>
+        <h1 class="font-weight-bold mb-4 mt-8" >Akıllı Kapı Sensörü</h1>
+         <span class="rgb-text " >Xenon Smart uygulaması sayesinde kapılarınızın durumunu <br class="my-2">her an  her yerden takip ve kontrol edebilirsiniz. </span>
          <v-card-actions>
              <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
@@ -84,17 +85,17 @@
        <v-col cols="6" class="d-flex">
            <v-img
              cover
-             src="@/assets/Layer72.png"
+             src="@/assets/Group53.png"
            ></v-img>
        </v-col>
        
        <v-col cols="6" class="d-flex flex-column">
-         <v-spacer class="card-title">
-             <span class="font-weight-bold">Kolay Kurulum</span>
+         <v-spacer class="card-title text-size">
+             <span class="font-weight-bold">Uzaktan Kontrol</span>
            </v-spacer>
-           <v-spacer class="card-text">
-            <span>
-              Akıllı Tekli Anahtar, basit kurulumu sayesinde herkesin kullanabileceği bir üründür. Mevcut anahtar prizinize takmanız yeterli, ardından mobil uygulama ile eşleştirme işlemini gerçekleştirin ve kontrolü elinize alın.
+           <v-spacer class="card-text mr-2 mb-2">
+            <span class="subtext-size">
+                Akıllı telefonunuz veya tabletiniz üzerinden ampulu uzaktan kontrol edebilirsiniz. Evinizde dolaşırken veya rahat bir koltuktan otururken ampulü açabilir, kapatabilir ve renkleri değiştirebilirsiniz.
           </span>
           </v-spacer>
            
@@ -106,26 +107,57 @@
   </v-spacer>
 
 
+  <v-spacer class="d-flex align-center justify-center">
+
+
+<v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
+  <v-row>
+    <v-col cols="6" class="d-flex flex-column">
+     <v-spacer class="card-title text-size">
+          <span class="font-weight-bold">Anlık Bildirimler</span>
+        </v-spacer>
+        <v-spacer class="card-text ml-2 mb-2">
+         <span class="subtext-size">
+            Kapı durumu değiştiğinde anında bildirim alın. Bu sayede evinizi istenmeyen ziyaretçilere karşı koruyabilirsiniz.
+       </span>
+       </v-spacer>
+        
+    </v-col>
+    
+     <v-col cols="6" class="d-flex">
+        <v-img
+          cover
+          max-width="760"
+          src="@/assets/Layer33.png"
+        ></v-img>
+   
+    </v-col>
+  </v-row>
+</v-card>
+</v-spacer>
+
+
+
  <v-spacer class="d-flex align-center justify-center">
 
 
-<v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
+<v-card class=" parlaklik-card " style="background-color: #FAF6FF ;" variant="tonal">
   <v-row>
 
     <v-col cols="6" class="d-flex">
         <v-img
           cover
-          src="@/assets/Group17.png"
+          src="@/assets/Layer42.png"
         ></v-img>
     </v-col>
     
     <v-col cols="6" class="d-flex flex-column">
-      <v-spacer class="card-title">
-          <span class="font-weight-bold">Uzaktan Kontrol</span>
+      <v-spacer class="card-title text-size">
+          <span class="font-weight-bold">Entegrasyon Yeteneği</span>
         </v-spacer>
-        <v-spacer class="card-text">
-         <span>
-          Mobil uygulama aracılığıyla kullanıcıya ev içindeki aydınlatma sistemini uzaktan kontrol etme imkanı sunar. Bu, evde olmadığınız zamanlarda bile ışıkları kontrol etme ve programlama özgürlüğü sağlar.
+        <v-spacer class="card-text mb-3" >
+         <span class="subtext-size mr-3">
+            Akıllı ev ekosistemine sorunsuz entegrasyon sağlar. Diğer akıllı cihazlarla birlikte çalışarak evinizi tam anlamıyla otomatikleştirebilirsiniz.
        </span>
        </v-spacer>
         
@@ -136,36 +168,6 @@
 </v-card>
 </v-spacer>
 
-   <!-- <v-spacer class="d-flex align-center justify-center">
-
-
-   <v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
-     <v-row>
- 
-       <v-col cols="6" class="d-flex">
-           <v-img
-             cover
-             src="@/assets/phone.png"
-           ></v-img>
-       </v-col>
-       
-       <v-col cols="6" class="d-flex flex-column">
-         <v-spacer class="card-title">
-             <span class="font-weight-bold">Uzaktan Kontrol</span>
-           </v-spacer>
-           <v-spacer class="card-text">
-            <span>
-              Akıllı telefonunuz veya tabletiniz üzerinden ampulu uzaktan kontrol edebilirsiniz. Evinizde dolaşırken veya rahat bir koltuktan otururken ampulü açabilir, kapatabilir ve renkleri değiştirebilirsiniz.
-          </span>
-          </v-spacer>
-           
- 
-       </v-col>
-       
-     </v-row>
-   </v-card>
-  </v-spacer> -->
-
 
    <v-spacer class="d-flex align-center justify-center">
 
@@ -174,11 +176,11 @@
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
         <v-spacer class="card-title text-size">
-             <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
+             <span class="font-weight-bold">Hava Koşullarına Dayanıklılık</span>
            </v-spacer>
            <v-spacer class="card-text ml-2">
-            <span>
-              Ampulu belirli bir zamanda otomatik olarak açabilir veya kapatabilirsiniz. Zamanlayıcı özelliği ile güneş batışı efektleri oluşturabilir veya gece lambası olarak kullanabilirsiniz.
+            <span class="subtext-size mb-3">
+                Dayanıklı tasarımı sayesinde iç ve dış mekan kapılarında güvenle kullanılabilir. Sert hava koşullarına karşı dirençlidir.
           </span>
           </v-spacer>
            
@@ -188,7 +190,7 @@
            <v-img
              cover
              max-width="760"
-             src="@/assets/Group 17.png"
+             src="@/assets/Layer240.png"
            ></v-img>
       
        </v-col>
@@ -199,7 +201,7 @@
    <v-row class="d-flex flex-column">
     <v-spacer class="text-center mt-6 mb-6">
        
-      <h3 class="font-weight-bold" style="color: gray;">Akıllı İkili Anahtar</h3>
+      <h3 class="font-weight-bold" style="color: gray;">Akıllı Kapı Sensörü</h3>
       
      </v-spacer>
    
@@ -208,46 +210,16 @@
      <v-spacer class="text-center mt-6 mb-6">
        <v-col cols="12" class="d-flex flex-column custom-text">
          
-         <span class="font-weight-bold" style="font-size: 1.5em; width: 90%;">Google Home ve Alexa uyumluluğu ile evinizin aydınlatmasını tam anlamıyla akıllı hale getiriyor.  Ortamın atmosferini parmaklarınızın ucuyla yönetin!</span>
+         <span class="font-weight-bold" style="font-size: 1.5em; width: 90%;">Akıllı Kapı Sensörü, kullanıcı dostu kurulum süreci ile hızlı bir şekilde devreye alınabilir. Hiçbir teknik bilgiye ihtiyaç duymadan kendi güvenliğinizi artırabilirsiniz.</span>
           <v-img width="90%" class="mt-4" src="@/assets/Layer_1.png"/>
        </v-col>
      </v-spacer>
    </v-row>
 
-<v-spacer class="d-flex align-center justify-center">
 
-   <v-card class=" parlaklik-card d-flex" variant="tonal">
-     <!-- <v-row> -->
-       <v-col cols="6" class="d-flex px-0 py-0">
-        <v-img
-             cover
-             width="45%"
-             max-width="760"
-             src="@/assets/Group49.png"
-           ></v-img>
-           
-
-       </v-col>
-       
-        <v-col cols="6" class="d-flex px-0 py-0">
-           <v-img
-             cover
-             width="45%"
-             max-width="760"
-             src="@/assets/Group33.png"
-           ></v-img>
-      
-       </v-col>
-     <!-- </v-row> -->
-   </v-card>
-  </v-spacer>
 
    <v-row class="d-flex flex-column">
-    <v-spacer class="text-center mt-6 mb-3">
-       
-      <h3 class="font-weight-bold" style="color: gray;">Akıllı İkili Anahtar</h3>
-      
-     </v-spacer>
+    
    
  
    
@@ -255,7 +227,7 @@
        <v-col cols="12" class="d-flex flex-column custom-text">
          <v-spacer  style="width: 90%;">
 
-         <span class="font-weight-bold" style="font-size: 1.5em;">Akıllı İkili Switch, uzaktan kontrol, zamanlayıcı fonksiyonu, ses kontrolü, kolay kurulum ve yüksek güvenlik özellikleriyle evinizi akıllı, enerji verimli ve güvenli bir şekilde kontrol etmenizi sağlayan modern bir çözümdür.</span>
+        
          <v-spacer class="card-action mt-4">
             <div >
             <v-btn size="x-large" density="compact" rounded="xl" variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
@@ -324,6 +296,9 @@
   font-size: 0.8em;  
  }
 
+
+
+
 }
 
 
@@ -337,6 +312,7 @@
   font-size:20px;
   padding:2px;
 }
+
 .card-text div {
   width: 80%;
 }
@@ -372,7 +348,7 @@ padding:4px;
  }
  
  .rgb-card{
-  background-image: url('@/assets/istock.png');
+  background-image: url('@/assets/istock1.png');
    background-size: cover;
   background-repeat: no-repeat;
   color: white;
