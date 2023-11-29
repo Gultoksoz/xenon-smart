@@ -8,12 +8,12 @@
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
            <v-spacer class="d-flex flex-column main-size " >
-            <span class="font-weight-bold">Akıllı Kapı Sensörü,</span>
-            <span> ev güvenliğinizi bir üst seviyeye taşımak için tasarlandı.</span>
+            <span class="font-weight-bold"> Akıllı Hareket Sensörü,</span>
+            <span> ev güvenliği artık daha akıllı ve etkili.</span>
           </v-spacer>
            <v-spacer class="mb-1 mt-2 subtext-size">
             <span>
-                Akıllı Kapı Sensörü, kapılarınızın durumunu anında izlemenize ve kontrol etmenize olanak tanır. Kablosuz teknoloji ile donatılmış bu akıllı sensör, kullanımı kolay özellikleri ile güvenliği artırır ve ev otomasyonunu optimize eder.
+                Akıllı Hareket Sensörü, evinizdeki hareketleri anlık olarak algılayarak size anında bildirimler gönderir ve evinizi koruma altına alır.
             </span>
           </v-spacer>
           <v-spacer>
@@ -30,7 +30,13 @@
            </v-spacer>
          </v-spacer>
      </v-col>
-     
+     <v-col cols="0" sm="4" md="5" class="d-flex justify-center align-start">
+       <v-img
+         max-width="160"
+         aspect-ratio="4/3"
+         src="@/assets/Group67.png"
+       ></v-img>
+     </v-col>
     <v-col cols="1"></v-col>
 
   </v-spacer>
@@ -48,8 +54,9 @@
    
    <!-- <v-row class="d-flex flex-column"> -->
     <v-spacer class="text-center mt-6">
-      <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Kapı Sensörü</h3>
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Kablosuz teknoloji ile donatılmış akıllı kapı sensörü, kullanımı kolay özellikleri ile güvenliği artırır ve ev otomasyonunu optimize eder.
+      <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Hareket Sensörü</h3>
+      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;"> Akıllı Hareket Sensörü, evinizdeki hareketleri anlık olarak algılayarak size anında bildirimler gönderir ve evinizi koruma altına alır.
+
         </p>
      </v-spacer>
      <v-spacer class=" d-flex flex-wrap justify-space-around">
@@ -64,8 +71,8 @@
     <v-spacer class="d-flex align-center justify-center">
      <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
         
-        <h1 class="font-weight-bold mb-4 mt-8" >Akıllı Kapı Sensörü</h1>
-         <span class="rgb-text " >Xenon Smart uygulaması sayesinde kapılarınızın durumunu <br class="my-2">her an  her yerden takip ve kontrol edebilirsiniz. </span>
+        <h1 class="font-weight-bold mb-4 mt-8" >Akıllı Hareket Sensörü</h1>
+         <span class="rgb-text " >Mobil uygulaması sayesinde sensörünüzün durumunu ve <br class="my-2">geçmişe yönelik hareket kayıtlarını takip edebilirsiniz. </span>
          <v-card-actions>
              <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
@@ -79,23 +86,23 @@
   <!-- </v-row> -->
    <v-spacer class="d-flex align-center justify-center">
 
-   <v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
+   <v-card class=" parlaklik-card " style="background-color: #F7FCFE;" variant="tonal">
      <v-row>
  
        <v-col cols="6" class="d-flex">
            <v-img
              cover
-             src="@/assets/Group53.png"
+             src="@/assets/Group13.png"
            ></v-img>
        </v-col>
        
        <v-col cols="6" class="d-flex flex-column">
          <v-spacer class="card-title text-size">
-             <span class="font-weight-bold">Uzaktan Kontrol</span>
+             <span class="font-weight-bold">Hassas Hareket Algılama</span>
            </v-spacer>
            <v-spacer class="card-text mr-2 mb-2">
             <span class="subtext-size">
-                Akıllı telefonunuz veya tabletiniz üzerinden ampulu uzaktan kontrol edebilirsiniz. Evinizde dolaşırken veya rahat bir koltuktan otururken ampulü açabilir, kapatabilir ve renkleri değiştirebilirsiniz.
+                Yüksek hassasiyetli sensörler, 120o açı ve 5m mesafedeki her türlü hareketi anında algılar ve size bildirim gönderir. Evden uzakta olduğunuzda bile, hareket algılama özelliği sayesinde güvenliğiniz kontrol altında olur.
           </span>
           </v-spacer>
            
@@ -141,23 +148,23 @@
  <v-spacer class="d-flex align-center justify-center">
 
 
-<v-card class=" parlaklik-card " style="background-color: #FAF6FF ;" variant="tonal">
+<v-card class=" parlaklik-card " style="background-color: #F7FCFE;" variant="tonal">
   <v-row>
 
     <v-col cols="6" class="d-flex">
         <v-img
           cover
-          src="@/assets/Layer42.png"
+          src="@/assets/Group73.png"
         ></v-img>
     </v-col>
     
     <v-col cols="6" class="d-flex flex-column">
       <v-spacer class="card-title text-size">
-          <span class="font-weight-bold">Entegrasyon Yeteneği</span>
+          <span class="font-weight-bold">Hareket Geçmişi</span>
         </v-spacer>
         <v-spacer class="card-text mb-3" >
          <span class="subtext-size mr-3">
-            Akıllı ev ekosistemine sorunsuz entegrasyon sağlar. Diğer akıllı cihazlarla birlikte çalışarak evinizi tam anlamıyla otomatikleştirebilirsiniz.
+            Akıllı telefonunuz veya tabletiniz üzerinden hareket sensörünün ne zaman açılıp kapandığını görebileceğiniz kayıt geçmişine erişebilirsiniz.
        </span>
        </v-spacer>
         
@@ -172,15 +179,15 @@
    <v-spacer class="d-flex align-center justify-center">
 
 
-   <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
+   <v-card class=" parlaklik-card" style="background-color: #F6F7FF  ;" variant="tonal">
      <v-row>
        <v-col cols="6" class="d-flex flex-column">
         <v-spacer class="card-title text-size">
-             <span class="font-weight-bold">Hava Koşullarına Dayanıklılık</span>
+             <span class="font-weight-bold">Entegrasyon Yeteneği</span>
            </v-spacer>
-           <v-spacer class="card-text ml-2">
+           <v-spacer class="card-text ml-4">
             <span class="subtext-size mb-3">
-                Dayanıklı tasarımı sayesinde iç ve dış mekan kapılarında güvenle kullanılabilir. Sert hava koşullarına karşı dirençlidir.
+                Akıllı ev ekosistemine sorunsuz entegrasyon sağlar. Diğer akıllı cihazlarla birlikte çalışarak evinizi tam anlamıyla otomatikleştirebilirsiniz.
           </span>
           </v-spacer>
            
@@ -190,7 +197,7 @@
            <v-img
              cover
              max-width="760"
-             src="@/assets/Layer240.png"
+             src="@/assets/Layer42.png"
            ></v-img>
       
        </v-col>
@@ -201,7 +208,7 @@
    <v-row class="d-flex flex-column">
     <v-spacer class="text-center mt-6 mb-6">
        
-      <h3 class="font-weight-bold" style="color: gray;">Akıllı Kapı Sensörü</h3>
+      <h3 class="font-weight-bold" style="color: gray;">Akıllı Hareket Sensörü</h3>
       
      </v-spacer>
    
@@ -210,7 +217,7 @@
      <v-spacer class="text-center mt-6 mb-6">
        <v-col cols="12" class="d-flex flex-column custom-text">
          
-         <span class="font-weight-bold" style="font-size: 1.5em; width: 90%;">Akıllı Kapı Sensörü, kullanıcı dostu kurulum süreci ile hızlı bir şekilde devreye alınabilir. Hiçbir teknik bilgiye ihtiyaç duymadan kendi güvenliğinizi artırabilirsiniz.</span>
+         <span class="font-weight-bold" style="font-size: 1.5em; width: 90%;">Akıllı Hareket Sensörü, kullanıcı dostu kurulum süreci ile hızlı bir şekilde devreye alınabilir. Hiçbir teknik bilgiye ihtiyaç duymadan kendi güvenliğinizi artırabilirsiniz.</span>
           <v-img width="90%" class="mt-4" src="@/assets/Layer_1.png"/>
        </v-col>
      </v-spacer>
@@ -340,7 +347,7 @@ padding:4px;
  
  .main-text{
    padding: 20px 0px;
-   background-image: url('@/assets/P5.png');
+   background-image: url('@/assets/bg03.jpeg');
    background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 250px;
