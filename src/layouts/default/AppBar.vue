@@ -23,6 +23,9 @@
               selected-class="custom-chip"
               mandatory
             >
+
+            <v-chip class="mx-1" text-color="black" @click="$router.push('/')" variant="text" >Ana Sayfa</v-chip>
+
               <v-chip
                 class="mx-1"
                 text-color="black"
@@ -32,7 +35,7 @@
                 <v-icon end icon="mdi mdi-chevron-down"></v-icon>
               </v-chip>
           
-            <v-chip class="mx-1" text-color="black" @click="" variant="text" >Online Mağaza</v-chip>
+            <v-chip class="mx-1" text-color="black" href="https://shop.xenonsmart.com/" variant="text" >Online Mağaza</v-chip>
             <v-chip class="mx-1" text-color="black" @click="" variant="text" >Destek</v-chip>
             <v-chip class="mx-1" text-color="black" @click="$router.push('/contact')" variant="text" >İletişim</v-chip></v-chip-group>
           </v-sheet>
@@ -80,7 +83,7 @@
         <router-link class="link" to="#">Akıllı Geçiş Kontrol</router-link>
         <v-spacer  v-for="(item) in smartPassControl"
             :key="item.id">
-          <span>
+          <span class="page-link" @click="$router.push(item.url)">
             {{ item.text }}
           </span>
         </v-spacer>
@@ -90,7 +93,7 @@
         <router-link class="link" to="#">Akıllı Kontrol Grubu</router-link>
         <v-spacer  v-for="(item) in smartControl"
             :key="item.id">
-          <span>
+          <span class="page-link" @click="$router.push(item.url)">
             {{ item.text }}
           </span>
         </v-spacer>
@@ -100,7 +103,7 @@
         <router-link class="link" to="#">Akıllı Kamera</router-link>
         <v-spacer  v-for="(item) in smartCamera"
             :key="item.id">
-          <span>
+          <span class="page-link" @click="$router.push(item.url)">
             {{ item.text }}
           </span>
         </v-spacer>
@@ -110,7 +113,7 @@
         <router-link class="link" to="#">Akıllı Kapı Kilidi</router-link>
         <v-spacer  v-for="(item) in smartDoorKey"
             :key="item.id">
-          <span>
+          <span class="page-link" @click="$router.push(item.url)">
             {{ item.text }}
           </span>
         </v-spacer>
@@ -120,17 +123,17 @@
         <router-link class="link" to="#">Akıllı Sensör</router-link>
         <v-spacer  v-for="(item) in smartSensor"
             :key="item.id">
-          <span>
+          <span class="page-link" @click="$router.push(item.url)">
             {{ item.text }}
           </span>
         </v-spacer>
       </v-col>
       <v-col cols="12" lg="2" xl="2">
         <v-icon size="48"> <img src="@/assets/akilli_aydinlatma.svg"/></v-icon><br>
-        <router-link class="link" to="#">Akıllı Aydınlatma</router-link>
+        <router-link class="link" to="/smartlighting">Akıllı Aydınlatma</router-link>
         <v-spacer  v-for="(item) in smartAydinlatma"
             :key="item.id">
-          <span>
+          <span class="page-link" @click="$router.push(item.url)">
             {{ item.text }}
           </span>
         </v-spacer>
@@ -163,14 +166,17 @@
         {
           id: 0,
           text: "RFID Kart Okuyucu(Dış Ortam)",
+          url:""
         },
         {
           id: 1,
           text: "RFID Kart Okuyucu(İç Ortam)",
+          url:""
         },
         {
           id: 2,
           text: "QR Kod Okuyucu(Dış Ortam)",
+          url:""
         },
         {
           id: 3,
@@ -179,132 +185,167 @@
         {
           id: 4,
           text: "1 Çıkış Geçiş Kontrol Paneli",
+          url:""
         },
         {
           id: 5,
           text: "2 Çıkış Geçiş Kontrol Paneli",
+          url:""
         },
         {
           id: 6,
-          text: "8 Çıkış Geçiş Kontrol Paneli"
+          text: "8 Çıkış Geçiş Kontrol Paneli",
+          url:""
         },
         {
           id: 7,
           text: "16 Çıkış Geçiş Kontrol Paneli",
+          url:""
         },
         {
           id: 8,
-          text: "Temassız Çıkış Butonu"
+          text: "Temassız Çıkış Butonu",
+          url:""
         }
       ],
       smartControl: [
         {
           id: 0,
           text: "Akıllı Tekli Priz",
+          url:"/singlesocket"
         },
         {
           id: 1,
           text: "Akıllı Çoklu Priz",
+          url:""
         },
         {
           id: 2,
           text: "Akıllı Tekli Anahtar",
+          url:"smartsingleswitch"
         },
         {
           id: 3,
           text: "Akıllı İkili Anahtar",
+          url:"smartdualswitch"
         },
         {
           id: 4,
           text: "Akıllı Perde Kontrol Rolesi",
+          url:"/curtainswitch"
         },
         {
           id: 5,
           text: "Akıllı Röle",
+          url:""
         },
         {
           id: 6,
-          text: "Akıllı Dokunmatik Anahtar"
+          text: "Akıllı Dokunmatik Anahtar",
+          url:""
         }
       ],
       smartCamera: [
         {
           id: 0,
           text: " Bebek Kamerası",
+          url:""
         },
         {
           id: 1,
           text: "Bebek Kamerası(Monitörlü)",
+          url:""
         },
         {
           id: 2,
           text: "Dış Ortam Kamerası",
+          url:""
         },
         {
           id: 3,
           text: "Dış Ortam Kamerası(Bataryalı)",
+          url:""
         },
         {
           id: 4,
           text: "İç Ortam Kamerası",
+          url:""
         }
       ],
       smartDoorKey: [
         {
           id: 0,
           text: "Akıllı Kapı Kilidi-X8051",
+          url:""
         },
         {
           id: 1,
           text: "Akıllı Kapı Kilidi-X8052",
+          url:""
         },
         {
           id: 2,
           text: "Akıllı Kapı Kilidi-X8056",
+          url:""
         },
         {
           id: 3,
           text: "Akıllı Kapı Kilidi-X8057",
+          url:""
         }
       ],
       smartSensor: [
         {
           id: 0,
           text: "Akıllı Kapı Sensörü",
+          url:"/doorsensor"
         },
         {
           id: 1,
           text: "Akıllı Hareket Sensörü",
+          url:"/motionsensor"
         },
         {
           id: 2,
           text: "Akıllı Duman Sensörü",
+          url:""
         },
         {
           id: 3,
           text: " Akıllı Titreşim Sensörü",
+          url:""
         },
         {
           id: 4,
           text: "Akıllı Su Sensörü ",
+          url:""
         },
         {
           id: 5,
           text: "Akıllı El Sensörü",
+          url:""
         }
       ],
       smartAydinlatma: [
         {
           id: 0,
           text: "Akıllı RGB Led Ampül ",
+          url:"/rgbled"
         },
         {
           id: 1,
-          text: "Akıllı Tekli Anahtar",
+          text: "Akıllı Tekli Switch",
+          url:""
         },
         {
           id: 2,
-          text: "Akıllı İkili Anahtar",
+          text: "Akıllı İkili Switch",
+          url:""
+        },
+        {
+          id: 2,
+          text: "Dokunmatik Üçlü Switch",
+          url:"/touchtripleswitch"
         }
       ],
     }
@@ -341,6 +382,11 @@
 .logo:hover {
   cursor: pointer;
 }
+
+.page-link:hover {
+  cursor: pointer;
+}
+
 
 .link{
   font-weight: bold;
