@@ -17,17 +17,17 @@
       <v-col cols="12" md="9"  class="d-flex px-0 py-0">
         <v-col cols="9" class="d-flex align-center justify-center  py-0">
         <v-spacer class="menu d-flex">
-          <v-sheet class="chips px-4" style="background-color: #E6E6E6; border-radius: 45px;">
+          <v-sheet class="mb-5" style="background-color: #E6E6E6; border-radius: 45px;">
             <v-chip-group
               v-model="selection"
               selected-class="custom-chip"
               mandatory
             >
 
-            <v-chip class="mx-1" text-color="black" @click="$router.push('/')" variant="text" >Ana Sayfa</v-chip>
+            <v-chip class="ml-1" text-color="black" @click="$router.push('/')" variant="text" >Ana Sayfa</v-chip>
 
               <v-chip
-                class="mx-1"
+                class=""
                 text-color="black"
                 variant="text"
                 @click.stop="drawer = !drawer"
@@ -35,9 +35,9 @@
                 <v-icon end icon="mdi mdi-chevron-down"></v-icon>
               </v-chip>
           
-            <v-chip class="mx-1" text-color="black" href="https://shop.xenonsmart.com/" variant="text" >Online Mağaza</v-chip>
-            <v-chip class="mx-1" text-color="black" @click="" variant="text" >Destek</v-chip>
-            <v-chip class="mx-1" text-color="black" @click="$router.push('/contact')" variant="text" >İletişim</v-chip></v-chip-group>
+            <v-chip class="" text-color="black" href="https://shop.xenonsmart.com/" variant="text" >Online Mağaza</v-chip>
+            <v-chip class="" text-color="black" @click="" variant="text" >Destek</v-chip>
+            <v-chip class="" text-color="black" @click="$router.push('/contact')" variant="text" >İletişim</v-chip></v-chip-group>
           </v-sheet>
         </v-spacer>
         </v-col>
