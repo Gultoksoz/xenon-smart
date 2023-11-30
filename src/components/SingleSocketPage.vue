@@ -116,7 +116,7 @@
      <v-spacer class="card-title text-size">
           <span class="font-weight-bold">Enerji Takibi</span>
         </v-spacer>
-        <v-spacer class="card-text ml-2">
+        <v-spacer class="card-text ml-2 mb-2">
          <span>
             Prizin enerji tüketimini izleme özelliği sayesinde hangi cihazların ne kadar enerji harcadığını takip edebilirsiniz. Bu, enerji maliyetlerinizi düşürmenize yardımcı olabilir.
        </span>
@@ -175,7 +175,7 @@
      <v-spacer class="card-title text-size">
           <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
         </v-spacer>
-        <v-spacer class="card-text ml-2">
+        <v-spacer class="card-text ml-2 mb-4">
          <span>
             Akıllı Tekli Prizi belirli bir zaman diliminde otomatik olarak açma veya kapama ayarları yapabilirsiniz. Böylece, günlük rutinlerinizi otomatikleştirebilir ve enerji tüketimini optimize edebilirsiniz.
        </span>

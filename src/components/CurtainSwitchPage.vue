@@ -129,7 +129,7 @@
       <v-spacer class="card-title">
           <span class="font-weight-bold">Uzaktan Kontrol</span>
         </v-spacer>
-        <v-spacer class="card-text">
+        <v-spacer class="card-text mb-4 mr-4">
          <span>
             Evden uzakta olduğunuzda bile perdenizi kontrol etmek artık çok kolay. Akıllı telefonunuz veya tabletiniz üzerinden özel uygulama aracılığıyla perdelerinizi açabilir veya kapatabilirsiniz. Böylece, günün herhangi bir saatinde evinizin atmosferini istediğiniz gibi düzenleyebilirsiniz.
        </span>
@@ -153,7 +153,7 @@
      <v-spacer class="card-title text-size">
           <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
         </v-spacer>
-        <v-spacer class="card-text ml-2">
+        <v-spacer class="card-text ml-2 mb-4">
          <span>
             Güneşin doğuşu veya batışına göre perdelerinizi otomatik olarak ayarlayabilirsiniz. Akıllı perde anahtarınız, belirlediğiniz zamanlarda perdelerinizi açıp kapatarak evinizde istediğiniz aydınlık seviyesini korur ve enerji tasarrufu sağlar.
        </span>
