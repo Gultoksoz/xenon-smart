@@ -72,7 +72,7 @@
      <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
         
         <h1 class="font-weight-bold mb-4 mt-8" >Akıllı Hareket Sensörü</h1>
-         <span class="rgb-text " >Mobil uygulaması sayesinde sensörünüzün durumunu ve <br class="my-2">geçmişe yönelik hareket kayıtlarını takip edebilirsiniz. </span>
+         <span class="rgb-text " >Mobil uygulaması sayesinde sensörünüzün <br class="my-2">durumunu ve geçmişe yönelik hareket kayıtlarını takip edebilirsiniz. </span>
          <v-card-actions>
              <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
@@ -102,7 +102,7 @@
            </v-spacer>
            <v-spacer class="card-text mr-2 mb-2">
             <span class="subtext-size">
-                Yüksek hassasiyetli sensörler, 120o açı ve 5m mesafedeki her türlü hareketi anında algılar ve size bildirim gönderir. Evden uzakta olduğunuzda bile, hareket algılama özelliği sayesinde güvenliğiniz kontrol altında olur.
+              Yüksek hassasiyetli sensörler, 110o açı ve 7m mesafedeki her türlü hareketi anında algılar ve size bildirim gönderir. Evden uzakta olduğunuzda bile, hareket algılama özelliği sayesinde güvenliğiniz kontrol altında olur.
           </span>
           </v-spacer>
            
@@ -125,7 +125,7 @@
         </v-spacer>
         <v-spacer class="card-text ml-2 mb-2">
          <span class="subtext-size">
-            Kapı durumu değiştiğinde anında bildirim alın. Bu sayede evinizi istenmeyen ziyaretçilere karşı koruyabilirsiniz.
+          Akıllı Hareket Sensörü her türlü hareketi anında algılar ve size bildirim gönderir. Evden uzakta olduğunuzda bile, hareket algılama özelliği sayesinde güvenliğiniz kontrol altında olur.
        </span>
        </v-spacer>
         
@@ -135,7 +135,7 @@
         <v-img
           cover
           max-width="760"
-          src="@/assets/Layer43.png"
+          src="@/assets/Layer73.png"
         ></v-img>
    
     </v-col>
