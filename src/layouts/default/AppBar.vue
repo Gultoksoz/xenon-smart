@@ -17,7 +17,7 @@
       <v-col cols="12" md="9"  class="d-flex px-0 py-0">
         <v-col cols="9" class="d-flex align-center justify-center  py-0">
         <v-spacer class="menu d-flex">
-          <v-sheet class="mb-5" style="background-color: #E6E6E6; border-radius: 45px;">
+          <v-sheet  style="background-color: #E6E6E6; border-radius: 45px;">
             <v-chip-group
               v-model="selection"
               selected-class="custom-chip"
