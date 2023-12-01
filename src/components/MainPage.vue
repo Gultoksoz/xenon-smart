@@ -32,7 +32,7 @@
       </v-col>
     </v-row>
   <v-row class="d-flex flex-column mt-6">
-    <v-spacer>
+    <v-spacer class="page">
     <v-col class="d-flex flex-wrap align-center justify-space-around">
       <v-col cols="6" md="4" lg="2" >
         <v-card
@@ -103,8 +103,9 @@
   <v-row class="d-flex flex-column">
     
   </v-row>
-  
-  <v-card variant="tonal" class="my-4 py-4">
+
+  <v-spacer class="page">
+  <v-card variant="tonal" class="my-4 py-4" style="border-radius: 20px;">
     <v-row>
       <v-col md="4" xl="6" class="px-0" >
         <v-spacer class="card-title">
@@ -173,7 +174,10 @@
       </v-col>
     </v-row>
   </v-card>
-  <v-card variant="tonal" class=" kontrol-card-color my-4 py-4">
+</v-spacer>
+
+<v-spacer class="page">
+  <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
     <v-row>
       <v-col md="8" xl="6" class="px-0">
         <v-spacer class="d-flex justify-center my-4">
@@ -239,9 +243,11 @@
       </v-col>
     </v-row>
   </v-card>
+</v-spacer>
 
 
-  <v-card variant="tonal" class="my-4 py-4 sensor-card-color">
+<v-spacer class="page">
+  <v-card variant="tonal" style="border-radius: 20px;" class="my-4 py-4 sensor-card-color">
     <v-row>
       <v-col md="4" xl="6" class="px-0" >
         <v-spacer class="card-title">
@@ -313,7 +319,7 @@
       </v-col>
     </v-row>
   </v-card>
-  
+</v-spacer>
 
   </v-container>
 </template>
@@ -342,6 +348,14 @@ export default {
     display: flex;
     flex-wrap: wrap-reverse;
   }
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .page{
+  padding: 5em;
+}
 }
 
 
