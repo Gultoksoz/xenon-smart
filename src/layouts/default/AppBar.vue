@@ -24,7 +24,7 @@
               mandatory
             >
 
-            <v-chip  text-color="black" @click="$router.push('/')" variant="text" > <span class="chips">Ana Sayfa</span></v-chip>
+            <v-chip class="ml-1" text-color="black" @click="$router.push('/')" variant="text" > <span class="chips">Ana Sayfa</span></v-chip>
 
               <v-chip
                 
