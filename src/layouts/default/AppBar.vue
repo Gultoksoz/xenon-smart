@@ -24,20 +24,20 @@
               mandatory
             >
 
-            <v-chip class="ml-1" text-color="black" @click="$router.push('/')" variant="text" >Ana Sayfa</v-chip>
+            <v-chip  text-color="black" @click="$router.push('/')" variant="text" > <span class="chips">Ana Sayfa</span></v-chip>
 
               <v-chip
-                class=""
+                
                 text-color="black"
                 variant="text"
                 @click.stop="drawer = !drawer"
-                > Ürünler
+                > <span class="chips"> Ürünler </span>
                 <v-icon end icon="mdi mdi-chevron-down"></v-icon>
               </v-chip>
           
-            <v-chip class="" text-color="black" href="https://shop.xenonsmart.com/" variant="text" >Online Mağaza</v-chip>
-            <v-chip class="" text-color="black" @click="" variant="text" >Destek</v-chip>
-            <v-chip class="" text-color="black" @click="$router.push('/contact')" variant="text" >İletişim</v-chip></v-chip-group>
+            <v-chip  text-color="black" href="https://shop.xenonsmart.com/" variant="text" > <span class="chips">Online Mağaza </span></v-chip>
+            <v-chip  text-color="black" @click="" variant="text" > <span class="chips">Destek </span></v-chip>
+            <v-chip  text-color="black" @click="$router.push('/contact')" variant="text" > <span class="chips">İletişim </span></v-chip></v-chip-group>
           </v-sheet>
         </v-spacer>
         </v-col>
@@ -397,5 +397,25 @@
 background-color: white;
 border-radius: 15px;
 }
+
+
+@media screen and (max-width: 600px) {
+  .chips{
+    font-size: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.v-chip-group .v-chip{
+  margin: 0px;
+}
+
+.v-chip.v-chip--size-default{
+  padding: 0px 7px;
+}
+
+
+}
+
 
 </style>
