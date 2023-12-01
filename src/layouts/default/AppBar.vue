@@ -98,26 +98,7 @@
           </span>
         </v-spacer>
       </v-col>
-      <v-col cols="12" lg="2" xl="2">
-        <v-icon size="48" > <img src="@/assets/akilli_kamera.svg"/></v-icon><br>
-        <router-link class="link" to="#">Akıllı Kamera</router-link>
-        <v-spacer  v-for="(item) in smartCamera"
-            :key="item.id">
-          <span class="page-link" @click="$router.push(item.url)">
-            {{ item.text }}
-          </span>
-        </v-spacer>
-      </v-col>
-      <v-col cols="12" lg="2" xl="2">
-        <v-icon size="48"> <img src="@/assets/akilli_kapi_kilidi.svg"/></v-icon><br>
-        <router-link class="link" to="#">Akıllı Kapı Kilidi</router-link>
-        <v-spacer  v-for="(item) in smartDoorKey"
-            :key="item.id">
-          <span class="page-link" @click="$router.push(item.url)">
-            {{ item.text }}
-          </span>
-        </v-spacer>
-      </v-col>
+      
       <v-col cols="12" lg="2" xl="2">
         <v-icon size="48"> <img src="@/assets/akilli_sensor.svg"/></v-icon><br>
         <router-link class="link" to="#">Akıllı Sensör</router-link>
@@ -132,6 +113,16 @@
         <v-icon size="48"> <img src="@/assets/akilli_aydinlatma.svg"/></v-icon><br>
         <router-link class="link" to="/smartlighting">Akıllı Aydınlatma</router-link>
         <v-spacer  v-for="(item) in smartAydinlatma"
+            :key="item.id">
+          <span class="page-link" @click="$router.push(item.url)">
+            {{ item.text }}
+          </span>
+        </v-spacer>
+      </v-col>
+      <v-col cols="12" lg="2" xl="2">
+        <v-icon size="48"> <img src="@/assets/akilliyasam.svg"/></v-icon><br>
+        <router-link class="link" to="">Akıllı Yaşam</router-link>
+        <v-spacer  v-for="(item) in smartLife"
             :key="item.id">
           <span class="page-link" @click="$router.push(item.url)">
             {{ item.text }}
@@ -165,45 +156,21 @@
       smartPassControl: [
         {
           id: 0,
-          text: "RFID Kart Okuyucu(Dış Ortam)",
+          text: "RFID Kart Okuyucu",
           url:""
         },
         {
           id: 1,
-          text: "RFID Kart Okuyucu(İç Ortam)",
+          text: "QR Kod Okuyucu",
           url:""
         },
         {
           id: 2,
-          text: "QR Kod Okuyucu(Dış Ortam)",
+          text: "Geçiş Kontrol Paneli",
           url:""
         },
         {
           id: 3,
-          text: "QR Kod Okuyucu(İç Ortam)",
-        },
-        {
-          id: 4,
-          text: "1 Çıkış Geçiş Kontrol Paneli",
-          url:""
-        },
-        {
-          id: 5,
-          text: "2 Çıkış Geçiş Kontrol Paneli",
-          url:""
-        },
-        {
-          id: 6,
-          text: "8 Çıkış Geçiş Kontrol Paneli",
-          url:""
-        },
-        {
-          id: 7,
-          text: "16 Çıkış Geçiş Kontrol Paneli",
-          url:""
-        },
-        {
-          id: 8,
           text: "Temassız Çıkış Butonu",
           url:""
         }
@@ -221,78 +188,14 @@
         },
         {
           id: 2,
-          text: "Akıllı Tekli Anahtar",
-          url:"smartsingleswitch"
-        },
-        {
-          id: 3,
-          text: "Akıllı İkili Anahtar",
-          url:"smartdualswitch"
-        },
-        {
-          id: 4,
           text: "Akıllı Perde Kontrol Rolesi",
           url:"/curtainswitch"
         },
         {
-          id: 5,
+          id: 3,
           text: "Akıllı Röle",
           url:""
         },
-        {
-          id: 6,
-          text: "Akıllı Dokunmatik Anahtar",
-          url:""
-        }
-      ],
-      smartCamera: [
-        {
-          id: 0,
-          text: " Bebek Kamerası",
-          url:""
-        },
-        {
-          id: 1,
-          text: "Bebek Kamerası(Monitörlü)",
-          url:""
-        },
-        {
-          id: 2,
-          text: "Dış Ortam Kamerası",
-          url:""
-        },
-        {
-          id: 3,
-          text: "Dış Ortam Kamerası(Bataryalı)",
-          url:""
-        },
-        {
-          id: 4,
-          text: "İç Ortam Kamerası",
-          url:""
-        }
-      ],
-      smartDoorKey: [
-        {
-          id: 0,
-          text: "Akıllı Kapı Kilidi-X8051",
-          url:""
-        },
-        {
-          id: 1,
-          text: "Akıllı Kapı Kilidi-X8052",
-          url:""
-        },
-        {
-          id: 2,
-          text: "Akıllı Kapı Kilidi-X8056",
-          url:""
-        },
-        {
-          id: 3,
-          text: "Akıllı Kapı Kilidi-X8057",
-          url:""
-        }
       ],
       smartSensor: [
         {
@@ -343,9 +246,31 @@
           url:""
         },
         {
-          id: 2,
-          text: "Dokunmatik Üçlü Switch",
+          id: 3,
+          text: "Akıllı Dokunmatik Anahtar",
           url:"/touchtripleswitch"
+        }
+      ],
+      smartLife: [
+        {
+          id: 0,
+          text: "Akıllı Kameralar",
+          url:""
+        },
+        {
+          id: 1,
+          text: "Akıllı Kapı Kilitleri",
+          url:""
+        },
+        {
+          id: 2,
+          text: "Akıllı Basküller",
+          url:""
+        },
+        {
+          id: 3,
+          text: "Akıllı Röle",
+          url:""
         }
       ],
     }
