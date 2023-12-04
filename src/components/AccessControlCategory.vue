@@ -8,12 +8,13 @@
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
            <v-spacer class="d-flex flex-column main-size " >
-            <span class="font-weight-bold"> Akıllı Perde Switch,</span>
-            <span> evden uzakta olduğunuzda bile perdenizi kontrol etmek çok kolay.</span>
+            <span class="font-weight-bold"> Access Control ürünleri,</span>
+            <span>  
+              ihtiyaçlarınıza göre özelleştirilebilen kullanıcı dostu çözümler sunar.</span>
           </v-spacer>
            <v-spacer class="mb-1 mt-2 subtext-size">
             <span>
-                Ev yaşamınızı daha konforlu ve akıllı hale getirmek için tasarlanmış olan Akıllı Perde Anahtarı, ev otomasyonu dünyasına heyecan verici bir dokunuş katıyor. Perdelerinizi tek bir dokunuşla kontrol etmenin yanı sıra, enerji tasarrufu yapmanıza da yardımcı oluyor.
+              Giriş ve çıkışların düzenlenmesi, yetkilendirilmemiş erişimlerin önlenmesi ve güvenlik protokollerinin etkin bir şekilde uygulanması için kritik öneme sahiptir.
             </span>
           </v-spacer>
           <v-spacer>
@@ -31,11 +32,7 @@
          </v-spacer>
      </v-col>
      <v-col cols="0" sm="4" md="5" class="d-flex justify-center align-start">
-       <v-img
-         max-width="160"
-         aspect-ratio="4/3"
-         src="@/assets/P3.png"
-       ></v-img>
+       
      </v-col>
     <v-col cols="1"></v-col>
 
@@ -54,27 +51,184 @@
    
    <!-- <v-row class="d-flex flex-column"> -->
     <v-spacer class="text-center mt-6">
-      <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Perde Switch</h3>
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;"> Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
+      <h3 class="font-weight-bold mb-4" style="color: gray;">Access Control Sistemleri</h3>
+      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;"> İdeal Access Control Sisteminiz için doğru çözümleri bulun
 
         </p>
      </v-spacer>
-     <v-spacer class=" d-flex flex-wrap justify-space-around">
-         <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/app-store.png"/></v-col> 
-         <v-col sm="4" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/google-play.png"/></v-col>
-         <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/xenon-app.png"/></v-col>
-         <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/googlehome@4x.png"/></v-col>
-         <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/Google-Alexa.png"/></v-col>
-     </v-spacer>
-   <!-- </v-row> -->
-   <!-- <v-row class="d-flex flex-column"> -->
+
+     <v-spacer class="page">
+    <v-row class="d-flex flex-column mt-4">
+    <v-col class="d-flex flex-wrap align-center justify-space-around">
+      <v-col cols="12" md="6" lg="4" sm="6"  >
+
+        <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+          <v-row>
+            <v-col >
+              <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
+                <v-sheet width="40%" class="d-flex justify-center align-center" elevation="0" >
+                  <v-img
+                    width="auto"
+                    src="@/assets/qr.png"
+                  ></v-img>
+                </v-sheet>
+              </v-spacer>
+              
+            </v-col>
+            <v-col >
+              <v-spacer class="card-title">
+                <div>
+                  <span>QR Kod Okuyucu</span>
+                </div>
+                </v-spacer>
+                <v-spacer class="card-text">
+                  <div>
+                  <span>
+                    Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.
+                </span>
+              </div>
+                </v-spacer>
+                <v-spacer class="card-action">
+                  <div >
+                  <v-btn size="x-large" density="comfortable" rounded="xl" variant="flat" color="#007AFF">
+                    <strong>Daha fazla</strong>
+                  </v-btn>
+                </div>
+                </v-spacer>
+            </v-col>
+          </v-row>
+        </v-card>
+
+        <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+          <v-row>
+            <v-col >
+              <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
+                <v-sheet width="40%" class="d-flex justify-center align-center" elevation="0" >
+                  <v-img
+                    width="auto"
+                    src="@/assets/qr.png"
+                  ></v-img>
+                </v-sheet>
+              </v-spacer>
+              
+            </v-col>
+            <v-col >
+              <v-spacer class="card-title">
+                <div>
+                  <span>QR Kod Okuyucu</span>
+                </div>
+                </v-spacer>
+                <v-spacer class="card-text">
+                  <div>
+                  <span>
+                    Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.
+                </span>
+              </div>
+                </v-spacer>
+                <v-spacer class="card-action">
+                  <div >
+                  <v-btn size="x-large" density="comfortable" rounded="xl" variant="flat" color="#007AFF">
+                    <strong>Daha fazla</strong>
+                  </v-btn>
+                </div>
+                </v-spacer>
+            </v-col>
+          </v-row>
+        </v-card>
+
+      </v-col>
+      
+      <v-col cols="12" md="6" lg="4" sm="6"  >
+      
+        <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+          <v-row>
+            <v-col >
+              <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
+                <v-sheet width="40%" class="d-flex justify-center align-center" elevation="0" >
+                  <v-img
+                    width="auto"
+                    src="@/assets/qr.png"
+                  ></v-img>
+                </v-sheet>
+              </v-spacer>
+              
+            </v-col>
+            <v-col >
+              <v-spacer class="card-title">
+                <div>
+                  <span>QR Kod Okuyucu</span>
+                </div>
+                </v-spacer>
+                <v-spacer class="card-text">
+                  <div>
+                  <span>
+                    Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.
+                </span>
+              </div>
+                </v-spacer>
+                <v-spacer class="card-action">
+                  <div >
+                  <v-btn size="x-large" density="comfortable" rounded="xl" variant="flat" color="#007AFF">
+                    <strong>Daha fazla</strong>
+                  </v-btn>
+                </div>
+                </v-spacer>
+            </v-col>
+          </v-row>
+        </v-card>
+       
+       
+        <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+          <v-row>
+            <v-col >
+              <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
+                <v-sheet width="40%" class="d-flex justify-center align-center" elevation="0" >
+                  <v-img
+                    width="auto"
+                    src="@/assets/qr.png"
+                  ></v-img>
+                </v-sheet>
+              </v-spacer>
+              
+            </v-col>
+            <v-col >
+              <v-spacer class="card-title">
+                <div>
+                  <span>QR Kod Okuyucu</span>
+                </div>
+                </v-spacer>
+                <v-spacer class="card-text">
+                  <div>
+                  <span>
+                    Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.
+                </span>
+              </div>
+                </v-spacer>
+                <v-spacer class="card-action">
+                  <div >
+                  <v-btn size="x-large" density="comfortable" rounded="xl" variant="flat" color="#007AFF">
+                    <strong>Daha fazla</strong>
+                  </v-btn>
+                </div>
+                </v-spacer>
+            </v-col>
+          </v-row>
+        </v-card>
+        
+      </v-col>
+    </v-col>
+  </v-row>
+  </v-spacer>
+
+
+
     <v-spacer class="d-flex align-center justify-center">
      <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
         
         <h1 class="font-weight-bold mb-4 mt-8" >Nerede olursan ol!</h1>
          <span class="rgb-text " > Xenon Smart mobil uygulaması sayesinde dünyanın <br class="my-2">herhangi bir yerinden evinize erişebiliyorsunuz.  </span>
          <v-card-actions>
-             <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+             <v-btn   class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
            </v-card-actions>
@@ -83,95 +237,10 @@
 
   </v-spacer>
 
-  <!-- </v-row> -->
+  
 
-  <v-spacer class="d-flex align-center justify-center">
-
-
-<v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
-  <v-row>
-    <v-col cols="6" class="d-flex flex-column">
-     <v-spacer class="card-title text-size">
-          <span class="font-weight-bold">Kolay Kurulum</span>
-        </v-spacer>
-        <v-spacer class="card-text ml-2">
-         <span>
-            Akıllı Perde Switch basit kurulumu sayesinde herkesin kullanabileceği bir üründür. Mevcut anahtar prizinize takmanız yeterli, ardından mobil uygulama ile eşleştirme işlemini gerçekleştirin ve kontrolü elinize alın.
-       </span>
-       </v-spacer>
-        
-    </v-col>
-    
-     <v-col cols="6" class="d-flex">
-        <v-img
-          cover
-          max-width="760"
-          src="@/assets/Group95.png"
-        ></v-img>
-   
-    </v-col>
-  </v-row>
-</v-card>
-</v-spacer>
-  <v-spacer class="d-flex align-center justify-center">
-
-<v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
-  <v-row>
-
-    <v-col cols="6" class="d-flex">
-        <v-img
-          cover
-          src="@/assets/Group36.png"
-        ></v-img>
-    </v-col>
-    
-    <v-col cols="6" class="d-flex flex-column">
-      <v-spacer class="card-title">
-          <span class="font-weight-bold">Uzaktan Kontrol</span>
-        </v-spacer>
-        <v-spacer class="card-text mb-4 mr-4">
-         <span>
-            Evden uzakta olduğunuzda bile perdenizi kontrol etmek artık çok kolay. Akıllı telefonunuz veya tabletiniz üzerinden özel uygulama aracılığıyla perdelerinizi açabilir veya kapatabilirsiniz. Böylece, günün herhangi bir saatinde evinizin atmosferini istediğiniz gibi düzenleyebilirsiniz.
-       </span>
-       </v-spacer>
-        
-
-    </v-col>
-    
-  </v-row>
-</v-card>
-</v-spacer>
-
-
-
-<v-spacer class="d-flex align-center justify-center">
-
-
-<v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
-  <v-row>
-    <v-col cols="6" class="d-flex flex-column">
-     <v-spacer class="card-title text-size">
-          <span class="font-weight-bold">Programlanabilir Zamanlayıcı</span>
-        </v-spacer>
-        <v-spacer class="card-text ml-2 mb-4">
-         <span>
-            Güneşin doğuşu veya batışına göre perdelerinizi otomatik olarak ayarlayabilirsiniz. Akıllı perde anahtarınız, belirlediğiniz zamanlarda perdelerinizi açıp kapatarak evinizde istediğiniz aydınlık seviyesini korur ve enerji tasarrufu sağlar.
-       </span>
-       </v-spacer>
-        
-    </v-col>
-    
-     <v-col cols="6" class="d-flex">
-        <v-img
-          cover
-          max-width="760"
-          src="@/assets/Layer214.png"
-        ></v-img>
-   
-    </v-col>
-  </v-row>
-</v-card>
-</v-spacer>
+  
+  
 
 <v-row class="d-flex flex-column">
  <v-spacer class="text-center mt-6 mb-6">
@@ -310,13 +379,13 @@
 
 .card-title div span {
   font-weight: bold;
+  font-size: 0.8em;
 }
 .card-text{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:20px;
-  padding:2px;
+  font-size:0.5;
 }
 
 .card-text div {
@@ -339,14 +408,21 @@ padding:4px;
    text-align: center;
  }
  
- .pad{
-    padding-left: 6em;
-    padding-right: 6em;
- }
+ @media screen and (min-width: 600px) {
+
+.page{
+padding: 3em;
+}
+}
+
+
+
+
+
  
  .main-text{
    padding: 20px 0px;
-   background-image: url('@/assets/bg04.png');
+   background-image: url('@/assets/bg21.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 300px;

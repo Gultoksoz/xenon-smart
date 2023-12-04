@@ -36,7 +36,7 @@
               </v-chip>
           
             <v-chip  text-color="black" href="https://shop.xenonsmart.com/" variant="text" > <span class="chips">Online Mağaza </span></v-chip>
-            <v-chip  text-color="black" @click="" variant="text" > <span class="chips">Destek </span></v-chip>
+            <v-chip  text-color="black"  variant="text" > <span class="chips">Destek </span></v-chip>
             <v-chip  text-color="black" @click="$router.push('/contact')" variant="text" > <span class="chips">İletişim </span></v-chip></v-chip-group>
           </v-sheet>
         </v-spacer>
@@ -80,7 +80,7 @@
     <v-card class="d-flex flex-wrap" style="overflow-y: scroll;">
       <v-col cols="12" lg="2" xl="2">
         <v-icon size="48"> <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon><br>
-        <router-link class="link" to="#">Akıllı Geçiş Kontrol</router-link>
+        <router-link class="link" to="/accesscontrol">Akıllı Geçiş Kontrol</router-link>
         <v-spacer  v-for="(item) in smartPassControl"
             :key="item.id">
           <span class="page-link" @click="$router.push(item.url)">
@@ -139,7 +139,7 @@
 </template>
 
 <script >
-  import router from '@/router/index.js'
+ 
   export default {
   data() {
     return {
@@ -286,7 +286,7 @@
       }
     },
   methods: {
-    myEventHandler(e) {
+    myEventHandler() {
       this.resize = window.innerWidth;
       }
   },
