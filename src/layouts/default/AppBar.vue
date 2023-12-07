@@ -80,7 +80,7 @@
     <v-card class="d-flex flex-wrap" style="overflow-y: scroll;">
       <v-col cols="12" lg="2" xl="2">
         <v-icon size="48"> <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon><br>
-        <router-link class="link" to="/accesscontrol">Akıllı Geçiş Kontrol</router-link>
+        <router-link class="link" to="/accesscontrolcategory">Akıllı Geçiş Kontrol</router-link>
         <v-spacer  v-for="(item) in smartPassControl"
             :key="item.id">
           <span class="page-link" @click="$router.push(item.url)">
