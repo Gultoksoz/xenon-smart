@@ -162,7 +162,7 @@
         {
           id: 1,
           text: "QR Kod Okuyucu",
-          url:""
+          url:"/qrcode"
         },
         {
           id: 2,

@@ -74,7 +74,7 @@
         <h1 class="font-weight-bold mb-4 mt-8" >Nerede olursan ol!</h1>
          <span class="rgb-text " > Xenon Smart mobil uygulaması sayesinde dünyanın <br class="my-2">herhangi bir yerinden evinize erişebiliyorsunuz.  </span>
          <v-card-actions>
-             <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+             <v-btn class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
            </v-card-actions>

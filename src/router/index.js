@@ -1,4 +1,4 @@
-// Composables
+
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -47,7 +47,7 @@ const routes = [
         component: () => import('@/views/Contact.vue'),
       },
       {
-        path: '/smartlighting',
+        path: '/smartlightingcategory',
         name: 'smartlighting',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
@@ -111,12 +111,20 @@ const routes = [
         component: () => import('@/views/SingleSocket.vue'),
       },
       {
-        path: '/accesscontrol',
+        path: '/accesscontrolcategory',
         name: 'accesscontrol',
         // route level code-splitting
         // this generates a separate chunk (Home-[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () => import('@/views/AccessControl.vue'),
+      },
+      {
+        path: '/qrcode',
+        name: 'accesscontrol',
+        // route level code-splitting
+        // this generates a separate chunk (Home-[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('@/views/QrCode.vue'),
       },
 
     ],
