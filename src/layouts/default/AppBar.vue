@@ -111,7 +111,7 @@
       </v-col>
       <v-col cols="12" lg="2" xl="2">
         <v-icon size="48"> <img src="@/assets/akilli_aydinlatma.svg"/></v-icon><br>
-        <router-link class="link" to="/smartlighting">Akıllı Aydınlatma</router-link>
+        <router-link class="link" to="/smartlightingcategory">Akıllı Aydınlatma</router-link>
         <v-spacer  v-for="(item) in smartAydinlatma"
             :key="item.id">
           <span class="page-link" @click="$router.push(item.url)">
