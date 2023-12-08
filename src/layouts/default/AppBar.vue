@@ -173,6 +173,11 @@
           id: 3,
           text: "Temassız Çıkış Butonu",
           url:""
+        },
+        {
+          id: 4,
+          text: "QR + RFID Okuyucu",
+          url:"/qrcoderfid"
         }
       ],
       smartControl: [
