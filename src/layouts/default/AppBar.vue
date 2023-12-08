@@ -157,7 +157,7 @@
         {
           id: 0,
           text: "RFID Kart Okuyucu",
-          url:""
+          url:"/rfid"
         },
         {
           id: 1,

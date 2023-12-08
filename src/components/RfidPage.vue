@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="main" style="margin-top: 180px;">
+    <v-container fluid class="main" style="margin-top: 180px;" >
       <v-carousel hide-delimiters>
   <v-carousel-item
   >
@@ -7,14 +7,14 @@
     <v-col cols="2" sm="1"></v-col>
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
-           <v-spacer class="d-flex flex-column main-size " >
-            <span class="font-weight-bold">QR Kod Okuyucu</span>
+           <v-spacer class="d-flex flex-column main-size pt-4 mt-4 " >
+            <span class="font-weight-bold"> RFID Okuyucu,</span>
             <span>  
-               geçiş sistemleri, gelişmiş güvenlik ve hızlı erişim için tasarlandı.</span>
+               modern teknolojinin güvenlikle buluştuğu nokta.</span>
           </v-spacer>
            <v-spacer class="mb-1 mt-2 subtext-size">
             <span>
-              QR Code Okuyucu, modern güvenlik ihtiyaçlarınız için mükemmel bir çözümdür. Bu akıllı cihaz, kullanıcıları hızlı ve güvenli bir şekilde tanımlamak ve erişim kontrolünü sağlamak amacıyla tasarlanmıştır.
+                Akıllı RFID Kartlı Geçiş Sistemi! Hızlı, güvenilir ve esnek özellikleri ile her türlü kurumsal çevrede kullanıma uygun olan bu sistem, zamanlı erişim kontrolü, olay izleme ve çift yönlü geçiş kontrolü gibi özellikleriyle güvenliği bir adım öteye taşıyor.
             </span>
           </v-spacer>
           <v-spacer>
@@ -50,52 +50,57 @@
 </v-carousel>
    
    <!-- <v-row class="d-flex flex-column"> -->
-    <v-spacer class="text-center">
+    <v-spacer class="d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
+   
+
+    <v-spacer class="text-center" >
       <h3 class="font-weight-bold mb-4" style="color: gray;">Access Control Sistemleri</h3>
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Yüksek hızlı QR kod okuma teknolojisi ile donatılmıştır, böylece kullanıcılar anında tanımlanabilir ve erişim izinleri otomatik olarak kontrol edilebilir.
+      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">RFID teknolojisinin avantajlarıyla donatılmış Akıllı Access Control Sistemi, kullanıcılarına hızlı ve güvenli bir geçiş deneyimi sunar. Kolay entegrasyon ile güvenliği üst seviyeye çıkarır.
 
         </p>
      </v-spacer>
-     <v-spacer class=" d-flex flex-wrap justify-space-around">
+     <v-spacer class=" d-flex flex-wrap justify-space-around pb-5" >
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/app-store.png"/></v-col> 
          <v-col sm="4" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/google-play.png"/></v-col>
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/xenon-app.png"/></v-col>
         
      </v-spacer>
-     <v-spacer class="page">
-    
-  </v-spacer>
+    </v-spacer>
+    </v-spacer>
+
+     
 
 
 
     <v-spacer class="d-flex align-center justify-center">
      <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
         
-        <h1 class="font-weight-bold text-center mb-4 mt-8" >Mobil Çağ! Doors App</h1>
+        <h1 class="font-weight-bold text-center mb-4 mt-8" >Geçiş kontrol sisteminde mobil devrim!</h1>
          <span class="rgb-text " >
-          Dinamik QR kodlar ile mobil geçiş seçeneği sunar. Doors App, Doors Cloud ile uçtan uca bir geçiş kontrol çözümü veya mevcut geçiş kontrol sistemleri için esnek entegrasyon seçenekleri sağlar. Doors App, kullandığınız geçiş kontrol paneli ne olursa olsun Akıllı QR okuyucularla uyumlu olarak çalışır. </span>
+            Wiegand, standalone veya ağ tabanlı kullanım seçenekleri: Standalone kulanım için web tabanlı bir yönetim arayüzü sunar. Doors App ile hemen kullanmaya başlayın veya mevcut herhangi bir sisteme 5 dakikada entegre edin. Wi-Fi bağlantı ile HTTP, TCP, MQTT, UDP protokollerini destekler. </span>
          
-         <v-sheet width="55%" class="d-flex justify-center align-center mt-4 mb-4" elevation="0" >
-          <v-img
+         <v-sheet width="55%" class="d-flex justify-center align-center py-4 my-4" elevation="0" >
+          <v-img class="py-4 my-4"
             width="auto"
-            src="@/assets/Group111.png"
+            src="@/assets/Group0.png"
           ></v-img>
         </v-sheet>
 
          <v-row class="px-4">
           <v-col>
-            <v-card color="#354DD1" style="border-radius: 25px;" class="pl-2">
+            <v-card color="#8A5A10" height="100%" style="border-radius: 25px;" class="px-6 py-4">
               <v-img class="py-4 ml-2"
                 width="auto"
-                src="@/assets/Group.png"
+                src="@/assets/Group2.png"
               ></v-img>
-              <h1 class="font-weight-bold ml-2" >Dinamik QR kod ile geçiş</h1>
-             <p class="ml-2 mb-2"> Dinamik QR kodlar, beş saniye süreyle geçerli olacak şekilde oluşturulur ve bu sayede paylaşılmaları imkânsız hale gelir. Yetkilendirme işlemleri uzaktan ve anlık olarak yapılır, plastik kimlik kartlarına kıyasla daha uygun maliyetli ve sürdürülebilir çözümler sunar.</p>
+              <h1 class="font-weight-bold ml-2" >Güvenlik</h1>
+             <p class="ml-2 mb-2"> Dinamik QR kodlar iyi şekilde şifrelenir ve her biri benzersizdir. Doors Cloud, Doors App ve okuyucular arasındaki ağ güvenliği TLS 1.2 ile sağlanır.</p>
 
             </v-card>
           </v-col>
           <v-col>
-            <v-card color="#354DD1" style="border-radius: 25px;">
+            <v-card color="#8A5A10" style="border-radius: 25px;" class="px-2 py-2">
               <v-spacer class="d-flex justify-between-around">
               <v-img class=" ml-2"
                 width="auto"
@@ -105,7 +110,7 @@
              <p class="ml-2 mb-2"> İnternet kesintilerinde okuyucular sorunsuz çalışmaya devam eder. Kullanıcı yetkilendirmeleri, okuyucular ile Doors Cloud arasında sürekli senkronize edilmektedir.</p>
 
             </v-card>
-            <v-card color="#354DD1" style="border-radius: 25px;" class="mt-4 pr-2">
+            <v-card color="#8A5A10" style="border-radius: 25px;" class="mt-4 px-2 py-2">
               <v-spacer class="d-flex justify-between-around">
               <v-img class=" ml-2 py-2"
                 width="auto"
@@ -124,7 +129,7 @@
   </v-spacer>
 
   <v-spacer class="d-flex align-center justify-center py-4">
-    <v-card class=" parlaklik-card " style="background-color: #F7FCFE;" variant="tonal">
+    <v-card class=" parlaklik-card " style="background-color: #FDFAF5;" variant="tonal">
       <v-row>
 
         <v-col cols="6" class="d-flex">
@@ -155,7 +160,7 @@
 <v-spacer class="d-flex align-center justify-center py-4">
 
 
-<v-card class=" parlaklik-card" style="background-color: #F7FCFE  ;" variant="tonal">
+<v-card class=" parlaklik-card" style="background-color: #FDFAF5  ;" variant="tonal">
 <v-row>
  <v-col cols="6" class="d-flex flex-column">
   <v-spacer class="card-title text-size">
@@ -163,7 +168,7 @@
      </v-spacer>
      <v-spacer class="card-text ml-2 mb-2">
       <span class="subtext-size">
-        Akıllı okuyucuların kontrol ettiği kapılar Doors App kullanılarak açılabilir. Akıllı okuyucular geçiş kontrol panelinize kablo ile bağlanabilir veya geçiş kontrol paneline gerek kalmadan doğrudan geçiş kontrol sunucunuz ile ağ üzerinden haberleşebilir. Okuyucunun sunduğu web arayüzü ile ağ iletişim parametreleri özelleştirilebilir.
+        Kullanıcılar, kapıda bir Xenon Smart okuyucu varsa, erişmek için Doors Uygulaması kullanabilir. Xenon Smart okuyucular, kapı denetleyicinize kablolu olarak bağlanabilir veya bir ağ aracılığıyla erişim kontrol sunucunuzla doğrudan iletişim kurabilir ve kapıyı her şekilde kontrol edebilir.Ağ iletişimi yapılandırması, okuyucu kullanıcı arabiriminde özelleştirilebilir.
     </span>
     </v-spacer>
      
@@ -173,7 +178,7 @@
      <v-img
        cover
        max-width="760"
-       src="@/assets/Layer4.png"
+       src="@/assets/Layer01.png"
      ></v-img>
 
  </v-col>
@@ -181,40 +186,32 @@
 </v-card>
 </v-spacer>
 
+<v-spacer class="d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
+
+<v-row class="d-flex flex-column align-center justify-center">
+ <v-spacer class=" mt-8 mb-6">
+    
+  <v-img
+    width="auto"
+    src="@/assets/cevre.png"
+  ></v-img>
+   
+  </v-spacer>
 
 
-<v-spacer class="d-flex align-center justify-center py-4">
 
-
-<v-card class=" parlaklik-card " style="background-color: #F7FCFE;" variant="tonal">
-<v-row>
-
- <v-col cols="6" class="d-flex">
-     <v-img
-       cover
-       src="@/assets/Group1.png"
-     ></v-img>
- </v-col>
- 
- <v-col cols="6" class="d-flex flex-column">
-   <v-spacer class="card-title text-size">
-       <span class="font-weight-bold">Ziyaretçileriniz için dinamik QR </span>
-     </v-spacer>
-     <v-spacer class="card-text mb-3" >
-      <span class="subtext-size mr-3">
-        Geçişi erişim yetkisi verdiğiniz ziyaretçi için bir dinamik QR kod oluşturma bağlantısı oluşturulur. Ziyaretçiniz, geçiş işlemleri için bu bağlantıyı kullanarak dinamik QR kodlar oluşturabilir. Resepsiyon ihtiyacını ve teması ortadan kaldırır.
-    </span>
-    </v-spacer>
-     
-
- </v-col>
- 
+  <v-spacer class="text-center mt-6 mb-6">
+    <v-col cols="12" class="d-flex flex-column custom-text">
+      
+      <span class="font-weight-bold" style="font-size: 1.5em; width: 90%;">Plastik atık ve karbon ayak izinizi azaltıyoruz. Mobil geçiş çözümleri, plastik kart taşımama özgürlüğü sunar ve karbon ayak izinizi azaltmanıza yardımcı olur.</span>
+       <v-img width="20%" class="mt-4" src="@/assets/cevre2.png"/>
+    </v-col>
+  </v-spacer>
 </v-row>
-</v-card>
-</v-spacer>
-
   
-
+</v-spacer>
+    </v-spacer>
 
 
 
@@ -332,10 +329,10 @@ padding: 3em;
  
  .main-text{
    padding: 20px 0px;
-   background-image: url('@/assets/Rec18.png');
+   background-image: url('@/assets/Rec1.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 450px;
   width: 100%;
  }
  
@@ -344,7 +341,7 @@ padding: 3em;
   border-radius: 33px;
    margin: 10px 20px;
    padding-top: 3.1em;
-   padding-bottom: 10em;
+   padding-bottom: 2em;
    height:auto ;
    max-width: 900px;
    width: 90%;
