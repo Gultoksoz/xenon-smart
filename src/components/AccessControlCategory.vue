@@ -61,20 +61,18 @@
     <v-row class="d-flex flex-column">
     <v-col class="d-flex flex-wrap align-center justify-space-around">
       <v-col cols="12" md="6" lg="4" sm="6"  >
-
-        <v-card variant="tonal" style="border-radius: 20px; " class=" kontrol-card-color my-4 py-4">
-          <v-row>
-            <v-col >
+        <v-card variant="tonal" style="border-radius: 20px; " class=" card my-4 py-4">
+          <!-- <v-row> -->
+            <v-col class="d-flex align-center" >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
-                <v-sheet width="40%" class="d-flex justify-center align-center" elevation="0" >
+                <v-sheet class="a d-flex justify-center align-center" elevation="0" >
                   <v-img
                     width="auto"
-                    height="100px"
+                    height="auto"
                     src="@/assets/qr.png"
                   ></v-img>
                 </v-sheet>
               </v-spacer>
-              
             </v-col>
             <v-col >
               <v-spacer class="card-title">
@@ -83,11 +81,12 @@
                 </div>
                 </v-spacer>
                 <v-spacer class="card-text">
-                  <div >
+                  <!-- <div > -->
                     <!-- <span> -->
-                      Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.
+                      <div v-if="text1.length<130">{{ text1 }}</div>
+                      <div v-else>{{ text1.substring(0,127)+"..." }}</div>
                     <!-- </span> -->
-                </div>
+                <!-- </div> -->
                 </v-spacer>
                 <v-spacer class="card-action">
                   <div >
@@ -97,10 +96,10 @@
                 </div>
                 </v-spacer>
             </v-col>
-          </v-row>
+          <!-- </v-row> -->
         </v-card>
 
-        <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+        <v-card variant="tonal" style="border-radius: 20px;" class=" card my-4 py-4">
           <v-row>
             <v-col >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
@@ -121,11 +120,12 @@
                 </div>
                 </v-spacer>
                 <v-spacer class="card-text">
-                  <div>
+                  <!-- <div> -->
                   <!-- <span> -->
-                    Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.
+                    <div v-if="text2.length<130">{{ text2 }}</div>
+                      <div v-else>{{ text2.substring(0,127)+"..." }}</div>
                 <!-- </span> -->
-              </div>
+              <!-- </div> -->
                 </v-spacer>
                 <v-spacer class="card-action">
                   <div >
@@ -142,7 +142,7 @@
       
       <v-col cols="12" md="6" lg="4" sm="6"  >
       
-        <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+        <v-card variant="tonal" style="border-radius: 20px;" class=" card my-4 py-4">
           <v-row>
             <v-col >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
@@ -163,13 +163,14 @@
                 </div>
                 </v-spacer>
                 <v-spacer class="card-text">
-                  <div >
-                  <span>
-                    Doors Cloud ile tam entegre çalışan RFID okuyucular, bulut tabanlı yetki yönetimi ve Doors App ile mobil geçiş özellikleri sunar.
+                  <!-- <div > -->
+                  <!-- <span> -->
+                    <div v-if="text3.length<130">{{ text3 }}</div>
+                      <div v-else>{{ text3.substring(0,127)+"..." }}</div>
                     
 
-                </span>
-              </div>
+                <!-- </span> -->
+              <!-- </div> -->
                 </v-spacer>
                 <v-spacer class="card-action ">
                   <div >
@@ -183,7 +184,7 @@
         </v-card>
        
        
-        <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+        <v-card variant="tonal" style="border-radius: 20px;" class="card my-4 py-4">
           <v-row>
             <v-col >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
@@ -204,11 +205,12 @@
                 </div>
                 </v-spacer>
                 <v-spacer class="card-text">
-                  <div>
-                  <span>
-                    Okuyuculara ihtiyaç duymadan mobil geçiş imkanı sağlayarak uygun maliyetli geçiş kontrol çözümleri sunar. Doors App ile kullanıma hazır.
-                </span>
-              </div>
+                  <!-- <div> -->
+                  <!-- <span> -->
+                    <div v-if="text4.length<130">{{ text4 }}</div>
+                      <div v-else>{{ text4.substring(0,127)+"..." }}</div>
+                <!-- </span> -->
+              <!-- </div> -->
                 </v-spacer>
                 <v-spacer class="card-action">
                   <div >
@@ -289,7 +291,12 @@
    data() {
      return {
       
-      button:""
+      button:"",
+      text1:" Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.",
+      text2:"Doors Cloud ile tam entegre çalışan QR Kod Okuyucular, bulut üzerinden kullanıcı ve misafir yönetimi özellikleri sunarken Doors App ile mobil geçiş teknolojileri sağlar.",
+      text3:"Doors Cloud ile tam entegre çalışan RFID okuyucular, bulut tabanlı yetki yönetimi ve Doors App ile mobil geçiş özellikleri sunar.",
+      text4:"Okuyuculara ihtiyaç duymadan mobil geçiş imkanı sağlayarak uygun maliyetli geçiş kontrol çözümleri sunar. Doors App ile kullanıma hazır.",
+      
      };
    },
 
@@ -334,6 +341,8 @@
 
 
 
+ .page{
+padding: 3em;}
 
 }
 
@@ -378,15 +387,6 @@ padding:4px;
    justify-content :center;
    text-align: center;
  }
- 
- @media screen and (min-width: 600px) {
-
-.page{
-padding: 3em;
-}
-}
-
-
 
 
 
@@ -430,7 +430,19 @@ padding: 3em;
   font-size: 1em;  
  }
 
+ .page{
+padding: 3em;
+}
 
+
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .page{
+padding: 3em;
+}
 
 
 }
@@ -442,6 +454,13 @@ padding: 3em;
   font-size: 1.6vw;
   
  }
+
+ .page{
+padding: 3em;
+}
+
+
+
 }
 
  .slider-text{
