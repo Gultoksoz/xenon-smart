@@ -104,75 +104,73 @@
     
   </v-row>
 
-  <v-spacer class="page">
-  <v-card variant="tonal" class="my-4 py-4" style="border-radius: 20px;">
-    <v-row>
-      <v-col md="4" xl="6" class="px-0" >
-        <v-spacer class="card-title">
-          <div>
-            <span>Akıllı Geçiş Kontrol</span>
-              sistemleri daha akıllı bir yaşam tarzına geçiş yapmak için mükemmel bir seçenektir.
-        </div>
+  <v-spacer class="page d-flex justify-center">
+  <v-card variant="tonal" class="my-4 py-4 px-4 d-flex flex-wrap" style="border-radius: 20px; max-width: 1000px;">
+    <v-col md="8" xl="6" class="px-0" >
+      <v-spacer class="card-title">
+        <div>
+          <span>Akıllı Geçiş Kontrol</span>
+            sistemleri daha akıllı bir yaşam tarzına geçiş yapmak için mükemmel bir seçenektir.
+      </div>
 
-          </v-spacer>
-          <v-spacer class="card-text">
-            <div>
-            <span>
-            Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları, apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü optimize edebilirsiniz.
-          </span>
+        </v-spacer>
+        <v-spacer class="card-text">
+          <div>
+          <span>
+          Gelişmiş teknoloji ve kullanıcı dostu tasarımı ile bu sistem, günlük işlerinizi kolaylaştırırken güvende hissetmenizi sağlar. İşletmeler, kamu binaları, apartmanlar ve diğer birçok yer için ideal bir güvenlik çözümü sunar. QR Kod ve RFID okuyucu sistemler ile hem güvenlik hem de erişim kontrolünü optimize edebilirsiniz.
+        </span>
+      </div>
+        </v-spacer>
+        
+          <v-spacer class="card-action">
+            <div >
+          <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
+            <strong>Daha fazla</strong>
+          </v-btn>
         </div>
-          </v-spacer>
-         
-            <v-spacer class="card-action">
-             <div >
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
-              <strong>Daha fazla</strong>
-            </v-btn>
-          </div>
-          </v-spacer>
-      </v-col>
-      <v-col md="8" xl="6" class="px-0" >
-        <v-spacer class="d-flex justify-center my-4">
-        <v-sheet width="80%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#cccccc">
-          <v-img
-            
-            width="auto"
-            aspect-ratio="4/3"
-            src="@/assets/giris_kontrol.png"
-          ></v-img>
+        </v-spacer>
+    </v-col>
+    <v-col md="4" xl="6" class="px-0" >
+      <v-spacer class="d-flex justify-center my-4">
+      <v-sheet width="100%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#cccccc">
+        <v-img
+          
+          width="auto"
+          aspect-ratio="4/3"
+          src="@/assets/giris_kontrol.png"
+        ></v-img>
+      </v-sheet>
+    </v-spacer>
+    <v-spacer class="d-flex justify-center my-4">
+        <v-sheet
+          elevation="0"
+          rounded="xl"
+          color="#E9E9E9"
+          width="100%"
+        >
+          <v-slide-group
+            v-model="model"
+            selected-class="bg-success"
+            show-arrows
+            class="d-flex align-center"
+          >
+            <v-slide-group-item
+              v-for="n in 15"
+              :key="n"
+            >
+              <v-scale-transition class="my-4">
+                <v-spacer style="max-width: 100px;" class="text-center mx-2">
+                  <v-img max-height="80" src="@/assets/rfid_kart.svg"></v-img>
+                  <span class="mt-2">
+                    RFID Kart Okuyucu
+                  </span>
+                </v-spacer>
+              </v-scale-transition>
+            </v-slide-group-item>
+          </v-slide-group>
         </v-sheet>
       </v-spacer>
-      <v-spacer class="d-flex justify-center my-4">
-          <v-sheet
-            elevation="0"
-            rounded="xl"
-            color="#E9E9E9"
-            width="80%"
-          >
-            <v-slide-group
-              v-model="model"
-              selected-class="bg-success"
-              show-arrows
-              class="d-flex align-center"
-            >
-              <v-slide-group-item
-                v-for="n in 15"
-                :key="n"
-              >
-                <v-scale-transition class="my-4">
-                  <v-spacer style="max-width: 100px;" class="text-center mx-2">
-                    <v-img max-height="80" src="@/assets/rfid_kart.svg"></v-img>
-                    <span class="mt-2">
-                      RFID Kart Okuyucu
-                    </span>
-                  </v-spacer>
-                </v-scale-transition>
-              </v-slide-group-item>
-            </v-slide-group>
-          </v-sheet>
-        </v-spacer>
-      </v-col>
-    </v-row>
+    </v-col>
   </v-card>
 </v-spacer>
 
@@ -366,7 +364,6 @@ export default {
   justify-content: center;
   margin-top: 16px;
   font-size: 32px;
-  padding:8px;
 }
 .card-title div {
   width: 80%;
@@ -380,7 +377,6 @@ export default {
   align-items: center;
   justify-content: center;
   font-size:20px;
-  padding:8px;
 }
 .card-text div {
   width: 80%;
