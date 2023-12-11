@@ -167,7 +167,7 @@
         {
           id: 2,
           text: "Geçiş Kontrol Paneli",
-          url:""
+          url:"/accesscontrolpanel"
         },
         {
           id: 3,

@@ -375,7 +375,7 @@ padding: 3em;
 @media screen and (min-width: 1280px) {
   .rgb-text{
   text-align: center;
-  font-size: 1.6vw;
+  font-size: 20px;
   
  }
 }
