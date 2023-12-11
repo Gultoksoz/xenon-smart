@@ -81,7 +81,7 @@
                 <v-img 
                     max-width="200"
                     aspect-ratio="4/3"
-                    src="@/assets/Doors.png"
+                    src="@/assets/doors.png"
                 ></v-img></v-col>
                 <h3 class="font-weight-bold text-center">Doors Cloud</h3>
                 <p class=" card-text-size text-center">Doors Cloud, Xenon Smart geçiş kontrol donanımları için sunulan ve farklı seviyelerde entegrasyon olanakları ile uçtan uca bir çözümü kapsayan bir geçiş kontrol hizmetleri platformudur.</p>
