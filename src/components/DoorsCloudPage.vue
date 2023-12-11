@@ -94,7 +94,7 @@
                 <v-img 
                     max-width="60"
                     aspect-ratio="4/3"
-                    src="@/assets/iphone.png"
+                    src="@/assets/iPhone.png"
                 ></v-img></v-col>
                 <h3 class="font-weight-bold text-center">Doors App</h3>
                 <p  class=" card-text-size text-center">Dinamik QR kodlar ile güvenli geçiş seçeneği sunar. Doors App, mevcut geçiş kontrol sistemleri için esnek entegrasyon seçenekleri ve Doors Cloud ile uçtan uca bir geçiş kontrol çözümü sunar.</p>
