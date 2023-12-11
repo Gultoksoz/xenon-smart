@@ -178,6 +178,11 @@
           id: 4,
           text: "QR + RFID Okuyucu",
           url:"/qrcoderfid"
+        },
+        {
+          id: 5,
+          text: "Doors Cloud",
+          url:"/doorscloud"
         }
       ],
       smartControl: [
