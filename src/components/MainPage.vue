@@ -174,8 +174,8 @@
   </v-card>
 </v-spacer>
 
-<v-spacer class="page">
-  <v-card variant="tonal" style="border-radius: 20px;" class=" kontrol-card-color my-4 py-4">
+<v-spacer class="page d-flex justify-center">
+  <v-card variant="tonal" style="border-radius: 20px;  max-width: 1000px;" class=" kontrol-card-color my-4 py-4 px-4 d-flex flex-wrap">
     <v-row>
       <v-col md="8" xl="6" class="px-0">
         <v-spacer class="d-flex justify-center my-4">
@@ -244,8 +244,8 @@
 </v-spacer>
 
 
-<v-spacer class="page">
-  <v-card variant="tonal" style="border-radius: 20px;" class="my-4 py-4 sensor-card-color">
+<v-spacer class="page d-flex justify-center">
+  <v-card variant="tonal" style="border-radius: 20px;  max-width: 1000px;" class="my-4 py-4 sensor-card-color px-4 d-flex flex-wrap">
     <v-row>
       <v-col md="4" xl="6" class="px-0" >
         <v-spacer class="card-title">
@@ -323,7 +323,6 @@
 </template>
   
 <script >
-import router from '@/router/index.js'
 export default {
   data() {
     return {
