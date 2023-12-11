@@ -71,7 +71,7 @@
          <v-card-title >RGB Led Ampul</v-card-title>
          <v-card-text class="rgb-text " >Parti modunda müzikle senkronize renk<br class="my-2"> değişimleriyle eğlenceli bir atmosfer yaratın.</v-card-text>
          <v-card-actions>
-             <v-btn  @click="" class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+             <v-btn   class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
              <v-btn class="rgb-button ml-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">

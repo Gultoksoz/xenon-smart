@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <v-app>
     <v-spacer class="d-flex align-start justify-center">
@@ -7,7 +8,7 @@
         <default-bar />
 
         <default-view />
-        <Footer />
+        <DefaultFooter/>
       </v-spacer>
     </v-spacer>
 
@@ -17,5 +18,5 @@
 <script setup>
   import DefaultBar from './AppBar.vue'
   import DefaultView from './View.vue'
-  import Footer from './Footer.vue';
+  import DefaultFooter from './Footer.vue';
 </script>

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <v-footer class="d-flex footer-color">
     <v-spacer>
@@ -88,7 +89,6 @@
   </template>
 
 <script>
-  import router from '@/router/index.js'
 export default {
   data: () => ({
     email: "",

@@ -67,7 +67,7 @@
         <h1 class="font-weight-bold mb-4 mt-8" >Akıllı Kapı Sensörü</h1>
          <span class="rgb-text " >Xenon Smart uygulaması sayesinde kapılarınızın durumunu <br class="my-2">her an  her yerden takip ve kontrol edebilirsiniz. </span>
          <v-card-actions>
-             <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+             <v-btn   class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
            </v-card-actions>

@@ -197,7 +197,7 @@
             <v-btn size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
               <strong>Satın Al</strong>
             </v-btn>
-            <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="">
+            <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" >
               <strong>Daha fazla</strong>
             </v-btn>
           </div>
@@ -228,7 +228,7 @@
             <v-btn size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
               <strong>Satın Al</strong>
             </v-btn>
-            <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="">
+            <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" >
               <strong>Daha fazla</strong>
             </v-btn>
           </div>

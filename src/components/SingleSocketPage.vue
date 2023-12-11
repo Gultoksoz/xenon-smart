@@ -89,7 +89,7 @@
                 ></v-img>
 
              <v-col cols="4" sm="6" md="4">
-                <v-btn  @click="" class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+                <v-btn   class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
             </v-col>
