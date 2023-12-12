@@ -137,275 +137,33 @@
 
   </v-spacer>
 
+  <v-spacer class="d-flex align-center justify-center py-4 mt-4">
+    <v-card class=" parlaklik-card " style="background-color: #F5F6FD;" variant="tonal">
+      <v-row>
 
-
-     <v-spacer class="d-flex justify-center page">
-        <v-row style=" max-width: 1000px; " class=" px-4 ">
-        <v-col cols="12" sm="6">
-            <v-card color="#F2F6FC" style="border-radius: 20px;  max-height: 400px; height: 350px;" class="my-4 py-4 px-4 d-flex flex-column" >
-                <v-col class="d-flex justify-center">
-                <v-img 
-                    max-width="200"
-                    aspect-ratio="4/3"
-                    src="@/assets/doors.png"
-                ></v-img></v-col>
-                <h3 class="font-weight-bold text-center">Doors Cloud</h3>
-                <p class=" card-text-size text-center">Doors Cloud, Xenon Smart geçiş kontrol donanımları için sunulan ve farklı seviyelerde entegrasyon olanakları ile uçtan uca bir çözümü kapsayan bir geçiş kontrol hizmetleri platformudur.</p>
-            </v-card>
+        <v-col cols="6" class="d-flex">
+          <v-img
+            cover
+            src="@/assets/Group09.png"
+          ></v-img>
         </v-col>
-        
-        <v-col>
-            <v-card color="#F2F6FC" style="border-radius: 20px; max-height: 400px; height: 350px;" class="my-4 py-4 px-4 d-flex flex-column">
-                <v-col class="d-flex justify-center">
-                <v-img 
-                    max-width="60"
-                    aspect-ratio="4/3"
-                    src="@/assets/iPhone.png"
-                ></v-img></v-col>
-                <h3 class="font-weight-bold text-center">Doors App</h3>
-                <p  class=" card-text-size text-center">Dinamik QR kodlar ile güvenli geçiş seçeneği sunar. Doors App, mevcut geçiş kontrol sistemleri için esnek entegrasyon seçenekleri ve Doors Cloud ile uçtan uca bir geçiş kontrol çözümü sunar.</p>
-         
-            </v-card>
-        </v-col>
-    </v-row>
-     </v-spacer>
-
-
-
-    <v-spacer class="d-flex align-center justify-center pb-4">
-     <v-card class=" rgb-card d-flex flex-column align-center justify-end" color="#F2F6FC">
-        
-        <h1 class="font-weight-bold text-center mb-4 mt-8" >Doors Cloud</h1>
-         <span class="rgb-text " >
-            Sistem yöneticileri; cihazları, kullanıcıları ve ziyaretçileri web tabanlı bir yönetim arayüzü üzerinden yönetebilir. Yetkilendirme işlemleri uzaktan ve anlık olarak yapılır, hızlı ve sorunsuz bir deneyim sağlar.</span>
-         
-            <v-row class="d-flex flex-wrap align-center justify-between-around pt-6 mt-4 px-4">
-            
-                <v-col class="d-flex align-center flex-column">
-                  <v-img 
-                      width="auto"
-                      src="@/assets/Group03.png"
-                  ></v-img>
-                <span class="text-center pt-4">Cihaz yönetimi</span>
-                </v-col>
-                <v-col class="d-flex align-center flex-column">
-                  <v-img 
-                      width="auto"
-                      src="@/assets/Group04.png"
-                  ></v-img>
-                <span class=" text-center pt-4">Kullanıcı Yönetimi</span>
-                </v-col>
-                <v-col class="d-flex align-center flex-column">
-                  <v-img 
-                      width="auto"
-                      src="@/assets/Group05.png"
-                  ></v-img>
-                <span class=" text-center pt-4">Yetki Yönetimi</span>
-                </v-col>
-                <v-col class="d-flex align-center flex-column">
-                  <v-img 
-                      width="auto"
-                      src="@/assets/Group06.png"
-                  ></v-img>
-                <span class=" text-center pt-4">Geçiş Kayıtları</span>
-                </v-col>
     
-             </v-row>
-
-         <v-row class="px-4">
-          <v-col>
-            <v-card color="#808285" style="border-radius: 25px; max-height: 410px; height: 410px; " class="px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/Group07.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >Cloud Avantajları</h1>
-             <p class="ml-2 mb-2"> Doors Cloud, işletme ve bakım maliyetlerini ortadan kaldırır, gerekli donanım sayısını en aza indirir.
-            </p>
-            </v-card>
-            <v-card color="#808285"  style="border-radius: 25px; max-height: 410px; height: 410px;" class=" mt-4 px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/wifi.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >Çevrimdışı Uyumluluk</h1>
-             <p class="ml-2 mb-2">İnternet kesintilerinde okuyucular sorunsuz çalışmaya devam eder. Kullanıcı yetkilendirmeleri, okuyucular ile Doors Cloud arasında sürekli senkronize edilmektedir.</p>
-            </v-card>
-            
-          </v-col>
-          <v-col>
-            <v-card color="#808285" style="border-radius: 25px; max-height: 410px; height: 410px;" class="px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/circle.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >Konumdan Bağımsız</h1>
-             <p class="ml-2 mb-2"> Çok sayıda okuyucu ve geçiş kontrol panelini, konumlarından bağımsız olarak, tek bir ekranda yönetin.
-
-            </p>
-            </v-card>
-            <v-card color="#808285"  style="border-radius: 25px; max-height: 410px; height: 410px;" class=" mt-4 px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/view.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >API Hizmeti</h1>
-             <p class="ml-2 mb-2">Yönetim arayüzünde gerçekleştirilen tüm işlemler, sunulan API hizmetleri aracılığıyla da gerçekleştirilebilir.</p>
-            </v-card>
-          </v-col>
-         </v-row>
+        <v-col cols="6" class="d-flex flex-column">
+          <v-spacer class="card-title text-size">
+            <span class="font-weight-bold">Maliyet Avantajı</span>
+          </v-spacer>
+        <v-spacer class="card-text mr-2 mb-2">
+         <span class="subtext-size">
+          Wiegand, standalone veya ağ tabanlı kullanım seçenekleri: Standalone kulanım için web tabanlı bir yönetim arayüzü sunar. Doors App ile hemen kullanmaya başlayın veya mevcut herhangi bir sisteme 5 dakikada entegre edin. Wi-Fi bağlantısı ile HTTP, TCP, MQTT, UDP protokollerini destekler.
+       </span>
+       </v-spacer>
         
-        
-   </v-card>
 
-  </v-spacer>
-
-  <v-spacer class="d-flex justify-center pt-4">
-        <v-spacer style="max-width: 1000px;">
-   
-
-    <v-spacer class="text-center py-4" >
-      <h1 class="font-weight-bold mb-4" >Desteklenen Access Control Yöntemleri</h1>
-      <p class=" mx-4 px-4" >Doors Cloud en yaygın, güvenli ve pratik geçiş kontrol sistemleri olan Dinamik QR Kod, RFID Kart ve Mobil Geçiş sistemlerini destekler ve kullanımı kolay yönetim paneli ile kontrol etmenize olanak tanır.
-
-        </p>
-     </v-spacer>
-     <v-spacer class=" d-flex flex-wrap align-center justify-space-around pb-5" >
-      <v-col class="d-flex align-center  flex-column">
-        <v-img 
-        max-width="40%"
-            width="80px"
-            src="@/assets/Layer02.png"
-        ></v-img>
-        <span class="text-center pt-4" style="font-size: 0.9em;">RFID Kart</span>
-      </v-col>
-      <v-col class="d-flex align-center flex-column">
-        <v-img 
-        max-width="40%"
-            width="80px"
-            src="@/assets/Layer03.png"
-        ></v-img>
-      <span class=" text-center pt-4" style="font-size: 0.9em;">Dinamik QR Kod</span>
-      </v-col>
-      <v-col class="d-flex align-center flex-column">
-        <v-img 
-        max-width="40%"
-            width="80px"
-            src="@/assets/Layer04.png"
-        ></v-img>
-      <span class=" text-center pt-4" style="font-size: 0.9em;">Uzaktan Kontrol</span>
-      </v-col>
-     </v-spacer>
-    </v-spacer>
-    </v-spacer>
-
-
-<v-spacer class="d-flex align-center justify-center py-4 mb-4">
-<v-card class=" parlaklik-card " style="background-color: #F5F6FD;" variant="tonal">
-<v-row>
-
- <v-col cols="6" class="d-flex">
-     <v-img
-       cover
-       src="@/assets/Group1.png"
-     ></v-img>
- </v-col>
- 
- <v-col cols="6" class="d-flex flex-column">
-   <v-spacer class="card-title text-size">
-       <span class="font-weight-bold">Ziyaretçileriniz için dinamik QR </span>
-     </v-spacer>
-     <v-spacer class="card-text mb-3" >
-      <span class="subtext-size mr-3">
-        Geçişi erişim yetkisi verdiğiniz ziyaretçi için bir dinamik QR kod oluşturma bağlantısı oluşturulur. Ziyaretçiniz, geçiş işlemleri için bu bağlantıyı kullanarak dinamik QR kodlar oluşturabilir. Resepsiyon ihtiyacını ve teması ortadan kaldırır.
-    </span>
-    </v-spacer>
-     
-
- </v-col>
- 
-</v-row>
+    </v-col>
+    
+  </v-row>
 </v-card>
 </v-spacer>
-
-<v-spacer class="d-flex justify-center py-4">
-        <v-spacer style="max-width: 1000px;">
-<v-spacer class="text-center" >
-      
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;"> Yüksek Standartlarda Güvenlik!
-Doors Cloud, TLS 1.2 veri iletişimi güvenlik sistemi ve dinamik QR kodları kopyalanamaz, çoğaltılamaz ve taklit edilemez. Bu sayede yüksek standartlarda güvenlik sağlar. 
-
-        </p>
-     </v-spacer>
-    </v-spacer>
-  </v-spacer>
-
-  <v-spacer class="d-flex align-center justify-center py-4">
-     <v-card class=" rgb-card d-flex flex-column align-center justify-end" color="#F2F6FC">
-        
-        <h1 class="font-weight-bold text-center mb-4 mt-8" >Doors App</h1>
-         <span class="rgb-text " >
-          
-Dinamik QR kodlar ile güvenli geçiş seçeneği sunar. Doors App, mevcut geçiş kontrol sistemleri için esnek entegrasyon seçenekleri ve Doors Cloud ile uçtan uca bir geçiş kontrol çözümü sunar.</span>
-         
-            <v-row class="d-flex flex-wrap align-center justify-center py-4 mt-4 px-4">
-                <v-col class="d-flex align-center flex-column">
-                  <v-img 
-                  max-width="70%"
-                      width="auto"
-                      src="@/assets/Doors-App.png"
-                  ></v-img>
-                </v-col>
-             </v-row>
-
-         <v-row class="px-4">
-          <v-col cols="12" sm="6">
-            <v-card color="#808285" style="border-radius: 25px; max-height: 410px; height: 410px; " class="px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/Group.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >Dinamik QR Kod</h1>
-             <p class="ml-2 mb-2 doors-text-size"> Dinamik QR kodlar, beş saniye süreyle geçerli olacak şekilde oluşturulur ve bu sayede paylaşılmaları imkânsız hale gelir. Yetkilendirme işlemleri uzaktan ve anlık olarak yapılır, plastik kimlik kartlarına kıyasla daha uygun maliyetli ve sürdürülebilir çözümler sunar.
-
-            </p>
-            </v-card>
-            <v-card color="#808285"  style="border-radius: 25px; max-height: 410px; height: 410px;" class=" mt-4 px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/wifi.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >Çevrimdışı Uyumluluk</h1>
-             <p class="ml-2 mb-2 doors-text-size">İnternet kesintilerinde okuyucular sorunsuz çalışmaya devam eder. Kullanıcı yetkilendirmeleri, okuyucular ile Doors Cloud arasında sürekli senkronize edilmektedir.</p>
-            </v-card>
-            
-          </v-col>
-          <v-col>
-            <v-card color="#808285" style="border-radius: 25px; max-height: 410px; height: 410px;" class="px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/Group2.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >Güvenlik</h1>
-             <p class="ml-2 mb-2 doors-text-size"> Dinamik QR kodlar iyi şekilde şifrelenir ve her biri benzersizdir. Doors Cloud, Doors App ve okuyucular arasındaki ağ güvenliği TLS 1.2 ile sağlanır.
-
-            </p>
-            </v-card>
-            <v-card color="#808285"  style="border-radius: 25px; max-height: 410px; height: 410px;" class=" mt-4 px-6 py-4">
-              <v-img class="py-4 ml-2"
-                width="auto"
-                src="@/assets/gen3.png"
-              ></v-img>
-              <h1 class="font-weight-bold ml-2" >Uzaktan Erişim</h1>
-             <p class="ml-2 mb-2 doors-text-size">Uzaktan erişim yetkisine sahip kullanıcılar kapılarını uzaktan kontrol edebilirler.</p>
-            </v-card>
-          </v-col>
-         </v-row>
-        
-        
-   </v-card>
-
-  </v-spacer>
 
 
 <v-spacer class="d-flex align-center justify-center py-4">
@@ -419,7 +177,7 @@ Dinamik QR kodlar ile güvenli geçiş seçeneği sunar. Doors App, mevcut geçi
      </v-spacer>
      <v-spacer class="card-text ml-2 mb-2">
       <span class="subtext-size">
-        Akıllı okuyucuların kontrol ettiği kapılar Doors App kullanılarak açılabilir. Akıllı okuyucular geçiş kontrol panelinize kablo ile bağlanabilir veya geçiş kontrol paneline gerek kalmadan doğrudan geçiş kontrol sunucunuz ile ağ üzerinden haberleşebilir. Okuyucunun sunduğu web arayüzü ile ağ iletişim parametreleri özelleştirilebilir.
+        Kullanıcılar, kapıda bir Xenon Smart okuyucu varsa, erişmek için Doors Uygulaması kullanabilir. Xenon Smart okuyucular, kapı denetleyicinize kablolu olarak bağlanabilir veya bir ağ aracılığıyla erişim kontrol sunucunuzla doğrudan iletişim kurabilir ve kapıyı her şekilde kontrol edebilir.Ağ iletişimi yapılandırması, okuyucu kullanıcı arabiriminde özelleştirilebilir.
     </span>
     </v-spacer>
      
@@ -429,7 +187,7 @@ Dinamik QR kodlar ile güvenli geçiş seçeneği sunar. Doors App, mevcut geçi
      <v-img
        cover
        max-width="760"
-       src="@/assets/Layer4.png"
+       src="@/assets/Layer07.png"
      ></v-img>
 
  </v-col>
