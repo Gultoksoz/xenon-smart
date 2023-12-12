@@ -57,18 +57,18 @@
         </p>
      </v-spacer>
 
-     <v-spacer class="page">
-    <v-row class="d-flex flex-column">
+     <v-spacer class=" d-flex justify-center page">
+    <v-row style=" max-width: 1000px; " class="d-flex flex-column">
     <v-col class="d-flex flex-wrap align-center justify-space-around">
-      <v-col cols="12" md="6" lg="4" sm="6"  >
-        <v-card variant="tonal" style="border-radius: 20px; " class=" card my-4 py-4">
-          <!-- <v-row> -->
-            <v-col class="d-flex align-center" >
+      <v-col cols="12" md="6" lg="6" sm="6"  >
+        <v-card variant="tonal" style="border-radius: 20px;max-height: 600px; height: 550px;" class=" card my-4 py-4">
+          <v-row>
+            <v-col >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
                 <v-sheet class="a d-flex justify-center align-center" elevation="0" >
                   <v-img
                     width="auto"
-                    height="auto"
+                    height="100px"
                     src="@/assets/qr.png"
                   ></v-img>
                 </v-sheet>
@@ -96,10 +96,10 @@
                 </div>
                 </v-spacer>
             </v-col>
-          <!-- </v-row> -->
+          </v-row>
         </v-card>
 
-        <v-card variant="tonal" style="border-radius: 20px;" class=" card my-4 py-4">
+        <v-card variant="tonal" style="border-radius: 20px;max-height: 600px; height: 550px;" class=" card my-4 py-4">
           <v-row>
             <v-col >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
@@ -140,9 +140,9 @@
 
       </v-col>
       
-      <v-col cols="12" md="6" lg="4" sm="6"  >
+      <v-col cols="12" md="6" lg="6" sm="6"  >
       
-        <v-card variant="tonal" style="border-radius: 20px;" class=" card my-4 py-4">
+        <v-card variant="tonal" style="border-radius: 20px;max-height: 600px; height: 550px;" class=" card my-4 py-4">
           <v-row>
             <v-col >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
@@ -184,7 +184,7 @@
         </v-card>
        
        
-        <v-card variant="tonal" style="border-radius: 20px;" class="card my-4 py-4">
+        <v-card variant="tonal" style="border-radius: 20px;max-height: 600px; height: 550px;" class="card my-4 py-4">
           <v-row>
             <v-col >
               <v-spacer class="d-flex justify-center my-4 mx-0 px-0">
@@ -396,7 +396,7 @@ padding:4px;
    background-image: url('@/assets/bg21.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 450px;
   width: 100%;
  }
  
