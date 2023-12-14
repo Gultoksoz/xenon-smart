@@ -1,6 +1,6 @@
 <template>
-    <v-container fluid class="main" style="margin-top: 180px;">
-        <v-carousel hide-delimiters cycle=true :interval=20000 :show-arrows="false">
+    <v-container fluid class="main" style="margin-top: 150px;">
+        <v-carousel hide-delimiters cycle=true :interval=200000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
@@ -46,7 +46,8 @@
   ></v-carousel-item>
 </v-carousel>
    
-
+<v-spacer class="d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
 <v-spacer class="text-center mt-2">
       <h3 class="font-weight-bold mb-4" style="color: gray; font-size: 20px;">Akıllı Aydınlatma</h3>
       <p class=" mx-4 px-4" style="font-size: 40px; line-height: 48px;">Enerji verimliliğini artırmak için tasarlanmış modern ve kullanıcı dostu olan akıllı aydınlatma sistemleri , hem kullanım kolaylığı hem de çevresel sürdürülebilirlik sunar.</p>
@@ -58,7 +59,7 @@
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/googlehome@4x.png"/></v-col>
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/Google-Alexa.png"/></v-col>
      </v-spacer>
-
+    </v-spacer></v-spacer>
    
    
      <v-spacer class=" d-flex justify-center">
@@ -135,7 +136,7 @@
 </v-spacer>
 
   
-  <v-spacer class=" kontrol-card-color d-flex justify-center">
+  <v-spacer class=" d-flex justify-center">
   <v-card variant="tonal" style="border-radius: 20px;  max-width: 1000px;" class=" kontrol-card-color my-4 py-4 px-4 d-flex flex-wrap">
       <v-col md="4" xl="6" class="px-0">
         <v-spacer class="d-flex justify-center my-4 ">
