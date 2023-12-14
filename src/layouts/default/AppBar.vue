@@ -254,12 +254,12 @@
         {
           id: 1,
           text: "Akıllı Tekli Switch",
-          url:""
+          url:"/smartsingleswitch"
         },
         {
           id: 2,
           text: "Akıllı İkili Switch",
-          url:""
+          url:"/smartdualswitch"
         },
         {
           id: 3,

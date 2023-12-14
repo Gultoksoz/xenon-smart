@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="main" style="margin-top: 180px;">
-      <v-carousel hide-delimiters>
+      <v-carousel hide-delimiters cycle=true :interval=200000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
@@ -52,7 +52,8 @@
   ></v-carousel-item>
 </v-carousel>
    
-   <!-- <v-row class="d-flex flex-column"> -->
+<v-spacer class=" page d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
     <v-spacer class="text-center mt-6">
       <h3 class="font-weight-bold mb-4" style="color: gray;">RGB Led Ampul </h3>
       <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
@@ -64,8 +65,11 @@
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/googlehome@4x.png"/></v-col>
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/Google-Alexa.png"/></v-col>
      </v-spacer>
-   <!-- </v-row> -->
-   <!-- <v-row class="d-flex flex-column"> -->
+    </v-spacer>
+  </v-spacer>
+
+
+
     <v-spacer class="d-flex align-center justify-center">
      <v-card class="d-flex flex-column align-center justify-end rgb-card"  variant="tonal">
       
@@ -379,7 +383,7 @@ padding:4px;
    background-image: url('@/assets/product_background.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 500px;
  }
  
  .rgb-card{
@@ -389,8 +393,6 @@ padding:4px;
   color: white;
   border-radius: 33px;
    margin: 10px 20px;
-   /* padding-top: 3.1em; */
-   /* padding-bottom: 3.1em; */
    height: 500px ;
    max-width: 900px;
    width: 90%;
@@ -404,6 +406,10 @@ padding:4px;
   text-align: center;
   font-size: 3vw;
   
+ }
+
+ .page{
+  padding: 2em 5em;
  }
 }
 @media screen and (min-width: 1280px) {

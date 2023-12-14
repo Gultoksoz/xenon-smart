@@ -46,7 +46,7 @@
   ></v-carousel-item>
 </v-carousel>
    
-<v-spacer class="d-flex justify-center">
+<v-spacer class=" page d-flex justify-center">
         <v-spacer style="max-width: 1000px;">
 <v-spacer class="text-center mt-2">
       <h3 class="font-weight-bold mb-4" style="color: gray; font-size: 20px;">Akıllı Aydınlatma</h3>
@@ -62,7 +62,7 @@
     </v-spacer></v-spacer>
    
    
-     <v-spacer class=" d-flex justify-center">
+     <v-spacer class=" page d-flex justify-center">
   <v-card variant="tonal" class="my-4 py-4 px-4 d-flex flex-wrap" style="border-radius: 20px; max-width: 1000px; background-color: #F1FBFF;">
     <v-col md="8" xl="6" class="px-0" >
       <v-spacer class="card-title">
@@ -136,7 +136,7 @@
 </v-spacer>
 
   
-  <v-spacer class=" d-flex justify-center">
+  <v-spacer class=" page d-flex justify-center">
   <v-card variant="tonal" style="border-radius: 20px;  max-width: 1000px;" class=" kontrol-card-color my-4 py-4 px-4 d-flex flex-wrap">
       <v-col md="4" xl="6" class="px-0">
         <v-spacer class="d-flex justify-center my-4 ">
@@ -208,7 +208,7 @@
 
  
 
-  <v-spacer class=" d-flex justify-center">
+  <v-spacer class=" page d-flex justify-center">
   <v-card variant="tonal" class="my-4 py-4 px-4 d-flex flex-wrap " style="border-radius: 20px; max-width: 1000px; background-color: #FFFBE8">
     <v-col md="8" xl="6" class="px-0" >
       <v-spacer class="card-title">
@@ -364,7 +364,6 @@
 
 }
 
-
 @media screen and (min-width: 600px) {
 
 .main-size{
@@ -374,6 +373,9 @@
 .subtext-size{
   font-size: 1em;  
  }
+ .page{
+padding: 2em 5em;
+}
 
 }
  
