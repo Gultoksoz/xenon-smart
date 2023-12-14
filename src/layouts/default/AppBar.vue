@@ -71,15 +71,17 @@
     </v-row>
   </v-app-bar>
 
-  <v-navigation-drawer style="max-width: 1110px;"
+  <v-navigation-drawer 
     v-model="drawer"
     temporary
     :location="resize > 1280 ? 'center': 'left'"
     class="py-3"
   >
-    <v-card class="d-flex flex-wrap" style="overflow-y: scroll;">
+    <v-card class="d-flex flex-wrap nav" style="overflow-y: scroll; max-width: 1280px;" variant="flat" >
       <v-col cols="12" lg="2" xl="2">
+        <v-spacer class="d-flex justify-space-around">
         <v-icon size="48"> <img src="@/assets/akilli_gecis_kontrol.svg"/></v-icon><br>
+      </v-spacer>
         <router-link class="link" to="/accesscontrolcategory">Akıllı Geçiş Kontrol</router-link>
         <v-spacer  v-for="(item) in smartPassControl"
             :key="item.id">
@@ -89,7 +91,8 @@
         </v-spacer>
       </v-col>
       <v-col cols="12" lg="2" xl="2">
-        <v-icon size="48"> <img src="@/assets/akilli_kontrol_grubu.svg"/></v-icon><br>
+        <v-spacer class="d-flex justify-space-around">
+        <v-icon size="48"> <img src="@/assets/akilli_kontrol_grubu.svg"/></v-icon><br></v-spacer>
         <router-link class="link" to="#">Akıllı Kontrol Grubu</router-link>
         <v-spacer  v-for="(item) in smartControl"
             :key="item.id">
@@ -100,7 +103,8 @@
       </v-col>
       
       <v-col cols="12" lg="2" xl="2">
-        <v-icon size="48"> <img src="@/assets/akilli_sensor.svg"/></v-icon><br>
+        <v-spacer class="d-flex justify-space-around">
+        <v-icon size="48"> <img src="@/assets/akilli_sensor.svg"/></v-icon><br></v-spacer>
         <router-link class="link" to="#">Akıllı Sensör</router-link>
         <v-spacer  v-for="(item) in smartSensor"
             :key="item.id">
@@ -110,7 +114,8 @@
         </v-spacer>
       </v-col>
       <v-col cols="12" lg="2" xl="2">
-        <v-icon size="48"> <img src="@/assets/akilli_aydinlatma.svg"/></v-icon><br>
+        <v-spacer class="d-flex justify-space-around">
+        <v-icon size="48"> <img src="@/assets/akilli_aydinlatma.svg"/></v-icon><br></v-spacer>
         <router-link class="link" to="/smartlightingcategory">Akıllı Aydınlatma</router-link>
         <v-spacer  v-for="(item) in smartAydinlatma"
             :key="item.id">
@@ -120,7 +125,8 @@
         </v-spacer>
       </v-col>
       <v-col cols="12" lg="2" xl="2">
-        <v-icon size="48"> <img src="@/assets/akilliyasam.svg"/></v-icon><br>
+        <v-spacer class="d-flex justify-space-around">
+        <v-icon size="48"> <img src="@/assets/akilliyasam.svg"/></v-icon><br></v-spacer>
         <router-link class="link" to="">Akıllı Yaşam</router-link>
         <v-spacer  v-for="(item) in smartLife"
             :key="item.id">
@@ -320,17 +326,25 @@
 
 .page-link:hover {
   cursor: pointer;
+  font-weight: bold;
 }
 
 
 .link{
   font-weight: bold;
   color: black;
+  text-decoration: none;
 }
 
 .custom-chip{
 background-color: white;
 border-radius: 15px;
+}
+
+@media screen and (min-width: 128px) {
+.nav{
+  justify-content: end;
+}
 }
 
 
