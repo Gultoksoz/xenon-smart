@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="main" style="margin-top: 180px;">
-      <v-carousel hide-delimiters>
+      <v-carousel hide-delimiters cycle=true :interval=200000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
@@ -45,8 +45,8 @@
     
   ></v-carousel-item>
 </v-carousel>
-   
-   <!-- <v-row class="d-flex flex-column"> -->
+<v-spacer class=" page d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
     <v-spacer class="text-center mt-6">
       <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Kapı Sensörü</h3>
       <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Kablosuz teknoloji ile donatılmış akıllı kapı sensörü, kullanımı kolay özellikleri ile güvenliği artırır ve ev otomasyonunu optimize eder.
@@ -59,25 +59,34 @@
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/googlehome@4x.png"/></v-col>
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/Google-Alexa.png"/></v-col>
      </v-spacer>
-   <!-- </v-row> -->
-   <!-- <v-row class="d-flex flex-column"> -->
-    <v-spacer class="d-flex align-center justify-center">
-     <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
-        
-        <h1 class="font-weight-bold mb-4 mt-8" >Akıllı Kapı Sensörü</h1>
-         <span class="rgb-text " >Xenon Smart uygulaması sayesinde kapılarınızın durumunu <br class="my-2">her an  her yerden takip ve kontrol edebilirsiniz. </span>
-         <v-card-actions>
-             <v-btn   class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
+    </v-spacer>
+  </v-spacer>
+
+
+  <v-spacer class="d-flex align-center justify-center">
+     <v-card class="d-flex flex-column align-center justify-end rgb-card"  variant="tonal">
+      
+      <v-card style="background: none;" >
+         <v-spacer class="text-center" style="color: white; font-size: 20px;">Akıllı Kapı Sensörü</v-spacer>
+         <v-spacer class="rgb-text mb-4 px-4"  style="color: white; font: 40px; line-height: 48px;" >
+          Xenon Smart uygulaması sayesinde kapılarınızın durumunu her an  her yerden takip ve kontrol edebilirsiniz.</v-spacer>
+         <v-spacer  class="text-center mb-4">
+             <v-btn   class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
-           </v-card-actions>
-        
+             
+           </v-spacer>
+          </v-card>
+
    </v-card>
 
   </v-spacer>
 
+
+   
+
   <!-- </v-row> -->
-   <v-spacer class="d-flex align-center justify-center">
+   <v-spacer class="d-flex align-center justify-center py-2">
 
    <v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
      <v-row>
@@ -107,7 +116,7 @@
   </v-spacer>
 
 
-  <v-spacer class="d-flex align-center justify-center">
+  <v-spacer class="d-flex align-center justify-center py-2">
 
 
 <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
@@ -138,7 +147,7 @@
 
 
 
- <v-spacer class="d-flex align-center justify-center">
+ <v-spacer class="d-flex align-center justify-center py-2">
 
 
 <v-card class=" parlaklik-card " style="background-color: #FAF6FF ;" variant="tonal">
@@ -169,7 +178,7 @@
 </v-spacer>
 
 
-   <v-spacer class="d-flex align-center justify-center">
+   <v-spacer class="d-flex align-center justify-center py-2">
 
 
    <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
@@ -206,7 +215,8 @@
      </v-spacer>
    
  
-   
+     <v-spacer class=" page d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
      <v-spacer class="text-center mt-6 mb-6">
        <v-col cols="12" class="d-flex flex-column custom-text">
          
@@ -214,6 +224,9 @@
           <v-img width="90%" class="mt-4" src="@/assets/Layer_1.png"/>
        </v-col>
      </v-spacer>
+    </v-spacer>
+  </v-spacer>
+
    </v-row>
 
 
@@ -343,7 +356,7 @@ padding:4px;
    background-image: url('@/assets/P5.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 500px;
   width: 100%;
  }
  
@@ -354,9 +367,7 @@ padding:4px;
   color: white;
   border-radius: 33px;
    margin: 10px 20px;
-   padding-top: 3.1em;
-   padding-bottom: 10em;
-   height:auto ;
+   height:500px ;
    max-width: 900px;
    width: 90%;
  }
@@ -379,7 +390,9 @@ padding:4px;
   font-size: 1em;  
  }
 
-
+ .page{
+  padding: 2em 5em;
+ }
 
 
 }

@@ -80,9 +80,7 @@ Xenon Smart mobil uygulası sayesinde dünyanın herhangi bir yerinden evinize e
              <v-btn   class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
-             <v-btn class="rgb-button ml-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
-               Daha fazla
-             </v-btn>
+             
            </v-spacer>
           </v-card>
 
