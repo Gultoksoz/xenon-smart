@@ -68,25 +68,14 @@
     </v-spacer>
   </v-spacer>
 
-    <!-- <v-spacer class="d-flex align-center justify-center">
-     <v-card class=" d-flex flex-column align-center justify-end rgb-card"  variant="tonal">
-        
-        <h1 class="font-weight-bold mb-4 mt-8" >Nerede olursan ol!</h1>
-         <span class="rgb-text " > Xenon Smart mobil uygulaması sayesinde <br class="my-2"> dünyanın herhangi bir yerinden evinize erişebiliyorsunuz.</span>
-         <v-card-actions>
-             <v-btn   class="rgb-button mr-4" size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#FFFFFF" href="https://shop.xenonsmart.com/">
-               Satın al
-             </v-btn>
-           </v-card-actions>
-   </v-card>
-  </v-spacer> -->
 
   <v-spacer class="d-flex align-center justify-center">
      <v-card class="d-flex flex-column align-center justify-end rgb-card"  variant="tonal">
       
       <v-card style="background: none;" >
-         <v-spacer class="text-center" style="color: white; font-size: 20px;">RGB Led Ampul</v-spacer>
-         <v-spacer class="rgb-text mb-4"  style="color: white; font: 40px; line-height: 48px;" >Parti modunda müzikle senkronize renk<br> değişimleriyle eğlenceli bir atmosfer yaratın.</v-spacer>
+         <v-spacer class="text-center" style="color: white; font-size: 20px;">Nerede olursan ol!</v-spacer>
+         <v-spacer class="rgb-text mb-4 px-4"  style="color: white; font: 40px; line-height: 48px;" >
+Xenon Smart mobil uygulası sayesinde dünyanın herhangi bir yerinden evinize erişebiliyorsunuz.</v-spacer>
          <v-spacer  class="text-center mb-4">
              <v-btn   class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
@@ -161,35 +150,7 @@
 </v-card>
 </v-spacer>
 
-   <!-- <v-spacer class="d-flex align-center justify-center">
-
-
-   <v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
-     <v-row>
- 
-       <v-col cols="6" class="d-flex">
-           <v-img
-             cover
-             src="@/assets/phone.png"
-           ></v-img>
-       </v-col>
-       
-       <v-col cols="6" class="d-flex flex-column">
-         <v-spacer class="card-title">
-             <span class="font-weight-bold">Uzaktan Kontrol</span>
-           </v-spacer>
-           <v-spacer class="card-text">
-            <span>
-              Akıllı telefonunuz veya tabletiniz üzerinden ampulu uzaktan kontrol edebilirsiniz. Evinizde dolaşırken veya rahat bir koltuktan otururken ampulü açabilir, kapatabilir ve renkleri değiştirebilirsiniz.
-          </span>
-          </v-spacer>
-           
- 
-       </v-col>
-       
-     </v-row>
-   </v-card>
-  </v-spacer> -->
+   
 
 
    <v-spacer class="d-flex align-center justify-center">

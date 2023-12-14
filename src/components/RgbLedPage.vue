@@ -55,8 +55,8 @@
 <v-spacer class=" page d-flex justify-center">
         <v-spacer style="max-width: 1000px;">
     <v-spacer class="text-center mt-6">
-      <h3 class="font-weight-bold mb-4" style="color: gray;">RGB Led Ampul </h3>
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
+      <h3 class="font-weight-bold mb-4" style="color: gray; font-size: 20px;">RGB Led Ampul </h3>
+      <p class=" mx-4 px-4" style="font-size: 40px; line-height: 48px;">Evinizi veya ofisinizi renklendirmenin ve atmosferinizi anında değiştirmenin mükemmel yolu! Bu akıllı ampul, kullanıcı dostu özellikleri ve geniş renk seçenekleriyle dikkat çekiyor.</p>
      </v-spacer>
      <v-spacer class=" d-flex flex-wrap justify-space-around">
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/app-store.png"/></v-col> 
