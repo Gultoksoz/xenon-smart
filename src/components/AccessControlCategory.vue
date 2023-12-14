@@ -7,13 +7,13 @@
     <v-col cols="2" sm="1"></v-col>
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
-           <v-spacer class="d-flex flex-column main-size " >
-            <span class="font-weight-bold"> Access Control ürünleri,</span>
+           <v-spacer class="d-flex flex-column main-size "  style="font-size: 36px;">
+            <span class="font-weight-bold" > Access Control ürünleri,</span>
             <span>  
               ihtiyaçlarınıza göre özelleştirilebilen kullanıcı dostu çözümler sunar.</span>
           </v-spacer>
            <v-spacer class="mb-1 mt-2 subtext-size">
-            <span>
+            <span style="font-size: 18px;">
               Giriş ve çıkışların düzenlenmesi, yetkilendirilmemiş erişimlerin önlenmesi ve güvenlik protokollerinin etkin bir şekilde uygulanması için kritik öneme sahiptir.
             </span>
           </v-spacer>

@@ -49,7 +49,7 @@
 
 <v-spacer class="text-center mt-2">
       <h3 class="font-weight-bold mb-4" style="color: gray; font-size: 20px;">Akıllı Aydınlatma</h3>
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Enerji verimliliğini artırmak için tasarlanmış modern ve kullanıcı dostu olan akıllı aydınlatma sistemleri , hem kullanım kolaylığı hem de çevresel sürdürülebilirlik sunar.</p>
+      <p class=" mx-4 px-4" style="font-size: 40px; line-height: 48px;">Enerji verimliliğini artırmak için tasarlanmış modern ve kullanıcı dostu olan akıllı aydınlatma sistemleri , hem kullanım kolaylığı hem de çevresel sürdürülebilirlik sunar.</p>
      </v-spacer>
      <v-spacer class=" d-flex flex-wrap justify-space-around">
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/app-store.png"/></v-col> 
@@ -61,86 +61,87 @@
 
    
    
-   <v-card variant="tonal" class="my-4 py-4" style="border-radius: 25px; background-color: #F1FBFF;">
-    <v-row>
-      <v-col md="4" xl="6" class="px-0" >
-        <v-spacer class="card-title">
-          <div>
-            <span>Akıllı RGB Ampul</span>
-             ile yaşam alanınıza  özel bir dokunuş ekleyin.
-        </div>
+     <v-spacer class=" d-flex justify-center">
+  <v-card variant="tonal" class="my-4 py-4 px-4 d-flex flex-wrap" style="border-radius: 20px; max-width: 1000px; background-color: #F1FBFF;">
+    <v-col md="8" xl="6" class="px-0" >
+      <v-spacer class="card-title">
+        <div style=" font-size: 32px; line-height: 39px; padding-bottom: 10px;">
+          <span>Akıllı RGB Ampul</span>
+          ile yaşam alanınıza  özel bir dokunuş ekleyin.
+      </div>
 
-          </v-spacer>
-          <v-spacer class="card-text">
-            <div>
-            <span>
-                Akıllı Ampul ile evinizi kişiselleştirin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!
-          </span>
-        </div>
-          </v-spacer>
-         
-            <v-spacer class="card-action">
-             <div >
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
+        </v-spacer>
+        <v-spacer class="card-text">
+          <div>
+          <span style=" font-size: 18px;">
+            Akıllı Ampul ile evinizi kişiselleştirin ve her anın keyfini çıkarın. İster dinlenirken ister parti yaparken, bu akıllı ampul sayesinde ortamınızı dilediğiniz gibi renklendirin!
+        </span>
+      </div>
+        </v-spacer>
+        
+          <v-spacer class="card-action">
+            <div >
+              <v-btn size="x-large" class="mx-2" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
               <strong>Satın Al</strong>
             </v-btn>
-            <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/rgbled')">
-              <strong>Daha fazla</strong>
-            </v-btn>
-          </div>
-          </v-spacer>
-      </v-col>
-      <v-col md="8" xl="6" class="px-0" >
-        <v-spacer class="d-flex justify-center my-4">
-        <v-sheet width="80%" class="d-flex justify-center align-center key-card" elevation="0"  color="#cccccc">
-          <v-img
-          width="auto"
+          <v-btn size="x-large" class="mx-2" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
+            <strong>Daha fazla</strong>
+          </v-btn>
+        </div>
+        </v-spacer>
+    </v-col>
+    <v-col md="4"  xl="6" class="px-0" >
+      <v-spacer class="d-flex justify-center my-4">
+      <v-sheet width="100%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#cccccc">
+        <v-img
           
-            aspect-ratio="4/3"
-            src="@/assets/Rectangle12.png"
-          ></v-img>
+          width="auto"
+          aspect-ratio="4/3"
+          src="@/assets/Rectangle12.png"
+        ></v-img>
+      </v-sheet>
+    </v-spacer>
+    <v-spacer class="d-flex justify-center my-4">
+        <v-sheet
+          elevation="0"
+          rounded="xl"
+          color="#E9E9E9"
+          width="100%"
+        >
+          <v-slide-group
+            v-model="model"
+            selected-class="bg-success"
+            show-arrows
+            class="d-flex align-center"
+          >
+            <v-slide-group-item
+              v-for="item in rgbLamp"
+              :key="item.id"
+            >
+              <v-scale-transition class="my-4">
+                <v-spacer style="max-width: 100px;" class="text-center mx-2">
+                  <v-img max-height="80" :src="item.url"></v-img>
+                  <span class="mt-2">
+                    
+                  </span>
+                </v-spacer>
+              </v-scale-transition>
+            </v-slide-group-item>
+          </v-slide-group>
         </v-sheet>
       </v-spacer>
-      <v-spacer class="d-flex justify-center my-4">
-          <v-sheet
-            elevation="0"
-            rounded="xl"
-            color="#E9E9E9"
-            width="80%"
-          >
-            <v-slide-group
-              v-model="model"
-              selected-class="bg-success"
-              show-arrows
-              class="d-flex align-center "
-            >
-              <v-slide-group-item
-                v-for="item in rgbLamp"
-                :key="item.id"
-              >
-              <v-spacer class="d-flex justify-center">
-                <v-scale-transition class="my-4">
-                  <v-spacer style="max-width: 100px;" class=" mx-2 ">
-                    <v-img aspect-ratio="1" max-height="80" :src="item.url" ></v-img>
-                    
-                  </v-spacer>
-                </v-scale-transition>
-              </v-spacer>
-              </v-slide-group-item>
-            </v-slide-group>
-          </v-sheet>
-        </v-spacer>
-      </v-col>
-    </v-row>
+    </v-col>
   </v-card>
-   
-  <v-card variant="tonal" class=" kontrol-card-color my-4 py-4">
-    <v-row>
-      <v-col md="8" xl="6" class="px-0">
-        <v-spacer class="d-flex justify-center my-4">
-          <v-sheet width="80%" class="d-flex justify-center align-center key-card" elevation="0"  color="#B0C7BC">
+</v-spacer>
+
+  
+  <v-spacer class=" kontrol-card-color d-flex justify-center">
+  <v-card variant="tonal" style="border-radius: 20px;  max-width: 1000px;" class=" kontrol-card-color my-4 py-4 px-4 d-flex flex-wrap">
+      <v-col md="4" xl="6" class="px-0">
+        <v-spacer class="d-flex justify-center my-4 ">
+          <v-sheet width="100%" class="d-flex justify-center align-center" elevation="0" rounded="xl" color="#B0C7BC">
             <v-img
-              class="kontrol_grubu_img"
+              
               width="auto"
               aspect-ratio="4/3"
               src="@/assets/Layer24.png"
@@ -150,109 +151,9 @@
         <v-spacer class="d-flex justify-center my-4">
           <v-sheet
             elevation="0"
-            width="80%"
+            width="100%"
             rounded="xl"
             color="#BBC6C1"
-          >
-            <v-slide-group
-              v-model="model"
-              class="d-flex align-center"
-              selected-class="bg-success"
-              show-arrows
-            >
-              <v-slide-group-item 
-                v-for="item in rgbLamp"
-                :key="item.id"
-              >
-              <v-spacer class="d-flex justify-center">
-                <v-scale-transition class="my-4">
-                  <v-spacer style="max-width: 100px;" class=" mx-2">
-                    <v-img max-height="80" :src="item.url"></v-img>
-                    
-                  </v-spacer>
-                </v-scale-transition>
-              </v-spacer>
-              </v-slide-group-item>
-            </v-slide-group>
-          </v-sheet>
-        </v-spacer>
-      </v-col>
-      <v-col md="4" xl="6" class="px-0">
-        <v-spacer class="card-title">
-          <div>
-            <span>Dokunmatik Üçlü  Anahtar,</span> 
-             
-            enerji verimliliği ve kolay kontrol  sağlayan modern çözüm.
-          </div>
-          </v-spacer>
-          <v-spacer class="card-text">
-            <div>
-            <span>
-              Ev otomasyonunu zirveye taşıyan bir çözümdür. Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar. Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir ve yüksek güvenlik önlemleriyle evinizi korur. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
-          </span>
-        </div>
-          </v-spacer>
-          <v-spacer class="card-action">
-             <div >
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
-              <strong>Satın Al</strong>
-            </v-btn>
-            <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" >
-              <strong>Daha fazla</strong>
-            </v-btn>
-          </div>
-          </v-spacer>
-      </v-col>
-    </v-row>
-  </v-card>
-
-
-  <v-card variant="tonal" class="my-4 py-4 sensor-card-color">
-    <v-row>
-      <v-col md="4" xl="6" class="px-0" >
-        <v-spacer class="card-title">
-          <div>
-            <span>Akıllı İkili Anahtar,</span>  
-                enerji verimliliği ve kolay kontrol  sağlayan modern bir çözümdür.
-          </div>
-        </v-spacer>
-        <v-spacer class="card-text">
-            <div>
-              <span>
-                Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar. Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir ve yüksek güvenlik önlemleriyle evinizi korur. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
-            </span>
-          </div>
-        </v-spacer>
-        <v-spacer class="card-action">
-             <div >
-            <v-btn size="x-large" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
-              <strong>Satın Al</strong>
-            </v-btn>
-            <v-btn class="ml-4" size="x-large" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" >
-              <strong>Daha fazla</strong>
-            </v-btn>
-          </div>
-          </v-spacer>
-      </v-col>
-      <v-col md="8" xl="6" class="px-0" >
-        <v-spacer class="d-flex justify-center my-4">
-        <v-sheet width="80%" class="d-flex justify-center align-center key-card" elevation="0" color="#97A9B7">
-          <v-img
-            class="sensor-img"
-            width="auto"
-            aspect-ratio="4/3"
-            src="@/assets/Layer12.png"
-          ></v-img>
-        </v-sheet>
-      </v-spacer>
-      <v-spacer class="d-flex justify-center my-4">
-          <v-sheet
-            width="80%"
-            elevation="0"
-            
-            rounded="xl"
-            color="#BFCFDC"
-            
           >
             <v-slide-group
               v-model="model"
@@ -264,39 +165,134 @@
                 v-for="item in rgbLamp"
                 :key="item.id"
               >
-              <v-spacer class="d-flex justify-center">
-                  
-                    <v-scale-transition class="my-4">
-                      <v-spacer style="max-width: 100px;" class=" mx-2">
-                        <v-img max-height="80" :src="item.url"></v-img>
-                        
-                      </v-spacer>
-                    </v-scale-transition>
-                  
+                <v-scale-transition class="my-4">
+                  <v-spacer style="max-width: 100px;" class="text-center mx-2">
+                    <v-img max-height="80" :src="item.url"></v-img>
+                    <span class="mt-2">
+                      
+                    </span>
                   </v-spacer>
+                </v-scale-transition>
               </v-slide-group-item>
             </v-slide-group>
           </v-sheet>
         </v-spacer>
       </v-col>
-    </v-row>
+      <v-col md="8" xl="6" class="px-0">
+        <v-spacer class="card-title">
+          <div style=" font-size: 32px; line-height: 39px; padding-bottom: 10px">
+            <span>Dokunmatik Üçlü  Anahtar,</span> enerji verimliliği ve kolay kontrol  sağlayan modern çözüm.
+          </div>
+          </v-spacer>
+          <v-spacer class="card-text">
+            <div>
+            <span style=" font-size: 18px;">
+              Ev otomasyonunu zirveye taşıyan bir çözümdür. Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar. Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir ve yüksek güvenlik önlemleriyle evinizi korur. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
+          </span>
+        </div>
+          </v-spacer>
+          <v-spacer class="card-action">
+            <div >
+              <v-btn size="x-large" class="mx-2" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
+              <strong>Satın Al</strong>
+            </v-btn>
+            <v-btn size="x-large" class="mx-2" density="comfortable" rounded="xl" variant="outlined" color="#007AFF">
+              <strong>Daha fazla</strong>
+            </v-btn>
+          </div>
+          </v-spacer>
+      </v-col>
   </v-card>
+</v-spacer>
 
  
+
+  <v-spacer class=" d-flex justify-center">
+  <v-card variant="tonal" class="my-4 py-4 px-4 d-flex flex-wrap " style="border-radius: 20px; max-width: 1000px; background-color: #FFFBE8">
+    <v-col md="8" xl="6" class="px-0" >
+      <v-spacer class="card-title">
+        <div style=" font-size: 32px; line-height: 39px; padding-bottom: 10px;">
+          <span>Akıllı İkili Anahtar,</span>
+          enerji verimliliği ve kolay kontrol  sağlayan modern bir çözümdür.
+      </div>
+
+        </v-spacer>
+        <v-spacer class="card-text">
+          <div>
+          <span style=" font-size: 18px;">
+            Uzaktan kontrol, zamanlayıcı, ses kontrolü gibi özelliklerle donatılmış bu modern anahtar, ev sahiplerine ışıkları akıllı bir şekilde kontrol etme imkanı sunar. Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir ve yüksek güvenlik önlemleriyle evinizi korur. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
+        </span>
+      </div>
+        </v-spacer>
+        
+          <v-spacer class="card-action">
+            <div >
+              <v-btn size="x-large" class="mx-2" density="comfortable" rounded="xl"  variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
+              <strong>Satın Al</strong>
+            </v-btn>
+          <v-btn size="x-large" class="mx-2" density="comfortable" rounded="xl"  variant="outlined" color="#007AFF" @click="$router.push('/category')">
+            <strong>Daha fazla</strong>
+          </v-btn>
+        </div>
+        </v-spacer>
+    </v-col>
+    <v-col md="4"  xl="6" class="px-0" >
+      <v-spacer class="d-flex justify-center my-4">
+      <v-sheet width="100%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#FFFBE8">
+        <v-img
+          
+          width="auto"
+          aspect-ratio="4/3"
+          src="@/assets/Layer12.png"
+        ></v-img>
+      </v-sheet>
+    </v-spacer>
+    <v-spacer class="d-flex justify-center my-4">
+        <v-sheet
+          elevation="0"
+          rounded="xl"
+          color="#E9E9E9"
+          width="100%"
+        >
+          <v-slide-group
+            v-model="model"
+            selected-class="bg-success"
+            show-arrows
+            class="d-flex align-center"
+          >
+            <v-slide-group-item
+              v-for="item in rgbLamp"
+              :key="item.id"
+            >
+              <v-scale-transition class="my-4">
+                <v-spacer style="max-width: 100px;" class="text-center mx-2">
+                  <v-img max-height="80" :src="item.url"></v-img>
+                  <span class="mt-2">
+                    
+                  </span>
+                </v-spacer>
+              </v-scale-transition>
+            </v-slide-group-item>
+          </v-slide-group>
+        </v-sheet>
+      </v-spacer>
+    </v-col>
+  </v-card>
+</v-spacer>
+
   
     <v-spacer class="d-flex align-center justify-center mt-6 mb-3">
        
-      <h3 class="font-weight-bold" style="color: gray;">Akıllı Aydınlatma </h3>
+      <h3 class="font-weight-bold" style="color: gray; font-size: 20px;">Akıllı Aydınlatma </h3>
       
      </v-spacer>
    
- 
    
      <v-spacer class="d-flex mt-4 mb-6">
        <v-col cols="12" class="d-flex align-center justify-center flex-column">
          <v-spacer  style="width: 90%;" class="d-flex align-center justify-center flex-column">
 
-         <span class="font-weight-bold text-center" style="font-size: 1.5em;">Akıllı aydınlatma teknolojileri aydınlatma konusunda tam kontrol sahibi olmanızı ve yaşam alanlarınızı kendi zevkinize göre şekillendirmenizi mümkün kılar.</span>
+         <span class=" text-center" style="font-size: 40px;">Akıllı aydınlatma teknolojileri aydınlatma konusunda tam kontrol sahibi olmanızı ve yaşam alanlarınızı kendi zevkinize göre şekillendirmenizi mümkün kılar.</span>
          <v-spacer class=" mt-4">
             <div >
             <v-btn size="x-large" density="compact" rounded="xl" variant="flat" color="#007AFF" href="https://shop.xenonsmart.com/">
