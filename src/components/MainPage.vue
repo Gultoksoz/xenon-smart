@@ -130,7 +130,7 @@
         </div>
         </v-spacer>
     </v-col>
-    <v-col md="4" xl="6" class="px-0" >
+    <v-col md="4"  xl="6" class="px-0" >
       <v-spacer class="d-flex justify-center my-4">
       <v-sheet width="100%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#cccccc">
         <v-img
@@ -177,11 +177,11 @@
 <v-spacer class="page d-flex justify-center">
   <v-card variant="tonal" style="border-radius: 20px;  max-width: 1000px;" class=" kontrol-card-color my-4 py-4 px-4 d-flex flex-wrap">
     <v-row>
-      <v-col md="8" xl="6" class="px-0">
-        <v-spacer class="d-flex justify-center my-4">
-          <v-sheet width="80%" class="d-flex justify-center align-center" elevation="0" rounded="xl" color="#B0C7BC">
+      <v-col md="4" sm="4" xl="6" class="px-0">
+        <v-spacer class="d-flex justify-center my-4 px-4">
+          <v-sheet width="100%" class="d-flex justify-center align-center" elevation="0" rounded="xl" color="#B0C7BC">
             <v-img
-              class="kontrol_grubu_img"
+              
               width="auto"
               aspect-ratio="4/3"
               src="@/assets/kontrol_grubu.png"
@@ -218,7 +218,7 @@
           </v-sheet>
         </v-spacer>
       </v-col>
-      <v-col md="4" xl="6" class="px-0">
+      <v-col md="8" xl="6" class="px-0">
         <v-spacer class="card-title">
           <div>
             <span>Akıllı Kontrol Grubu</span> Evinizin kontrolünü parmak uçlarınızda tutun.
@@ -272,7 +272,7 @@
         <v-spacer class="d-flex justify-center my-4">
         <v-sheet width="80%" class="d-flex justify-center align-center" elevation="0"  rounded="xl" color="#97A9B7">
           <v-img
-            class="sensor-img"
+           max-width="400px"
             width="auto"
             aspect-ratio="4/3"
             src="@/assets/sensor.png"
