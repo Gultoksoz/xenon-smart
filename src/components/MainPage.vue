@@ -1,5 +1,5 @@
 <template>
-   <v-container fluid class="main" style="margin-top: 180px;">
+   <v-container fluid class="main " style="margin-top: 180px;">
     <v-row class="header_element">
       <v-col cols="12" md="6">
         <v-card class="left-aligned-card" variant="text">
@@ -408,12 +408,12 @@ padding:4px;
   text-align: left;
   color: black;
 }
-.main{
-  /* padding: 0px;
+/* .main{
+   padding: 0px;
   padding-left: 6em;
-  padding-right: 6em; */
+  padding-right: 6em; 
   max-width: 100vw !important;
-}
+} */
 
 
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <v-app-bar app flat  height="180" >
+  <v-app-bar app flat  height="180"  >
     <v-row no-gutters class="d-flex align-start justify-center">
-      <v-spacer class="d-flex flex-wrap" style="max-width: 2560px;">
+      <v-spacer class="d-flex flex-wrap" style="max-width: 1110px;">
 
       <v-col cols="12" md="3" class="d-flex align-center justify-center mb-3">
         <v-img
@@ -71,7 +71,7 @@
     </v-row>
   </v-app-bar>
 
-  <v-navigation-drawer
+  <v-navigation-drawer style="max-width: 1110px;"
     v-model="drawer"
     temporary
     :location="resize > 1280 ? 'center': 'left'"
