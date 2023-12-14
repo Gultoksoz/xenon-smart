@@ -48,7 +48,7 @@
    
 
 <v-spacer class="text-center mt-2">
-      <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Aydınlatma</h3>
+      <h3 class="font-weight-bold mb-4" style="color: gray; font-size: 20px;">Akıllı Aydınlatma</h3>
       <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Enerji verimliliğini artırmak için tasarlanmış modern ve kullanıcı dostu olan akıllı aydınlatma sistemleri , hem kullanım kolaylığı hem de çevresel sürdürülebilirlik sunar.</p>
      </v-spacer>
      <v-spacer class=" d-flex flex-wrap justify-space-around">
@@ -422,7 +422,7 @@ padding:4px;
    background-image: url('@/assets/bg.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 500px;
  }
  
 .background{

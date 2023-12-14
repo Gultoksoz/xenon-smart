@@ -396,7 +396,7 @@ padding:4px;
    background-image: url('@/assets/bg21.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 450px;
+  min-height: 500px;
   width: 100%;
  }
  
