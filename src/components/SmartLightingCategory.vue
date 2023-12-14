@@ -1,17 +1,17 @@
 <template>
     <v-container fluid class="main" style="margin-top: 180px;">
-        <v-carousel hide-delimiters>
+        <v-carousel hide-delimiters cycle=true :interval=20000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
     <v-col cols="2" sm="1"></v-col>
     <v-col cols="9" sm="6" md="5" class="d-flex justify-end">
          <v-spacer variant="text" style="color: white;">
-           <v-spacer class="d-flex flex-column main-size" >
+           <v-spacer class="d-flex flex-column main-size"  style="font-size: 36px; line-height: 48px;">
             <span class="font-weight-bold">Akıllı aydınlatma ile</span>
             <span>yaşam alanlarınız daha renkli, daha akıllı ve daha keyifli...</span>
           </v-spacer>
-           <v-spacer class="mb-4 mt-2 subtext-size">
+           <v-spacer class="mb-4 mt-2 subtext-size" style="font-size: 18px;">
             <span>
               Estetik tasarımı ve gelişmiş özellikleriyle bu akıllı aydınlatma sistemi, evinizde veya ofisinizde aydınlatma deneyiminizi başka bir seviyeye taşıyacak.
             </span>
@@ -418,7 +418,7 @@ padding:4px;
 
  
  .main-text{
-  padding: 20px 0px;
+  padding: 40px 0px;
    background-image: url('@/assets/bg.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;

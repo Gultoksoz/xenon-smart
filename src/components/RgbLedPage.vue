@@ -68,16 +68,20 @@
    <!-- <v-row class="d-flex flex-column"> -->
     <v-spacer class="d-flex align-center justify-center">
      <v-card class="d-flex flex-column align-center justify-end rgb-card"  variant="tonal">
-         <v-card-title >RGB Led Ampul</v-card-title>
-         <v-card-text class="rgb-text " >Parti modunda müzikle senkronize renk<br class="my-2"> değişimleriyle eğlenceli bir atmosfer yaratın.</v-card-text>
-         <v-card-actions>
+      
+      <v-card style="background: none;" >
+         <v-spacer class="text-center" style="color: white; font-size: 20px;">RGB Led Ampul</v-spacer>
+         <v-spacer class="rgb-text mb-4"  style="color: white; font: 40px; line-height: 48px;" >Parti modunda müzikle senkronize renk<br> değişimleriyle eğlenceli bir atmosfer yaratın.</v-spacer>
+         <v-spacer  class="text-center mb-4">
              <v-btn   class="rgb-button mr-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF" href="https://shop.xenonsmart.com/">
                Satın al
              </v-btn>
              <v-btn class="rgb-button ml-4" size="large" density="comfortable" rounded="xl"  variant="outlined" color="#FFFFFF">
                Daha fazla
              </v-btn>
-           </v-card-actions>
+           </v-spacer>
+          </v-card>
+
    </v-card>
 
   </v-spacer>
@@ -385,9 +389,9 @@ padding:4px;
   color: white;
   border-radius: 33px;
    margin: 10px 20px;
-   padding-top: 3.1em;
-   padding-bottom: 3.1em;
-   height:auto ;
+   /* padding-top: 3.1em; */
+   /* padding-bottom: 3.1em; */
+   height: 500px ;
    max-width: 900px;
    width: 90%;
  }

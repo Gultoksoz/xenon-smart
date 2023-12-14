@@ -7,15 +7,15 @@
             </v-col >
             <v-divider  :thickness="2"></v-divider>
         </v-row>
-        <v-row class="d-flex flex-wrap" >
+        <v-row >
 
           
-          <v-spacer>
+          <v-col cols="12" class="mx-0 my-o px-0 py-0" style="position: absolute; max-width: 1100px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3006.0412900578685!2d28.9868288!3d41.1117893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab54b7efb98d5%3A0xac34d0462f5f7c92!2sBili%C5%9Fim%20Vadisi%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1700563845234!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </v-spacer>
+          </v-col>
           
-          <v-col cols="12" class="d-flex card_form justify-end">
-            <v-col cols="12" md="6" lg="4" variant="elevated" class="py-0">
+          <v-col cols="5" offset="6" class="d-flex card_form">
+            <v-col cols="12" variant="elevated" class="py-0">
               <v-card class="rounded-xl px-4 py-4">
 
               <v-card-title class="text-color">GERİ BİLDİRİM FORMU</v-card-title> 
@@ -45,6 +45,8 @@
 
             </v-col>
           </v-col>
+
+          
         </v-row>
 
         <v-row class="main mb-4">
@@ -102,13 +104,11 @@ Gebze, Kocaeli Türkiye</p>
   }
 
   .card_form {
-    position: absolute;
+    
+    right: 50px;
+    top: 50px;
   }
- @media screen and (max-width: 960px) {
-  .card_form {
-    position: relative;
-  }
- }
+
   .small-text{
     font-size: 1em;
     color: black;
