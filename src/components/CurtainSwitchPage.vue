@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="main" style="margin-top: 180px;">
-      <v-carousel hide-delimiters>
+      <v-carousel hide-delimiters cycle=true :interval=200000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
@@ -52,20 +52,25 @@
   ></v-carousel-item>
 </v-carousel>
    
-   <!-- <v-row class="d-flex flex-column"> -->
-    <v-spacer class="text-center mt-6">
+<v-spacer class=" page d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
+    <v-spacer class="text-center mt-6 py-4">
       <h3 class="font-weight-bold mb-4" style="color: gray;">Akıllı Perde Switch</h3>
-      <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;"> Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
+      <p class="font-weight-bold mx-4 px-4 py-4" style="font-size: 1.5em;"> Kolay kurulumu sayesinde mevcut altyapıya hızla entegre edilebilir. Bu ürünle eviniz, daha konforlu, enerji tasarruflu ve güvenli bir yaşam alanına dönüşür.
 
         </p>
      </v-spacer>
-     <v-spacer class=" d-flex flex-wrap justify-space-around">
+   
+
+     <v-spacer class=" d-flex flex-wrap justify-space-around py-4">
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/app-store.png"/></v-col> 
          <v-col sm="4" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/google-play.png"/></v-col>
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/xenon-app.png"/></v-col>
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/googlehome@4x.png"/></v-col>
          <v-col sm="6" md="2" class="d-flex align-center justify-center"> <v-img class="logo_image" src="@/assets/Google-Alexa.png"/></v-col>
-     </v-spacer>
+     </v-spacer> 
+    </v-spacer>
+  </v-spacer>
    <!-- </v-row> -->
    <!-- <v-row class="d-flex flex-column"> -->
     <v-spacer class="d-flex align-center justify-center">
@@ -349,7 +354,7 @@ padding:4px;
    background-image: url('@/assets/bg04.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 500px;
   width: 100%;
  }
  
@@ -385,7 +390,9 @@ padding:4px;
   font-size: 1em;  
  }
 
-
+.page{
+  padding: 2em 5em;
+}
 
 
 }

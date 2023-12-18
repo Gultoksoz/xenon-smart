@@ -203,7 +203,7 @@
            <v-img
              cover
              max-width="760"
-             src="@/assets/Layer42.png"
+             src="@/assets/Layer34.png"
            ></v-img>
       
        </v-col>

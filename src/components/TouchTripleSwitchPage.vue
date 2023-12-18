@@ -69,7 +69,7 @@
   </v-spacer>
 
 
-  <v-spacer class="d-flex align-center justify-center">
+  <v-spacer class="d-flex align-center justify-center py-2">
      <v-card class="d-flex flex-column align-center justify-end rgb-card"  variant="tonal">
       
       <v-card style="background: none;" >
@@ -88,7 +88,7 @@ Xenon Smart mobil uygulası sayesinde dünyanın herhangi bir yerinden evinize e
 
   </v-spacer>
 
-   <v-spacer class="d-flex align-center justify-center">
+   <v-spacer class="d-flex align-center justify-center py-2">
 
    <v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
      <v-row>
@@ -118,7 +118,7 @@ Xenon Smart mobil uygulası sayesinde dünyanın herhangi bir yerinden evinize e
   </v-spacer>
 
 
- <v-spacer class="d-flex align-center justify-center">
+ <v-spacer class="d-flex align-center justify-center py-2">
 
 
 <v-card class=" parlaklik-card " style="background-color: #F7FCFE ;" variant="tonal">
@@ -151,7 +151,7 @@ Xenon Smart mobil uygulası sayesinde dünyanın herhangi bir yerinden evinize e
    
 
 
-   <v-spacer class="d-flex align-center justify-center">
+   <v-spacer class="d-flex align-center justify-center py-2">
 
 
    <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
