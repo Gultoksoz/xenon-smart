@@ -158,6 +158,14 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import('@/views/AccessControlPanel.vue'),
       },
+      {
+        path: '/temphumsensor',
+        name: 'temphumsensor',
+        // route level code-splitting
+        // this generates a separate chunk (Home-[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('@/views/TempHumSensor.vue'),
+      },
 
     ],
   },

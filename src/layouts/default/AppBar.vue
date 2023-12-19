@@ -243,6 +243,11 @@
           id: 5,
           text: "Akıllı El Sensörü",
           url:""
+        },
+        {
+          id: 6,
+          text: "Akıllı Isı Nem Sensörü",
+          url:"/temphumsensor"
         }
       ],
       smartAydinlatma: [
