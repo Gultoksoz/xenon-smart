@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="main" style="margin-top: 180px;">
-      <v-carousel hide-delimiters>
+      <v-carousel hide-delimiters cycle=true :interval=200000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
@@ -49,7 +49,8 @@
   ></v-carousel-item>
 </v-carousel>
    
-   <!-- <v-row class="d-flex flex-column"> -->
+<v-spacer class=" page d-flex justify-center">
+        <v-spacer style="max-width: 1000px;">
     <v-spacer class="text-center">
       <h3 class="font-weight-bold mb-4" style="color: gray;">Access Control Sistemleri</h3>
       <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;">Yüksek hızlı QR kod okuma teknolojisi ile donatılmıştır, böylece kullanıcılar anında tanımlanabilir ve erişim izinleri otomatik olarak kontrol edilebilir.
@@ -62,9 +63,9 @@
          <v-col sm="4" md="2" class="d-flex align-center justify-center"><v-img class="logo_image" src="@/assets/xenon-app.png"/></v-col>
         
      </v-spacer>
-     <v-spacer class="page">
-    
-  </v-spacer>
+     </v-spacer>
+     </v-spacer>
+     
 
 
 
@@ -82,7 +83,7 @@
           ></v-img>
         </v-sheet>
 
-         <v-row class="px-4">
+         <v-row class="px-4 py-4">
           <v-col>
             <v-card color="#354DD1" style="border-radius: 25px;" class="pl-2">
               <v-img class="py-4 ml-2"
@@ -335,7 +336,7 @@ padding: 3em;
    background-image: url('@/assets/Rec18.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 500px;
   width: 100%;
  }
  

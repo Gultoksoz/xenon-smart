@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="main" style="margin-top: 180px;">
-      <v-carousel hide-delimiters>
+      <v-carousel hide-delimiters cycle=true :interval=200000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
@@ -50,7 +50,7 @@
 </v-carousel>
    
    <!-- <v-row class="d-flex flex-column"> -->
-    <v-spacer class="text-center">
+    <v-spacer class="text-center py-4">
       <h3 class="font-weight-bold mb-4" style="color: gray;">Access Control Sistemleri</h3>
       <p class="font-weight-bold mx-4 px-4" style="font-size: 1.5em;"> İdeal Access Control Sisteminiz için doğru çözümleri bulun
 

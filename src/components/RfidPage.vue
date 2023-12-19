@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="main" style="margin-top: 180px;" >
-      <v-carousel hide-delimiters>
+      <v-carousel hide-delimiters cycle=true :interval=200000 :show-arrows="false">
   <v-carousel-item
   >
   <v-spacer class="main-text d-flex">
@@ -50,7 +50,7 @@
 </v-carousel>
    
    <!-- <v-row class="d-flex flex-column"> -->
-    <v-spacer class="d-flex justify-center">
+    <v-spacer class="d-flex justify-center py-4">
         <v-spacer style="max-width: 1000px;">
    
 
@@ -332,7 +332,7 @@ padding: 3em;
    background-image: url('@/assets/Rec1.png');
    background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 450px;
+  min-height: 500px;
   width: 100%;
  }
  
