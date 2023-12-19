@@ -277,11 +277,11 @@ Xenon Smart mobil uygulası sayesinde dünyanın herhangi bir yerinden evinize e
  
 
 .main-size{
-  font-size: 0.9em;  
+  font-size: 1.3em;  
  }
 
 .subtext-size{
-  font-size: 0.8em;  
+  font-size: 1em;  
  }
 
 
@@ -358,11 +358,11 @@ padding:4px;
  }
 
  .main-size{
-  font-size: 1.3em;  
+  font-size: 1.8em;  
  }
 
 .subtext-size{
-  font-size: 1em;  
+  font-size: 1.3em;  
  }
 
 .page{
