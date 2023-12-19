@@ -73,7 +73,7 @@
   </v-spacer>
    <!-- </v-row> -->
    <!-- <v-row class="d-flex flex-column"> -->
-    <v-spacer class="d-flex align-center justify-center">
+    <v-spacer class="d-flex align-center justify-center py-4">
      <v-card class=" rgb-card d-flex flex-column align-center justify-end"  variant="tonal">
         
         <h1 class="font-weight-bold mb-4 mt-8" >Nerede olursan ol!</h1>
@@ -90,7 +90,7 @@
 
   <!-- </v-row> -->
 
-  <v-spacer class="d-flex align-center justify-center">
+  <v-spacer class="d-flex align-center justify-center py-4">
 
 
 <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
@@ -118,7 +118,7 @@
   </v-row>
 </v-card>
 </v-spacer>
-  <v-spacer class="d-flex align-center justify-center">
+  <v-spacer class="d-flex align-center justify-center py-4">
 
 <v-card class=" parlaklik-card " style="background-color: #FAF6FF;" variant="tonal">
   <v-row>
@@ -149,7 +149,7 @@
 
 
 
-<v-spacer class="d-flex align-center justify-center">
+<v-spacer class="d-flex align-center justify-center py-4">
 
 
 <v-card class=" parlaklik-card" style="background-color: #FFF9F4  ;" variant="tonal">
@@ -178,7 +178,7 @@
 </v-card>
 </v-spacer>
 
-<v-row class="d-flex flex-column">
+<v-row class="d-flex flex-column py-4">
  <v-spacer class="text-center mt-6 mb-6">
     
    <h3 class="font-weight-bold" style="color: gray;">Akıllı Perde Switch</h3>
@@ -196,7 +196,7 @@
   </v-spacer>
 </v-row>
 
-<v-spacer class="d-flex align-center justify-center">
+<v-spacer class="d-flex align-center justify-center py-4">
 
 <v-card class=" parlaklik-card d-flex" variant="tonal">
   <!-- <v-row> -->
